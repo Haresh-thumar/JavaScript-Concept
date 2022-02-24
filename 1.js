@@ -1300,6 +1300,24 @@
 // console.log(haresh);
 
 
+/*================= default parameter ===============*/
+// function addValue(a, b=0){
+//     return a + b;
+// }
+// let ans = addValue(4);
+// console.log(ans); 
+
+
+/*================= rest parameter ===============*/
+// function myFunc(a, b, ...c){
+//     console.log("first value :", a);
+//     console.log("second value :", b);
+//     console.log("three value :", c);
+// }
+// myFunc(1,2,3,4,5,6,7);
+
+
+
 
 
 /*===============================================================================
@@ -1319,3 +1337,28 @@
 // let c = a;
 // console.log(a=b);
 // console.log(b=c);
+
+
+
+
+
+
+//*********** parameter wise pass argument ***********/
+// function haresh(obj) {
+//     if (obj.name != undefined) {
+
+//         console.log("Name :", obj.name);
+//     }
+//     if (obj.age != undefined) {
+
+//         console.log("Age :", obj.age);
+//     }
+//     if (obj.lname != undefined) {
+
+//         console.log("Lname:", obj.lname);
+//     }
+// }
+// haresh({ name: 22 });
+
+
+
