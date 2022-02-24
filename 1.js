@@ -1113,6 +1113,10 @@
 // }
 // const a = sumTwoNumber(5,10);
 // console.log(a);
+//--------- shortcut arrow function ----------
+// const sumTwoNumber = (num1, num2) => num1 + num2;
+// const a = sumTwoNumber(5, 10);
+// console.log(a);
 
 //------- sum number using prompt box in function -------
 // let a = +prompt();
@@ -1149,6 +1153,12 @@
 // }
 // console.log(isEven());
 
+
+/*========================== function hoisting =========================*/
+// hello();
+// function hello() {
+//     console.log("hello haresh");
+// }
 
 
 /*============================ function scope ==========================*/
@@ -1209,6 +1219,85 @@
 // };
 
 
+/*========================== Function inside function =========================*/
+// const app = () => {
+//     const myFunc = () => {
+//         console.log("this is first function");
+//     }
+//     const addTwoValue = (num1, num2) => {
+//         return num1 + num2;
+//     }
+//     const plusValue = (num1, num2) => num1 * num2;
+
+//     myFunc();
+//     console.log(addTwoValue(2, 5));
+//     console.log(plusValue(5, 5));
+// }
+// app();
+
+
+/*========================== lexical scope =========================*/
+/*--------- normal function lexical scope --------*/
+// const myVar = "normal function out scope call";
+// const app = () => {
+//     const myVar = "out scope call";
+
+//     function myFunc() {
+//         const myVar = "in scope call"
+//         console.log("inside myFunc :", myVar);
+//     }
+//     console.log(myVar);
+//     myFunc();
+// }
+// app();
+
+/*--------- function expression lexical scope --------*/
+// const myVar = "function out scope call";
+// const app = () => {
+//     const myVar = "out scope call";
+
+//     const myFunc = function() {
+//         const myVar = "in scope call"
+//         console.log("inside myFunc :", myVar);
+//     }
+//     console.log(myVar);
+//     myFunc();
+// }
+// app();
+
+/*--------- arrow function lexical scope --------*/
+// const myVar = "function out scope call";
+// const app = () => {
+//     const myVar = "out scope call";
+
+//     const myFunc = () => {
+//         const myVar = "in scope call"
+//         console.log("inside myFunc :", myVar);
+//     }
+//     console.log(myVar);
+//     myFunc();
+// }
+// app();
+
+
+/*================= block scope VS function scope ===============*/
+/*--------- var scope --------*/
+// {
+//     var haresh = "var scope";
+// }
+// console.log(haresh);
+
+/*--------- let scope --------*/
+// {
+//     let haresh = "let scope";
+// }
+// console.log(haresh);
+
+/*--------- const scope --------*/
+// {
+//     const haresh = "const scope";
+// }
+// console.log(haresh);
 
 
 
