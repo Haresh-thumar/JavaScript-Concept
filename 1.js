@@ -1316,6 +1316,124 @@
 // }
 // myFunc(1,2,3,4,5,6,7);
 
+/*========== all argument sum using function ==========*/
+// function sum(...numbers) {
+//     let total = 0;
+//     for (let number of numbers) {
+//         total = total + number;
+//     }
+//     return total;
+// }
+// let ans = sum(1, 2, 3, 4, 5, 6);
+// console.log(ans);
+
+
+/*============= parameter destructuring ==============*/
+// const obj = {
+//     name: "haresh",
+//     gender: "male",
+//     age: 24,
+// }
+// function printObj({ name, gender, age }) {
+//     console.log(name, gender, age);
+// }
+// printObj(obj);
+
+
+/*============= callback function with two parameter ==============*/
+// function myFunc1() {
+//     console.log("inside my func 1");
+// }
+// function myFunc2(callback) {
+//     console.log("inside my func 2");
+//     callback();
+// }
+// myFunc2(myFunc1);
+
+
+// function myFunc1(name) {
+//     console.log("inside my func 1");
+//     console.log(`your name is ${name}`);
+// }
+
+// function myFunc2(callback) {
+//     console.log("inside my func 2");
+//     callback("haresh");
+// }
+// myFunc2(myFunc1);
+
+
+/*============= function returning function ==============*/
+// function haresh() {
+//     function myFunc() {
+//         console.log("hello world");
+//     }
+//     return myFunc;
+// }
+// let ans = haresh();
+// ans();
+
+// function haresh() {
+//     return function myFunc() {
+//         console.log("hello world");
+//     }
+// }
+// let ans = haresh();
+// ans();
+
+
+
+
+/*===============================================================================
+                            Array with function 
+===============================================================================*/
+/*---- first index * 2 multiplication in Array using function ----*/
+// const numbers = [4, 3, 5, 6];
+// function haresh(number, index) {
+//     console.log(`${number}*2 = ${number*2}`);
+// }
+// haresh(numbers[0]);
+
+/*------- forEach Loop Using multiplication in array value -------*/
+// const numbers = [2, 5, 7, 9, 3];
+// numbers.forEach(function(number, index) {
+//     console.log(`index is ${index} number is ${number*2}`);
+// });
+
+/*------- print first name in array of object using forEach with arrow function -------*/
+// const hareshObj = [
+//     { firstName: "haresh", age: 20, gender: "male" },
+//     { firstName: "mohit", age: 21, gender: "male" },
+//     { firstName: "rutvik", age: 22, gender: "male" },
+// ]
+// hareshObj.forEach(x => {
+//     console.log(x.firstName);
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1338,11 +1456,6 @@
 // console.log(a=b);
 // console.log(b=c);
 
-
-
-
-
-
 //*********** parameter wise pass argument ***********/
 // function haresh(obj) {
 //     if (obj.name != undefined) {
@@ -1359,6 +1472,3 @@
 //     }
 // }
 // haresh({ name: 22 });
-
-
-
