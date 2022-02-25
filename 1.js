@@ -64,7 +64,7 @@
 
 // const name = "Front : ";
 // const number = prompt();
-// console.log(`${name}${number}`); 
+// console.log(`${name}${number}`);
 
 
 /*=========== Splitting the strings into words example ===========*/
@@ -84,7 +84,7 @@
 /*------ same property & same value in object ------*/
 // let age = 43;
 // let harry = { name: 'Harry Smith', age: age };
-// console.log(harry.age); 
+// console.log(harry.age);
 // The 'age' property is set to the value of the age variable
 
 
@@ -194,10 +194,10 @@
 // let d = b++;
 // let e = c--;
 
-// console.log(a); //200  199  
+// console.log(a); //200  199
 // console.log(b); //201  200
 // console.log(c); //199  199  201c
-// console.log(d); //201  200 
+// console.log(d); //201  200
 // console.log(e); //199  199
 
 
@@ -349,7 +349,7 @@
 /*------------------------------------------------------------------------------------
                         for loop with declair outside variable
 ------------------------------------------------------------------------------------*/
-// let a = 0; 
+// let a = 0;
 // for(;a <= 10; a++){
 //     console.log(a);
 // }
@@ -632,7 +632,7 @@
 // let c = item[2];
 // console.log(a);
 // console.log(b);
-// console.log(c); 
+// console.log(c);
 
 // const haresh = ["value1", "value2", "value3", "value4"];
 // let [myVar1, myVar2, ...item] = haresh;
@@ -652,15 +652,15 @@
 
 /*=========== access element in object ([“ ”]) bracket notation ===========*/
 // const obj = {
-//     name: "haresh", 
-//     age: 20, 
+//     name: "haresh",
+//     age: 20,
 //     gender : "male"
 // };
 // console.log(obj["gender"]);
 
 // const obj = {
-//     name: "haresh", 
-//     age: 20, 
+//     name: "haresh",
+//     age: 20,
 //     "my hobbies" : ["singing", "dancing", "reading", "swimming"]
 // };
 // console.log(obj["my hobbies"]);
@@ -679,8 +679,8 @@
 /*-------------------- iterate object -------------------*/
 //=========== for in loop ===========
 // const obj = {
-//     name: "haresh", 
-//     age: 20, 
+//     name: "haresh",
+//     age: 20,
 //     "my hobbies" : ["singing", "dancing", "reading", "swimming"]
 // };
 // for(let haresh in obj){
@@ -906,7 +906,7 @@
 
 // let arr = []
 // for (let i = 0; i < 5; i++) {    //for of loop print value
-//     arr.push(obj)  
+//     arr.push(obj)
 // }
 // for (const iterator of arr) {
 //     for (const key in iterator) {   //for in loop print index
@@ -937,7 +937,7 @@
 //         iterator.lname = "thummar "
 //     }
 //     for (const key in iterator) {     //for in loop print index
-//         console.log(key, iterator[key]) 
+//         console.log(key, iterator[key])
 //     }
 // }
 
@@ -961,7 +961,7 @@
 // function returnValue(){
 //     return 2 + 5;
 // }
-// console.log(returnValue()); 
+// console.log(returnValue());
 
 //------- function value store in variable -------
 // function returnValue(){
@@ -1006,7 +1006,7 @@
 //         }
 //         else {
 //             console.log("odd", index);
-//         } 
+//         }
 //     }
 // }
 // isEven();
@@ -1027,7 +1027,7 @@
 // const returnValue = function(){
 //     return 2 + 5;
 // }
-// console.log(returnValue()); 
+// console.log(returnValue());
 
 //------- function value store in variable -------
 // const returnValue = function(){
@@ -1073,7 +1073,7 @@
 //         }
 //         else {
 //             console.log("odd", index);
-//         } 
+//         }
 //     }
 // }
 // console.log(isEven());
@@ -1098,7 +1098,7 @@
 // const returnValue = () => {
 //     return 2 + 5;
 // }
-// console.log(returnValue()); 
+// console.log(returnValue());
 
 //------- function value store in variable -------
 // const returnValue = () => {
@@ -1148,7 +1148,7 @@
 //         }
 //         else {
 //             console.log("odd", index);
-//         } 
+//         }
 //     }
 // }
 // console.log(isEven());
@@ -1305,7 +1305,7 @@
 //     return a + b;
 // }
 // let ans = addValue(4);
-// console.log(ans); 
+// console.log(ans);
 
 
 /*================= rest parameter ===============*/
@@ -1385,7 +1385,7 @@
 
 
 /*===============================================================================
-                            Array with function 
+                            Array with function
 ===============================================================================*/
 /*---- first index * 2 multiplication in Array using function ----*/
 // const numbers = [4, 3, 5, 6];
@@ -1394,6 +1394,7 @@
 // }
 // haresh(numbers[0]);
 
+//======================== forEach method =========================//
 /*------- forEach Loop Using multiplication in array value -------*/
 // const numbers = [2, 5, 7, 9, 3];
 // numbers.forEach(function(number, index) {
@@ -1405,41 +1406,110 @@
 //     { firstName: "haresh", age: 20, gender: "male" },
 //     { firstName: "mohit", age: 21, gender: "male" },
 //     { firstName: "rutvik", age: 22, gender: "male" },
-// ]
+// ];
 // hareshObj.forEach(x => {
 //     console.log(x.firstName);
 // });
 
 
+//======================== map method =========================//
+// const number = [5, 2, 3, 8, 6, 4];
+// const square = function(number){
+//     return number * number;
+// }
+// const arrarValue = number.map(square);
+// console.log(arrarValue);
+
+/*-------- function expression -------*/
+// const number = [5, 2, 3, 8, 6, 4];
+// const arrarValue = number.map(function(number){
+//     return number * number;
+// });
+// console.log(arrarValue);
+
+/*-------- arrow function -------*/
+// const number = [5, 2, 3, 8, 6, 4];
+// const arrarValue = number.map(number =>{
+//     return number * number;
+// });
+// console.log(arrarValue);
+
+/*-------- reslistic Example of arrow function -------*/
+// const hareshObj = [
+//     { firstName: "haresh", age: 24, gender: "male" },
+//     { firstName: "mohit", age: 21, gender: "male" },
+//     { firstName: "rutvik", age: 22, gender: "male" },
+//     { firstName: "sweta", age: 23, gender: "female" },
+// ];
+// const total = hareshObj.map((user)=>{
+//     return user.firstName + " " + user.age + " " + user.gender;
+// });
+// console.log(total);
 
 
+//======================== filter method =========================//
+/*----- check even number -----*/
+// const isEven = [5, 8, 3, 4, 9, 2, 1, 6];
+// const checkEven = isEven.filter((number)=>{
+//     return number % 2 === 0;
+// });
+// console.log(checkEven);
+
+/*----- check odd number -----*/
+// const isOdd = [5, 8, 3, 4, 9, 2, 1, 6];
+// const checkOdd = isOdd.filter((number)=>{
+//     return number % 2 !== 0;
+// });
+// console.log(checkOdd);
 
 
+//======================== reduce method =========================//
+/*------ sum of all number in array -------*/
+// const user = [1, 2, 3, 4, 5, 6, 10];
+// const total = user.reduce((accumulator, currentValue)=>{
+//     return accumulator + currentValue;
+// });
+// console.log(total);
+// accumulator   +   currentValue   +   return  (work flow)
+// bydefault 1        bydefault 2       3
+// 3                  3                 6
+// 6                  4                 10
+// 10                 5                 15
+// 15                 6                 21
+// 21                 10                31
 
 
+/*------ sum of all number using reduce in array of object -------*/
+// const userCart = [
+//     {productId: 1, ProductName: "mobile", productPrice: 10000},
+//     {productId: 2, ProductName: "mobile", productPrice: 10000},
+//     {productId: 3, ProductName: "mobile", productPrice: 10000},
+// ];
+// const totalAmount = userCart.reduce((totalPrice, currentProduct)=>{
+//     return totalPrice + currentProduct.productPrice;
+// }, 0);
+// console.log(totalAmount);
 
 
+/*------ sum of all number using for loop in array of object -------*/
+// const userCart = [
+//     {productId: 1, ProductName: "mobile", productPrice: 10000},
+//     {productId: 2, ProductName: "mobile", productPrice: 10000},
+//     {productId: 3, ProductName: "mobile", productPrice: 10000},
+// ];
+// let ft = 0;
+// for(let total of userCart){
+//     ft = total.productPrice + ft;
+// }
+// console.log(ft);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//======================== sort method =========================//
 
 
 
 /*===============================================================================
-                            Additional Logic 
+                            Additional Logic
 ===============================================================================*/
 /*======== swap the character in variable ===========*/
 // let a = 15;
