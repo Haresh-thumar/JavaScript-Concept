@@ -1637,6 +1637,53 @@
 
 
 
+/*===============================================================================
+                        set & get key value pair in map
+===============================================================================*/
+/*------ set & get key value pair in map ------*/
+// const person = new Map();
+// person.set('firstName', 'haresh');
+// person.set('age', 24);
+// person.set(123, 'user');
+// person.set([1,2,3], 'onetwothree');
+// person.set({1:'one'}, 'onetwothree');
+// console.log(person);
+// console.log(person.get('age'));
+// console.log(person.get(123));
+// console.log(person.keys());
+// for(let item of person.keys()){
+//     console.log(item);
+// }
+// for(let item of person.keys()){
+//     console.log(item, typeof item);
+// }
+// for(let item of person){ 
+//     console.log(item);
+// }
+// for(let [item, value] of person){			
+//     console.log(item, value);
+// }
+
+/*------ set key value pair in array of array in map ------*/
+// const person = new Map([['firstName', 'haresh'], ['age', 24],[[1,2,3], 'onetwothree'], [123, 'user']]);
+// console.log(person);
+
+/*------ use object in map-------*/
+const haresh1 = {
+    id: 1,
+    firstName: "harshir",
+}
+console.log(haresh1.id);
+console.log(typeof haresh1);
+
+
+const extraInfo = new Map();
+extraInfo.set(haresh1, {age:8, gender:"male"});
+
+console.log(extraInfo.get(haresh1).age);
+
+
+
 
 /*===============================================================================
                             Additional Logic
