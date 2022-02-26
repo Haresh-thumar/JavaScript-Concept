@@ -1555,9 +1555,85 @@
 // console.log(findName.userId);
 
 
+//======================== every method =========================//
+/*----- check even number in array -----*/
+// const a = [2, 4, 6, 8, 10];
+// const b = a.every((c) => c % 2 === 0);
+// console.log(b);
+
+/*----- check odd number in array -----*/
+// const a = [1, 3, 5, 7, 9];
+// const b = a.every((c) => c % 2 !== 0);
+// console.log(b);
+
+/*------ sum of all number using for loop in array of object -------*/
+// const userCart = [
+//     { productId: 1, ProductName: "mobile", productPrice: 10000 },
+//     { productId: 2, ProductName: "mobile", productPrice: 15000 },
+//     { productId: 3, ProductName: "mobile", productPrice: 21000 },
+// ];
+// const checkPrice = userCart.every((cartItem) => cartItem.productPrice < 30000);
+// console.log(checkPrice);
+
+
+//======================== some method =========================//
+/*----- check odd number in array -----*/
+// const a = [1, 3, 5, 8, 9];
+// const b = a.some((c) => c % 2 === 0);
+// console.log(b);
+
+/*------ check the value greater than 100000 using some method in array of object -------*/
+// const userCart = [
+//     { productId: 1, ProductName: "mobile", productPrice: 10000 },
+//     { productId: 2, ProductName: "mobile", productPrice: 15000 },
+//     { productId: 3, ProductName: "mobile", productPrice: 210000 },
+// ];
+// const checkPrice = userCart.some((cartItem) => cartItem.productPrice > 100000);
+// console.log(checkPrice);
+
+
+//======================== fill method =========================//
+/*----- print the vallue in your choice -----*/
+// const myArray = new Array(10).fill("haresh");
+// console.log(myArray);
+
+/*----- custom value fill in your existing array -----*/
+// argument (value, start, end)
+// const haresh = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// haresh.fill(0, 2, 5);
+// console.log(haresh);
 
 
 
+
+
+/*===============================================================================
+                            iterables
+===============================================================================*/
+/*----- string -----*/
+// const haresh = "haresh";
+// for (let item of haresh) {
+//     console.log(item);
+// }
+
+/*----- array -----*/
+// const haresh = [1, 2, 3, 4, 5];
+// for (let item of haresh) {
+//     console.log(item);
+// }
+
+
+
+/*===============================================================================
+                            array like object
+===============================================================================*/
+/*-------- string --------*/
+// const firsrName = "haresh";
+// console.log(firsrName.length);
+
+/*-------- array --------*/
+// const firsrName = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// console.log(firsrName.length);
 
 
 
