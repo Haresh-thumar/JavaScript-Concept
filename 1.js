@@ -1505,6 +1505,60 @@
 
 
 //======================== sort method =========================//
+/*----- ascending order -----*/
+// const numbers = [5, 2, 8, 400, 600, 200, 1400, 800, 950];
+// const sortNumber = numbers.sort((a, b) => a - b);
+// console.log(numbers);                                // [2, 5, 8, 200, 400, 600, 800, 950, 1400] 
+
+/*----- descending order -----*/
+// const numbers = [5, 2, 8, 400, 600, 200, 1400, 800, 950];
+// const sortNumber = numbers.sort((a, b) => b - a);
+// console.log(numbers);                                   //[1400, 950, 800, 600, 400, 200, 8, 5, 2]
+
+/*----- sort product sorting lowToHigh & highToLow (realistic example) -----*/
+// const userCart = [
+//     { productId: 1, productName: "p1", productPrice: 500 },
+//     { productId: 2, productName: "p2", productPrice: 1200 },
+//     { productId: 3, productName: "p3", productPrice: 800 },
+//     { productId: 4, productName: "p4", productPrice: 200 },
+//     { productId: 5, productName: "p5", productPrice: 650 },
+//     { productId: 6, productName: "p6", productPrice: 2100 },
+//     { productId: 7, productName: "p7", productPrice: 50 },
+// ];
+// const lowToHigh = userCart.slice().sort((a, b) => {
+//     return a.productPrice - b.productPrice;
+// })
+// console.log(lowToHigh[0].productPrice);
+
+// const highToLow = userCart.slice().sort((a, b) => {
+//     return b.productPrice - a.productPrice;
+// })
+// console.log(highToLow);
+
+
+//======================== find method =========================//
+/*------- find element using arrow function -------*/
+// const haresh = ["elephant", "camel", "dog", "cat", "buffalo"];
+// const animal = haresh.find(item => item.length === 3);
+// console.log(animal);
+
+/*------ find perticular userId using arrow function in find method ------*/
+// const user = [
+//     { userId: 1, userName: "haresh" },
+//     { userId: 2, userName: "parth" },
+//     { userId: 3, userName: "rutvik" },
+//     { userId: 4, userName: "rushabh" },
+//     { userId: 5, userName: "divyesh" },
+//     { userId: 6, userName: "gunjan" },
+// ];
+// const findName = user.find((item) => item.userId === 3);
+// console.log(findName.userId);
+
+
+
+
+
+
 
 
 
