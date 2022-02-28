@@ -1669,18 +1669,112 @@
 // console.log(person);
 
 /*------ use object in map-------*/
-const haresh1 = {
-    id: 1,
-    firstName: "harshir",
-}
-console.log(haresh1.id);
-console.log(typeof haresh1);
+// const haresh1 = {
+//     id: 1,
+//     firstName: "harshir",
+// }
+// console.assert(haresh1);
+// console.log(typeof haresh1);
+// const extraInfo = new Map();
+// extraInfo.set(haresh1, { age: 8, gender: "male" });
+// console.log(extraInfo);const
+
+/*------ clone object method-------*/
+// const obj = {
+//     key1: "value1",
+//     key2: "value2",
+// };
+// const obj2 = {...obj};
+// const obj2 = Object.assign({}, obj);
+// obj.key3 = "value3";
+// console.log(obj);
+// console.log(obj2);
 
 
-const extraInfo = new Map();
-extraInfo.set(haresh1, {age:8, gender:"male"});
 
-console.log(extraInfo.get(haresh1).age);
+/*===============================================================================
+                            optional chaining
+===============================================================================*/
+// const user = {
+//     firstName: "haresh",
+// }
+// console.log(user.firstName);
+// console.log(user?.address?.houseNumber);
+
+// const haresh = {
+//     key1: "value1",
+// }
+// const user = haresh?.key2?.age;
+// console.log(user);
+
+
+
+/*===============================================================================
+                                methods
+===============================================================================*/
+/*---- use this keyword & access object inside property dynamically ----*/
+// const user = {
+//     firstName: "haresh",
+//     age: 24,
+//     about: function(){
+//         console.log(`user name is ${this.firstName} & user age is ${this.age}`);
+//     }
+// }
+// user.about();
+
+/*---- declair outside function & access outside function in multiple object ----*/
+// function personInfo(){
+//     console.log(`person name is ${this.firstName} & age is ${this.age}`);
+// }
+// const user1 = {
+//     firstName: "haresh",
+//     age: 24,
+//     about: personInfo
+// }
+// const user2 = {
+//     firstName: "rutvik",
+//     age: 23,
+//     about: personInfo
+// }
+// const user3 = {
+//     firstName: "parth",
+//     age: 22,
+//     about: personInfo
+// }
+// user1.about();
+// user2.about();
+// user3.about();
+
+/*------ this keyword ------*/
+// function myFunc(){
+//     console.log(this);
+// }
+// myFunc();
+
+/*------ use srtict mode ------*/
+// function myFunc(){
+//     'use strict'
+//     console.log(this);
+// }
+// myFunc();
+
+
+
+
+/*===============================================================================
+                            function
+===============================================================================*/
+/*-- call function using call method --*/ 
+// function user(){
+//     console.log("hello haresh");
+// }
+// user.call();
+
+
+
+
+
+
 
 
 
