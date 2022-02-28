@@ -1764,12 +1764,83 @@
 /*===============================================================================
                             function
 ===============================================================================*/
-/*-- call function using call method --*/ 
+/*------- call function using call method -------*/ 
 // function user(){
 //     console.log("hello haresh");
 // }
 // user.call();
 
+/*------- target second object value using first object with parameter using call method -------*/
+// const user1 = {
+//     firstName : "haresh",
+//     age : 24,
+//     about : function(hobby, music){
+//         console.log(this.firstName, this.age, hobby, music);
+//     },
+// }
+// const user2 = {
+//     firstName : "rutvik",
+//     age : 22,
+// }
+// user1.about.call(user2, "songs", "sonu");
+
+/*------- outside declare function & access object using call method -------*/
+// function about (hobby, music){
+//     console.log(this.firstName, this.age, hobby, music);
+// }
+// const user1 = {
+//     firstName : "haresh",
+//     age : 24,
+// }
+// const user2 = {
+//     firstName : "rutvik",
+//     age : 22,
+// }
+// about.call(user2, "songs", "sonu");
+
+
+/*------- apply function using call method -------*/ 
+// function user(){
+//     console.log("hello haresh");
+// }
+// user.apply();
+
+/*------- target second object value using first object with parameter using apply method -------*/
+// const user1 = {
+//     firstName : "haresh",
+//     age : 24,
+//     about : function(hobby, music){
+//         console.log(this.firstName, this.age, hobby, music);
+//     },
+// }
+// const user2 = {
+//     firstName : "rutvik",
+//     age : 22,
+// }
+// user1.about.apply(user2, ["songs", "sonu"]);
+
+
+/*------- bind function using call method -------*/ 
+// function user(){
+//     console.log("hello haresh");
+// }
+// const myFunc = user.bind();
+// myFunc();
+
+/*------- target second object value using first object with parameter using bind method -------*/
+// const user1 = {
+//     firstName : "haresh",
+//     age : 24,
+//     about : function(hobby, music){
+//         console.log(this.firstName, this.age, hobby, music);
+//     },
+// }
+// const user2 = {
+//     firstName : "rutvik",
+//     age : 22,
+// }
+// const myfunc = user1.about.bind(user2, "songs", "sonu");
+// myfunc();
 
 
 
