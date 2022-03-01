@@ -1842,12 +1842,36 @@
 // const myfunc = user1.about.bind(user2, "songs", "sonu");
 // myfunc();
 
+/*----- inside function call using bind method ------*/
+// const user1 = {
+//     firstName : "haresh",
+//     age : 24,
+//     about : function(){
+//         console.log(this.firstName, this.age);
+//     }
+// }
+// const myFunc = user1.about.bind(user1);
+// myFunc();
 
+/*----- this keyword not use in arrow function inside object ------*/
+// const user1 = {
+//     firstName: "haresh",
+//     age: 20,
+//     about: () => {
+//         console.log(this.firstName, this.age);
+//     }
+// }
+// user1.about(user1);
 
-
-
-
-
+/*----- shorthand code function in object ------*/
+// const user1 = {
+//     firstName: "haresh",
+//     age: 20,
+//     about(){
+//         console.log(this.firstName, this.age);
+//     }
+// }
+// user1.about(user1);
 
 
 /*===============================================================================
@@ -1886,4 +1910,13 @@
 // haresh({ name: 22 });
 
 
-// sdsdddsd
+
+
+
+/****************************************************************************************************************************************
+                                                    OBJECT ORIENTED PROGRAMMING IN JAVASCRIPT
+/****************************************************************************************************************************************/
+// function 
+// 1) that function create object 
+// 2) add key value pair
+// 3) return of object
