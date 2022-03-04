@@ -1920,3 +1920,130 @@
 // 1) that function create object 
 // 2) add key value pair
 // 3) return of object
+
+
+
+//**************** make method inside object & make multiple methode using function (Method-1) ****************//
+// const user1 = {
+//   firstName: "haresh",
+//   lastName: "thumar",
+//   email: "hareshthumar@gmail.com",
+//   age: 22,
+//   address: "hyderabad",
+//   about: function(){
+//     return `${this.firstName} is ${this.age} year old`;
+//   },
+//   is18: function(){
+//     return this.age >= 18;
+//   }
+// }
+// function createUser(firstName, lastName, email, age, address){
+//   const user2 = {};
+//   user2.firstName = firstName;
+//   user2.lastName = lastName;
+//   user2.email = email;
+//   user2.age = age;
+//   user2.address = address;
+//   user2.about = function(){
+//     return `${this.firstName} is ${this.age} year old`;
+//   },
+//   user2.is18 = function(){
+//     return this.age >= 18;
+//   }
+//   return user2;
+// }
+// const getUser1 = createUser("rushabh", "patel", "rushabh@gmail.com", 18, "gujrat");      // this is output
+// const getUser2 = createUser("parth", "savaliya", "parth@gmail.com", 20, "mysoor");       // this is output
+// console.log(getUser1);
+// console.log(getUser2);
+// const is18 = user1.is18();        
+// const about = user1.about();      
+// console.log(is18);                // true
+// console.log(about);               // haresh is 22 year old
+
+
+
+//**************** method outside object & make multiple methode using function (Method-2) ****************//
+// const user1 = {
+//   firstName: "haresh",
+//   lastName: "thumar",
+//   email: "hareshthumar@gmail.com",
+//   age: 22,
+//   address: "hyderabad",
+//   about: function(){
+//     return `${this.firstName} is ${this.age} year old`;
+//   },
+//   is18: function(){
+//     return this.age >= 18;
+//   }
+// }
+// const userMethod = {
+//   about: function(){
+//     return `${this.firstName} is ${this.age} year old`;
+//   },
+//   is18: function(){
+//     return this.age >= 18;
+//   }
+// }
+// function createUser(firstName, lastName, email, age, address){
+//   const user2 = {};
+//   user2.firstName = firstName;
+//   user2.lastName = lastName;
+//   user2.email = email;
+//   user2.age = age;
+//   user2.address = address;
+//   user2.about = userMethod.about;
+//   user2.is18 = userMethod.is18;
+//   return user2;
+// }
+// const getUser1 = createUser("rushabh", "patel", "rushabh@gmail.com", 18, "gujrat");      // this is output
+// const getUser2 = createUser("parth", "savaliya", "parth@gmail.com", 20, "mysoor");       // this is output
+// const getUser3 = createUser("", "savaliya", "parth@gmail.com", 20, "mysoor");       // this is output
+// console.log(getUser1.about());              // rushabh is 18 year old
+// console.log(getUser2.is18());               // true
+
+
+
+//**************** method outside object & make multiple methode using function (Method-2) ****************//
+const user1 = {
+  firstName: "haresh",
+  lastName: "thumar",
+  email: "hareshthumar@gmail.com",
+  age: 22,
+  address: "hyderabad",
+  about: function(){
+    return `${this.firstName} is ${this.age} year old`;
+  },
+  is18: function(){
+    return this.age >= 18;
+  }
+}
+const userMethod = {
+  about: function(){
+    return `${this.firstName} is ${this.age} year old`;
+  },
+  is18: function(){
+    return this.age >= 18;
+  },
+  sing: function(){
+    return "toon na na na la la...";
+  }
+}
+function createUser(firstName, lastName, email, age, address){
+  const user2 = {};
+  user2.firstName = firstName;
+  user2.lastName = lastName;
+  user2.email = email;
+  user2.age = age;
+  user2.address = address;
+  user2.about = userMethod.about;
+  user2.is18 = userMethod.is18;
+  user2.sing = userMethod.sing;
+  return user2;
+}
+const getUser1 = createUser("rushabh", "patel", "rushabh@gmail.com", 18, "gujrat");      // this is output
+const getUser2 = createUser("parth", "savaliya", "parth@gmail.com", 20, "mysoor");       // this is output
+const getUser3 = createUser("", "savaliya", "parth@gmail.com", 20, "mysoor");       // this is output
+console.log(getUser1.about());              // rushabh is 18 year old
+console.log(getUser2.is18());               // true
+console.log(getUser2.sing());               // toon na na na la la...
