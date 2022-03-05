@@ -1,3 +1,4 @@
+
 /*------------------------------------------------------------------------------------
                                     String
 ------------------------------------------------------------------------------------*/
@@ -896,6 +897,21 @@
 // console.log(newObj);
 
 
+//**************** clone objet & add key value using spread operator ****************//
+// const obj1 = {
+//   key1: "value1",
+//   key2: "value2",
+//   key3: [1,2,3,4],
+// }
+// const p = {
+//   ...obj1,
+//   key3: [...obj1.key3]
+// }
+// p.key3[0] = 100;
+// console.log(obj1.key3);
+// console.log(p.key3);
+
+
 
 // *********** print all object key with pair value ***********
 // let obj = {
@@ -1764,7 +1780,7 @@
 /*===============================================================================
                             function
 ===============================================================================*/
-/*------- call function using call method -------*/ 
+/*------- call function using call method -------*/
 // function user(){
 //     console.log("hello haresh");
 // }
@@ -1799,7 +1815,7 @@
 // about.call(user2, "songs", "sonu");
 
 
-/*------- apply function using call method -------*/ 
+/*------- apply function using call method -------*/
 // function user(){
 //     console.log("hello haresh");
 // }
@@ -1820,7 +1836,7 @@
 // user1.about.apply(user2, ["songs", "sonu"]);
 
 
-/*------- bind function using call method -------*/ 
+/*------- bind function using call method -------*/
 // function user(){
 //     console.log("hello haresh");
 // }
@@ -1922,7 +1938,6 @@
 // 3) return of object
 
 
-
 //**************** make method inside object & make multiple methode using function (Method-1) ****************//
 // const user1 = {
 //   firstName: "haresh",
@@ -1960,7 +1975,6 @@
 // const about = user1.about();      
 // console.log(is18);                // true
 // console.log(about);               // haresh is 22 year old
-
 
 
 //**************** method outside object & make multiple methode using function (Method-2) ****************//
@@ -2003,47 +2017,254 @@
 // console.log(getUser2.is18());               // true
 
 
-
 //**************** method outside object & make multiple methode using function (Method-2) ****************//
-const user1 = {
-  firstName: "haresh",
-  lastName: "thumar",
-  email: "hareshthumar@gmail.com",
-  age: 22,
-  address: "hyderabad",
-  about: function(){
-    return `${this.firstName} is ${this.age} year old`;
-  },
-  is18: function(){
-    return this.age >= 18;
-  }
-}
-const userMethod = {
-  about: function(){
-    return `${this.firstName} is ${this.age} year old`;
-  },
-  is18: function(){
-    return this.age >= 18;
-  },
-  sing: function(){
-    return "toon na na na la la...";
-  }
-}
-function createUser(firstName, lastName, email, age, address){
-  const user2 = {};
-  user2.firstName = firstName;
-  user2.lastName = lastName;
-  user2.email = email;
-  user2.age = age;
-  user2.address = address;
-  user2.about = userMethod.about;
-  user2.is18 = userMethod.is18;
-  user2.sing = userMethod.sing;
-  return user2;
-}
-const getUser1 = createUser("rushabh", "patel", "rushabh@gmail.com", 18, "gujrat");      // this is output
-const getUser2 = createUser("parth", "savaliya", "parth@gmail.com", 20, "mysoor");       // this is output
-const getUser3 = createUser("", "savaliya", "parth@gmail.com", 20, "mysoor");       // this is output
-console.log(getUser1.about());              // rushabh is 18 year old
-console.log(getUser2.is18());               // true
-console.log(getUser2.sing());               // toon na na na la la...
+// const user1 = {
+//   firstName: "haresh",
+//   lastName: "thumar",
+//   email: "hareshthumar@gmail.com",
+//   age: 22,
+//   address: "hyderabad",
+//   about: function(){
+//     return `${this.firstName} is ${this.age} year old`;
+//   },
+//   is18: function(){
+//     return this.age >= 18;
+//   }
+// }
+// const userMethod = {
+//   about: function(){
+//     return `${this.firstName} is ${this.age} year old`;
+//   },
+//   is18: function(){
+//     return this.age >= 18;
+//   },
+//   sing: function(){
+//     return "toon na na na la la...";
+//   }
+// }
+// function createUser(firstName, lastName, email, age, address){
+//   const user2 = {};
+//   user2.firstName = firstName;
+//   user2.lastName = lastName;
+//   user2.email = email;
+//   user2.age = age;
+//   user2.address = address;
+//   user2.about = userMethod.about;
+//   user2.is18 = userMethod.is18;
+//   user2.sing = userMethod.sing;
+//   return user2;
+// }
+// const getUser1 = createUser("rushabh", "patel", "rushabh@gmail.com", 18, "gujrat");      // this is output
+// const getUser2 = createUser("parth", "savaliya", "parth@gmail.com", 20, "mysoor");       // this is output
+// const getUser3 = createUser("", "savaliya", "parth@gmail.com", 20, "mysoor");       // this is output
+// console.log(getUser1.about());              // rushabh is 18 year old
+// console.log(getUser2.is18());               // true
+// console.log(getUser2.sing());               // toon na na na la la...
+
+
+//**************** print object using function ****************//
+// const user1 = {
+//   firstName: "haresh",
+//   lastName: "thumar",
+//   email: "hareshthumar@gmail.com",
+//   age: 22,
+//   address: "hyderabad",
+//   about: function(){
+//     return `${this.firstName} is ${this.age} year old`;
+//   },
+//   is18: function(){
+//     return this.age >= 18;
+//   }
+// }
+// function createUser(firstName, lastName, email, age, address, about, is18){
+//   const user2 = {};
+//   user2.firstName = firstName;
+//   user2.lastName = lastName;
+//   user2.email = email;
+//   user2.age = age;
+//   user2.address = address;
+//   user2.about = about;
+//   user2.is18 = is18;
+//   return user2;
+// }
+// const getUser1 = createUser(user1.firstName, user1.lastName, user1.email, user1.age, user1.address, user1.about, user1.is18);
+// user1.about();
+// console.log(getUser1.about());
+// console.log(getUser1.is18());
+
+
+//**************** this is one more way to create empty object ****************//
+// const obj2 = Object.create(obj1);
+// obj2.key2 = "newValue2";
+// obj2.key4 = "value4";
+// obj2.key3[0] = 10;
+// console.log(obj2.key3);
+// console.log(obj1.key3);
+
+
+//**************** proto & prototype chain ****************//
+// const obj1 = {
+//   key1: "value1",
+//   key2: "value2",
+//   key3: [1,2,3,4]
+// }
+// const obj2 = Object.create(obj1);
+// obj2.key2 = "newValue2";
+// obj2.key3 = "value3";
+// obj2.key4 = "value4";
+// console.log(obj2.__proto__);        // {key1: 'value1', key2: 'value2'}
+
+
+//**************** proto chain Example ****************//
+// const userMethod = {
+//   about: function(){
+//     return `${this.firstName} is ${this.age} year old`;
+//   },
+//   is18: function(){
+//     return this.age >= 18;
+//   },
+//   sing: function(){
+//     return "toon na na na la la...";
+//   }
+// }
+// function createUser(firstName, lastName, email, age, address){
+//   const user2 = Object.create(userMethod);
+//   user2.firstName = firstName;
+//   user2.lastName = lastName;
+//   user2.email = email;
+//   user2.age = age;
+//   user2.address = address;
+//   user2.about = userMethod.about;
+//   user2.is18 = userMethod.is18;
+//   user2.sing = userMethod.sing;
+//   return user2;
+// }
+// const getUser1 = createUser("rushabh", "patel", "rushabh@gmail.com", 18, "gujrat");      // this is output
+// const getUser2 = createUser("parth", "savaliya", "parth@gmail.com", 20, "mysoor");       // this is output
+// const getUser3 = createUser("", "savaliya", "parth@gmail.com", 20, "mysoor");       // this is output
+// console.log(getUser1);
+// console.log(getUser2);
+// console.log(getUser3);
+// console.log(getUser1.about());              // rushabh is 18 year old
+// console.log(getUser2.is18());               // true
+// console.log(getUser3.sing());               // toon na na na la la...
+
+
+
+
+/********** count first index & last index in array **********/
+// let haresh = [10, 20, 30, 40, 50];
+// let user = haresh[0] + haresh[haresh.length-1];
+// console.log(user); 
+
+
+/********** check the first index & last index are same in array **********/
+// let haresh = [10, 20, 30, 40, 10];
+// if(haresh[0] === haresh[haresh.length-1]){
+//   console.log("element is same");
+// }else{
+//   console.log("element is not same");
+// }
+
+
+/********** remove the element after 4 number in array **********/
+// let haresh = [];
+// let cutele = [];
+// for (let index = 1; index <= 100; index++) {
+//   haresh.push(index);
+// }
+// for (let i = 0; i < haresh.length; i++) {
+//   let element = haresh[i].toString();
+//   if(element[haresh[i].toString().length-1].includes("4")){
+//     haresh.splice(i,1)
+//     cutele.push(Number(element))
+//   }
+// }
+// console.log(haresh);
+// console.log(cutele);
+
+
+// haresh.forEach((x, i) => {
+//   if (x.toString()[x.toString().length-1].includes(4)) {
+//     haresh.splice(i, 1)
+//   }
+// })
+// console.log(haresh);
+
+
+/********** if condition with add key value in object *********/
+// let obj = [
+//   {
+//     name: "parth",
+//     age: 22
+//   },
+//   {
+//     name: "haresh",
+//     age: 24
+//   },
+//   {
+//     name: "rushabh",
+//     age: 22
+//   },
+//   {
+//     name: "Ravat",
+//     age: 22
+//   },
+// ];
+// let newfinal = obj.map(x => {
+//   if (x.age === 22) {
+//     x.education = "10th";
+//     return x;
+//   } else {
+//     x.education = "12th";
+//     return x;
+//   }
+// })
+// console.log(newfinal);
+
+
+/******* all value addition in array *******/
+// let arr1 = [1, 4, 6, 9, 5]
+// // let plus = 0
+// // arr1.forEach(x => plus += x)
+// console.log(plus);
+
+/*----- short hand code ------*/
+// console.log(arr1.reduce((x,i)=>x+i));
+
+
+/*********** print center value in array *********/
+// let arr1 = [0, 1, 1, 1, 0];
+// let arr2 = [0, 2, 2, 2, 0];
+// let arr3  = [...arr1.slice(1,4), ...arr2.slice(1,4)];
+// console.log(arr3);
+
+
+/******** replace even number ********/
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 10]
+// arr.forEach((x, i) => {
+//   if (x % 2 == 0) {
+//     arr[i]= "beki";
+//   }
+// })
+// console.log(arr);
+
+
+/********* print object value using inside function ********/
+// let obj = {
+//   name: "parth",
+//   age: 22,
+//   getfullname: () => {
+//    return  obj.name + " " + obj.age
+//   }
+// }
+// console.log(obj.getfullname());
+
+
+
+
+
+
+
+
+
