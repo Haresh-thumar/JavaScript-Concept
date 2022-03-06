@@ -2106,13 +2106,13 @@
 // const obj1 = {
 //   key1: "value1",
 //   key2: "value2",
-//   key3: [1,2,3,4]
+//   key3: [1,2,3,4],
 // }
 // const obj2 = Object.create(obj1);
 // obj2.key2 = "newValue2";
 // obj2.key3 = "value3";
 // obj2.key4 = "value4";
-// console.log(obj2.__proto__);        // {key1: 'value1', key2: 'value2'}
+// console.log(obj2.__proto__);        // {key1: 'value1', key2: 'value2', key3: array[4],}
 
 
 //**************** proto chain Example ****************//
@@ -2159,7 +2159,7 @@
 
 
 /********** check the first index & last index are same in array **********/
-// let haresh = [10, 20, 30, 40, 10];
+// let haresh = [10, 20, 30, 40, 50];
 // if(haresh[0] === haresh[haresh.length-1]){
 //   console.log("element is same");
 // }else{
@@ -2167,7 +2167,7 @@
 // }
 
 
-/********** remove the element after 4 number in array **********/
+/********** remove the all element last 4 number in array **********/
 // let haresh = [];
 // let cutele = [];
 // for (let index = 1; index <= 100; index++) {
@@ -2183,7 +2183,7 @@
 // console.log(haresh);
 // console.log(cutele);
 
-
+/*---- short hand -----*/
 // haresh.forEach((x, i) => {
 //   if (x.toString()[x.toString().length-1].includes(4)) {
 //     haresh.splice(i, 1)
@@ -2193,34 +2193,34 @@
 
 
 /********** if condition with add key value in object *********/
-// let obj = [
-//   {
-//     name: "parth",
-//     age: 22
-//   },
-//   {
-//     name: "haresh",
-//     age: 24
-//   },
-//   {
-//     name: "rushabh",
-//     age: 22
-//   },
-//   {
-//     name: "Ravat",
-//     age: 22
-//   },
-// ];
-// let newfinal = obj.map(x => {
-//   if (x.age === 22) {
-//     x.education = "10th";
-//     return x;
-//   } else {
-//     x.education = "12th";
-//     return x;
-//   }
-// })
-// console.log(newfinal);
+let obj = [
+  {
+    name: "parth",
+    age: 22
+  },
+  {
+    name: "haresh",
+    age: 24
+  },
+  {
+    name: "rushabh",
+    age: 22
+  },
+  {
+    name: "Ravat",
+    age: 22
+  },
+];
+let newfinal = obj.map(x => {
+  if (x.age === 22) {
+    x.education = "10th";
+    return x;
+  } else {
+    x.education = "12th";
+    return x;
+  }
+})
+console.log(newfinal);
 
 
 /******* all value addition in array *******/
@@ -2263,8 +2263,44 @@
 
 
 
+/************ javascript function ===> function + object *********** */
+/*----- print simple function with object type -----*/
+// function hello(){
+//   console.log("hello world");
+// }
+// console.log(hello.name);
 
+/*----- you can add your own properties -----*/
+// function hello(){
+//   console.log("hello world");
+// }
+// hello.myOwnProperty = "very unique value";
+// console.log(hello.myOwnProperty);
 
+/*---- check the prototype in function using if condition ----*/
+// function hello(){
+//   console.log("hello world");
+// }
+// if(hello.prototype){
+//   console.log("prototype is present");
+// }else{
+//   console.log("prototype is not present");
+// }
 
+/*---- check the prototype in object using if condition ----*/
+// const hello = {key1: "value1"};
+// if(hello.prototype){
+//   console.log("prototype is present");
+// }else{
+//   console.log("prototype is not present");
+// }
+
+/*---- check the prototype in array using if condition ----*/
+// const hello = ["value1", "value2"];
+// if(hello.prototype){
+//   console.log("prototype is present");
+// }else{
+//   console.log("prototype is not present");
+// }
 
 
