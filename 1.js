@@ -2193,64 +2193,64 @@
 
 
 /********** if condition with add key value in object *********/
-let obj = [
-  {
-    name: "parth",
-    age: 22
-  },
-  {
-    name: "haresh",
-    age: 24
-  },
-  {
-    name: "rushabh",
-    age: 22
-  },
-  {
-    name: "Ravat",
-    age: 22
-  },
-];
-let newfinal = obj.map(x => {
-  if (x.age === 22) {
-    x.education = "10th";
-    return x;
-  } else {
-    x.education = "12th";
-    return x;
-  }
-})
-console.log(newfinal);
+// let obj = [
+//   {
+//     name: "parth",
+//     age: 22
+//   },
+//   {
+//     name: "haresh",
+//     age: 24
+//   },
+//   {
+//     name: "rushabh",
+//     age: 22
+//   },
+//   {
+//     name: "Ravat",
+//     age: 22
+//   },
+// ];
+// let newfinal = obj.map(x => {
+//   if (x.age === 22) {
+//     x.education = "10th";
+//     return x;
+//   } else {
+//     x.education = "12th";
+//     return x;
+//   }
+// })
+// console.log(newfinal);
 
 
 /******* all value addition in array *******/
-// let arr1 = [1, 4, 6, 9, 5]
-// // let plus = 0
-// // arr1.forEach(x => plus += x)
-// console.log(plus);
+// let arr1 = [1, 4, 6, 9, 5];
+// let plus = 0;
+// arr1.forEach(x => plus += x);
+// console.log(plus);                       // 25
 
 /*----- short hand code ------*/
-// console.log(arr1.reduce((x,i)=>x+i));
+// console.log(arr1.reduce((x,i)=>x+i));      // 25
 
 
 /*********** print center value in array *********/
 // let arr1 = [0, 1, 1, 1, 0];
 // let arr2 = [0, 2, 2, 2, 0];
 // let arr3  = [...arr1.slice(1,4), ...arr2.slice(1,4)];
-// console.log(arr3);
+// console.log(arr3);                                          // [1, 1, 1, 2, 2, 2]
 
 
 /******** replace even number ********/
 // let arr = [1, 2, 3, 4, 5, 6, 7, 8, 10]
 // arr.forEach((x, i) => {
 //   if (x % 2 == 0) {
-//     arr[i]= "beki";
+//     arr[i]= "even";
 //   }
 // })
-// console.log(arr);
+// console.log(arr);                  // [1, 'even', 3, 'even', 5, 'even', 7, 'even', 'even']
 
 
-/********* print object value using inside function ********/
+/********* print object value using inside method ********/
 // let obj = {
 //   name: "parth",
 //   age: 22,
@@ -2258,7 +2258,7 @@ console.log(newfinal);
 //    return  obj.name + " " + obj.age
 //   }
 // }
-// console.log(obj.getfullname());
+// console.log(obj.getfullname());                        // parth 22
 
 
 
@@ -2268,14 +2268,14 @@ console.log(newfinal);
 // function hello(){
 //   console.log("hello world");
 // }
-// console.log(hello.name);
+// console.log(hello.name);               // hello
 
 /*----- you can add your own properties -----*/
 // function hello(){
 //   console.log("hello world");
 // }
 // hello.myOwnProperty = "very unique value";
-// console.log(hello.myOwnProperty);
+// console.log(hello.myOwnProperty);               // very unique value
 
 /*---- check the prototype in function using if condition ----*/
 // function hello(){
@@ -2284,23 +2284,66 @@ console.log(newfinal);
 // if(hello.prototype){
 //   console.log("prototype is present");
 // }else{
-//   console.log("prototype is not present");
-// }
+//   console.log("prototype is not present");             // output
+// }                                                      // prototype is present
 
 /*---- check the prototype in object using if condition ----*/
 // const hello = {key1: "value1"};
 // if(hello.prototype){
 //   console.log("prototype is present");
 // }else{
-//   console.log("prototype is not present");
-// }
+//   console.log("prototype is not present");             // output
+// }                                                      // prototype is not present
 
 /*---- check the prototype in array using if condition ----*/
 // const hello = ["value1", "value2"];
 // if(hello.prototype){
 //   console.log("prototype is present");
 // }else{
-//   console.log("prototype is not present");
+//   console.log("prototype is not present");             // output
+// }                                                      // prototype is not present
+
+
+
+
+
+
+/*----- name property ---> tells function name -----*/
+/*----- function provides more usefull property -----*/
+/*----- function provide call, apply, bind method -----*/
+
+
+/*----- add property prototype in function ------*/
+// function hello(){
+//     console.log("hello world");
 // }
+// hello.prototype.name = "haresh";
+// hello.prototype.age = 20;
+// hello.prototype.constructor = 20;
+// hello.prototype.myFunc = function(){
+//     return "hello! how are you.."
+// }
+// console.log(hello.prototype);               // {name: "haresh", xyz: "xyz", constructure: f}
 
 
+/*----- add methods & access methode using prototype in function ------*/
+// function createUser(firstName, lastName, email, age) {
+//     const user = Object.create(createUser.prototype);
+//     user.firstName = "haresh";
+//     user.lastName = "thumar";
+//     user.email = "haresh@gmail.com";
+//     user.age = 23;
+//     return user;
+// }
+// createUser.prototype.about = function () {
+//     return `${this.firstName} is ${this.age} year old`;
+// };
+// createUser.prototype.about = function () {
+//     return this.age >= 18;
+// };
+// createUser.prototype.about = function () {
+//     return "toon na na na la la...";
+// };
+// const getUser1 = createUser();      
+// console.log(getUser1);
+// console.log(getUser1.about());
