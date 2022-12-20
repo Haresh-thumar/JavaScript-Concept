@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head><title>Geeky Shows</title>
+	</head>
+	<body>
+		<script>
+			function Mobile(model_no){
+				this.model = model_no;
+				this.memory = 4;
+			}
+			
+			var samsung = new Mobile('Galaxy');
+			var nokia = new Mobile('3310');
+			
+			if(typeof nokia.memory !== 'undefined'){
+				document.write("Available");
+			} else {
+				document.write("Doesnt Exist");
+			}
+		</script>
+	</body>
+</html>
+
+

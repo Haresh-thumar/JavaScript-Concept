@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head><title>Geeky Shows</title>
+	</head>
+	<body>
+		<script>
+			function Mobile(model_no){
+				this.model = model_no;
+				this.color = 'white';
+				this.ram = '4GB';
+				this.price = function(){
+					document.write(this.model + " Price Rs.3000 <br>");
+				};
+			}
+			var samsung = new Mobile('Galaxy');
+			var nokia = new Mobile('3310');
+			for(var key in nokia)
+			{
+				document.write(nokia[key] + "<br>");
+			}
+		/* Value with key
+			for(var key in nokia)
+			{
+				document.write(key + " : " + nokia[key] + "<br>");
+			}
+		*/
+		</script>
+	</body>
+</html>
+
+

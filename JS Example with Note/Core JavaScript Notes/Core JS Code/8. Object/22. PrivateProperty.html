@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head><title>Geeky Shows</title>
+	</head>
+	<body>
+		<script>
+			var  Mobile = function(model_no, sprice){
+				this.model = model_no;
+				this.color = 'white';
+				var price = 3000;	// private property
+				this.sp = sprice;
+				// Private Method
+				var show = function() { return "Hello World";};
+			};
+			var samsung = new Mobile('Galaxy', 2000);
+			var nokia = new Mobile('3310', 1000);
+			document.write(nokia.price);
+			document.write(nokia.show());
+
+		</script>
+	</body>
+</html>
+
+

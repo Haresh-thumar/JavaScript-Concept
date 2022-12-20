@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head><title>Geeky Shows</title>
+	</head>
+	<body>
+		<script>
+			// Function for inheritance
+			function extend(Child, Parent){
+				Child.prototype = Object.create(Parent.prototype);
+				Child.prototype.constructor = Child;
+			}
+			
+			// Super Class
+			var Mobile = function() {
+				
+			}
+			// Prototype Member
+			Mobile.prototype.show = function(){
+				return "Super Class Method";
+			}
+			
+			// Sub Class
+			var Samsung = function(){
+			
+			}
+			
+			// sub class Samsung extending super class Mobile
+			extend(Samsung, Mobile);
+			
+			// Prototype Member for Sub Class
+			Samsung.prototype.show = function(){
+				return "Sub Class Method";
+			}
+			
+			// Creating object of sub class Samsung
+			var sam = new Samsung();
+			
+			// Accessing super class property model
+			// using sub class object
+			document.write(sam.show());	
+						
+			
+		</script>
+	</body>
+</html>
+
+

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function with parameter</title>
+</head>
+
+<body style="width: 85%; margin: 0 auto; padding-top: 20px;">
+
+    <style>
+        .heading-title {
+            color: rgb(255, 96, 117);
+            font-size: 50px;
+            font-weight: 400;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .table-title {
+            color: rgb(4, 133, 105);
+            font-size: 25px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            margin-top: 50px;
+            width: 50%;
+        }
+
+        td,
+        th {
+            border: 1px solid rgb(195, 195, 195);
+            text-align: left;
+            padding: 10px;
+            padding-left: 25px !important;
+        }
+
+        .div-border {
+            margin-top: 30px;
+        }
+
+        .operator-title {
+            font-size: 24px;
+            color: rgb(37, 26, 192);
+            font-family: sans-serif;
+        }
+
+        .operator-desc {
+            font-size: 16px;
+            margin-top: -15px;
+            color: rgb(95, 95, 95);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .operator-code {
+            font-size: 15px;
+            margin-left: 15px;
+            line-height: 1.5;
+            letter-spacing: 0.5px;
+            color: rgb(76, 150, 235);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .example {
+            font-size: 16px;
+            margin-left: 15px;
+            font-weight: bold;
+            color: rgb(255, 96, 117);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .example-1 {
+            font-size: 15px;
+            margin: 10px 0 -5px 15px;
+            font-weight: bold;
+            color: rgb(40, 184, 4);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .row {
+            width: 100%;
+            display: inline-flex;
+        }
+
+        .col-2 {
+            width: 20%;
+            height: auto;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .col-3 {
+            width: 30%;
+            height: auto;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .col-5 {
+            width: 50%;
+            height: auto;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .output {
+            font-size: 16px;
+            margin-left: 15px;
+            color: rgb(95, 95, 95);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- type of Logical operators -->
+    <!--==============================-->
+
+    <h1 class="heading-title">* function with parameter *</h1>
+    <p class="operator-desc">- એક function માં 1 થી વધારે parameter pass કરીએ છીએ અને એને print કરવા માટે એક default value પણ pass કઈ શકીએ છીએ અને પછી concatination કરીને variable pas કરવાનું હોય છે. ઉપર parameter માં આપણે કોઈ પણ default value pass કરીએ તો function declair કરીએ ત્યારે ત્યાં કાંઈ parameter માં variable કે value enter ના કરીએ તો ત્યાં default parameter ની value get કરે છે. જો function declair કરીએ ત્યારે કોઈ પણ variable કે value pass કરવી પડે છે bydefault તે ઉપર declair કરેલી value get કરે છે અને નીચે function માં new value change કરવી હોય તો new value add કરીએ તો new value print કરે છે. જો ઉપર parameter માં ખાલી variable pass કરાવીને નીચે declair કરેલા function માં જો કાંઈ argument pass કરવામાં નહિ આવે તો તેની value undefined print કરશે.</p>
+
+    <br>
+    <br>
+
+
+
+
+
+
+    <!--==================== structure =======================-->
+    <div class="div-border">
+        <h4 class="operator-title">* Simple Parameter structure :- *</h4>
+        <div class="row">
+            <!---------------------------->
+            <div class="col-5">
+                <p class="operator-code">
+                    function functionName(parameter1, parameter2) {<br>
+                        &nbsp;&nbsp;&nbsp;statement<br>
+                    }<br><br>
+
+                    functionName(argument1, argument2);
+                    
+                </p>
+            </div>
+            <!---------------------------->
+        </div>
+    </div>
+    <br>
+
+
+
+     <!--==================== Operator-1 =======================-->
+     <div class="div-border">
+        <h4 class="operator-title">(1) Parameter with set default value :-</h4>
+        <div class="row">
+            <!---------------------------->
+            <div class="col-5">
+                <p class="example">(Example - 1) :-</p>
+                <p class="operator-code">
+                    function abc(fname ="haresh", lname ="thumar") {<br>
+                        &nbsp;&nbsp;&nbsp;document.write("hello" + fname + "" + lname);<br>
+                    }<br><br>
+
+                    abc();<br>
+                    abc(fname, lname);<br>
+                    abc("ram", + "singh")<br>
+                    
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">hello haresh thumar</p>
+                <p class="output">hello haresh thumar</p>
+                <p class="output">hello ram singh</p>
+            </div>
+            <!---------------------------->
+        </div>
+    </div>
+    <br>
+
+
+    <!--==================== Operator-2 =======================-->
+    <div class="div-border">
+        <h4 class="operator-title">(2) simple Function With Parameter :-</h4>
+        <div class="row">
+            <!---------------------------->
+            <div class="col-5">
+                <p class="example">(Example - 2) :-</p>
+                <p class="operator-code">
+                    function abc(a, b) {<br>
+                        &nbsp;&nbsp;&nbsp;document.write(a + b);<br>
+                    }<br><br>
+
+                    abc(20, 30);<br>
+                    abc(40, 50);
+                    
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">50</p>
+                <p class="output">90</p>
+            </div>
+            <!---------------------------->
+        </div>
+    </div>
+    <br>
+
+
+    <!--==================== Operator-3 =======================-->
+    <div class="div-border">
+        <h4 class="operator-title">(3) print undefined value :-</h4>
+        <div class="row">
+            <!---------------------------->
+            <div class="col-5">
+                <p class="example">(Example - 2) :-</p>
+                <p class="operator-code">
+                    function abc(a, b) {<br>
+                        &nbsp;&nbsp;&nbsp;document.write("hello" + a + b);<br>
+                    }<br><br>
+
+                    abc();<br>
+                    
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">hello undefined undefined</p>
+            </div>
+            <!---------------------------->
+        </div>
+    </div>
+    <br>
+
+
+  
+
+
+
+    <script>
+        function abc(fname ="haresh", lname ="thumar") {
+            document.write("hello " + fname + " " + lname);
+        }
+
+        abc();
+        abc(fname, lname);
+        abc("ram", + "singh");
+        
+    </script>
+    <br><br>
+
+
+
+    <script>
+        function abc(a, b) {
+            document.write(a + b);
+        }
+
+        abc(20, 30);
+        document.write("<br>");//for use only space
+        abc(60, 40);
+        
+    </script>
+    <br><br>
+
+
+
+    <script>
+        function abc(a, b) {
+            document.write("hello" + " " + a + " " + b);
+        }
+
+        abc();
+        
+    </script>
+    <br><br>
+
+
+
+    
+
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head >
+        <title>Geekyshows</title>
+    </head>
+    <body>
+        <p id="myp" class="myclass1" style= "color:yellowgreen;">Paragraph</p>
+        <script>
+            // It will return Object.prototype
+            console.log(Object.prototype);
+
+            // creating an empty object and prototype object of this 
+            // object is Object.prototype
+            var b = {};
+
+            // We are checking what is the Prototype Object of b which 
+            // should be Object.prototype
+            // b will inherit all properties of Object.prototype Object
+            console.log(Object.getPrototypeOf(b)); 
+
+            // Further check what is the Prototype Object of Object.prototype it should be null
+            console.log(Object.getPrototypeOf(Object.prototype)); 
+
+            // Check the above stuff with new operator
+            var b1 = new Object();
+            console.log(Object.getPrototypeOf(b1));
+
+            // checking with Array
+            // First check what is the Array.prototype
+            console.log(Array.prototype);
+
+            // creating empty Array Object
+            var b2 = new Array();
+
+            // check what is the Prototype of Object b2
+            // it will be Array.Prototype
+            console.log(Object.getPrototypeOf(b2));
+
+            // Now check what is the Prototype Object of Array.prototype
+            console.log(Object.getPrototypeOf(Array.prototype));
+
+
+        </script>
+    </body>
+</html>

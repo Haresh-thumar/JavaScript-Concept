@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camparison_operators</title>
+</head>
+
+<body style="width: 85%; margin: 0 auto; padding-top: 20px;">
+
+    <style>
+        .heading-title {
+            color: rgb(255, 96, 117);
+            font-size: 50px;
+            font-weight: 400;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .table-title {
+            color: rgb(4, 133, 105);
+            font-size: 25px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            margin-top: 50px;
+            width: 50%;
+        }
+
+        td,
+        th {
+            border: 1px solid rgb(195, 195, 195);
+            text-align: left;
+            padding: 10px;
+            padding-left: 25px !important;
+        }
+
+        .div-border {
+            margin-top: 30px;
+        }
+
+        .operator-title {
+            font-size: 24px;
+            color: rgb(37, 26, 192);
+            font-family: sans-serif;
+        }
+
+        .operator-desc {
+            font-size: 16px;
+            margin-top: -15px;
+            color: rgb(95, 95, 95);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .operator-code {
+            font-size: 15px;
+            margin-left: 15px;
+            line-height: 1.5;
+            letter-spacing: 0.5px;
+            color: rgb(76, 150, 235);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .example {
+            font-size: 16px;
+            margin-left: 15px;
+            font-weight: bold;
+            color: rgb(255, 96, 117);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .example-1 {
+            font-size: 15px;
+            margin: 10px 0 -5px 15px;
+            font-weight: bold;
+            color: rgb(40, 184, 4);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .row {
+            width: 100%;
+            display: inline-flex;
+        }
+
+        .col-2 {
+            width: 20%;
+            height: auto;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .col-3 {
+            width: 30%;
+            height: auto;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .output {
+            font-size: 16px;
+            margin-left: 15px;
+            color: rgb(95, 95, 95);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+
+
+
+
+
+    <!-- type of Arithmetic operators -->
+    <!--==============================-->
+
+    <h1 class="heading-title">* Camparison operators *</h1>
+
+
+    <table>
+        <tr>
+            <th class="table-title" colspan="2">type of Camparison_operators :-</th>
+        </tr>
+        <tr>
+            <th style="color: crimson;">Operators</th>
+            <th style="color: crimson;">Discription</th>
+        </tr>
+        <tr>
+            <td>==</td>
+            <td>Equal to</td>
+        </tr>
+        <tr>
+            <td>===</td>
+            <td>Equal value & Equal type</td>
+        </tr>
+        <tr>
+            <td>!=</td>
+            <td>not Equal</td>
+        </tr>
+        <tr>
+            <td>!==</td>
+            <td>not Equal value & not Equal type</td>
+        </tr>
+        <tr>
+            <td>></td>
+            <td>Greater than</td>
+        </tr>
+        <tr>
+            <td> < </td>
+            <td>Less than</td>
+        </tr>
+        <tr>
+            <td>>=</td>
+            <td>Greater than or Equal to</td>
+        </tr>
+        <tr>
+            <td> <= </td>
+            <td>Less than or Equal to</td>
+        </tr>
+    </table>
+
+
+    <br>
+    <br>
+
+
+    <!--==================== Operator-1 =======================-->
+    <div class="div-border">
+        <h4 class="operator-title">(1) Equal to (==) :-</h4>
+        <p class="operator-desc">- only check the value in function.</p>
+        <div class="row">
+            <!---------------------------->
+            <div class="col-2">
+                <p class="example">(Example - 1) :-</p>
+                <p class="operator-code">
+                    var a = 20;<br>
+                    var b = 20;<br>
+                    document.write(a == b);
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">true</p>
+            </div>
+            <!---------------------------->
+            <div class="col-2">
+                <p class="example">(Example - 2) :-</p>
+                <p class="operator-code">
+                    var a = 22;<br>
+                    var b = 20;<br>
+                    document.write(a == b);
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">false</p>
+            </div>
+            <!---------------------------->
+            <div class="col-2">
+                <p class="example">(Example - 3) :-</p>
+                <p class="operator-code">
+                    var a = 20;<br>
+                    var b = 22;<br>
+                    document.write(a == b);
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">false</p>
+            </div>
+            <!---------------------------->
+        </div>
+    </div>
+    <br>
+
+
+    <!--==================== Operator-2 =======================-->
+    <div class="div-border">
+        <h4 class="operator-title">(2) Equal to value & Equal type (===) :-</h4>
+        <p class="operator-desc">- check the value & check the data type in function.</p>
+        <div class="row">
+            <!---------------------------->
+            <div class="col-2">
+                <p class="example">(Example - 1) :-</p>
+                <p class="operator-code">
+                    var a = 50;<br>
+                    var b = 50;<br>
+                    document.write(a === b);
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">true</p>
+            </div>
+            <!---------------------------->
+            <div class="col-2">
+                <p class="example">(Example - 2) :-</p>
+                <p class="operator-code">
+                    var a = "50";<br>
+                    var b = 50;<br>
+                    document.write(a === b);
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">false</p>
+            </div>
+            <!---------------------------->
+            <div class="col-2">
+                <p class="example">(Example - 3) :-</p>
+                <p class="operator-code">
+                    var a = 50;<br>
+                    var b = ["12", "22"];<br>
+                    document.write(a === b);
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">false</p>
+            </div>
+            <!---------------------------->
+            <div class="col-2">
+                <p class="example">(Example - 4) :-</p>
+                <p class="operator-code">
+                    var a = 50;<br>
+                    var b = "Haresh";<br>
+                    document.write(a === b);
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">false</p>
+            </div>
+            <!---------------------------->
+            <div class="col-2">
+                <p class="example">(Example - 5) :-</p>
+                <p class="operator-code">
+                    var a = 20;<br>
+                    var b = {name: 'haresh', age: '23'};<br>
+                    document.write(a === b);
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">false</p>
+            </div>
+            <!---------------------------->
+        </div>
+    </div>
+    <br>
+
+
+    <!--==================== Operator-3 =======================-->
+    <div class="div-border">
+        <h4 class="operator-title">(3) not Equal (!=) :-</h4>
+        <p class="operator-desc">- check the not value in function (not enter same number value in
+            "string" because is Equal same value in "number").</p>
+        <div class="row">
+            <!---------------------------->
+            <div class="col-2">
+                <p class="example">(Example - 1) :-</p>
+                <p class="operator-code">
+                    var a = 50;<br>
+                    var b = 50;<br>
+                    document.write(a != b);
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">false</p>
+            </div>
+            <!---------------------------->
+            <div class="col-2">
+                <p class="example">(Example - 2) :-</p>
+                <p class="operator-code">
+                    var a = 50;<br>
+                    var b = 55;<br>
+                    document.write(a != b);
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">true</p>
+            </div>
+            <!---------------------------->
+            <div class="col-2">
+                <p class="example">(Example - 4) :-</p>
+                <p class="operator-code">
+                    var a = 20;<br>
+                    var b = "50";<br>
+                    document.write(a != b);
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">true</p>
+            </div>
+            <!---------------------------->
+            <div class="col-2">
+                <p class="example">(Example - 5) :-</p>
+                <p class="operator-code">
+                    var a = 50;<br>
+                    var b = "50";<br>
+                    document.write(a != b);
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">false</p>
+            </div>
+            <!---------------------------->
+            <div class="col-2">
+                <p class="example">(Example - 3) :-</p>
+                <p class="operator-code">
+                    var a = 50;<br>
+                    var b = ["12", "22"];<br>
+                    document.write(a != b);
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">true</p>
+            </div>
+            <!---------------------------->
+            <div class="col-2">
+                <p class="example">(Example - 5) :-</p>
+                <p class="operator-code">
+                    var a = 20;<br>
+                    var b = {age: '20', year: '2020'};<br>
+                    document.write(a != b);
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">true</p>
+            </div>
+            <!---------------------------->
+        </div>
+    </div>
+    <br>
+
+
+    <!--==================== Operator-4 =======================-->
+    <div class="div-border">
+        <h4 class="operator-title">(4) not Equal value & not Equal type (!==) :-</h4>
+        <p class="operator-desc">- check the not Equal value & check the not Equal data type in function.</p>
+        <div class="row">
+            <!---------------------------->
+            <div class="col-2">
+                <p class="example">(Example - 1) :-</p>
+                <p class="operator-code">
+                    var a = 50;<br>
+                    var b = 50;<br>
+                    document.write(a !== b);
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">false</p>
+            </div>
+            <!---------------------------->
+            <div class="col-2">
+                <p class="example">(Example - 2) :-</p>
+                <p class="operator-code">
+                    var a = 50;<br>
+                    var b = 55;<br>
+                    document.write(a !== b);
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">true</p>
+            </div>
+            <!---------------------------->
+            <div class="col-2">
+                <p class="example">(Example - 4) :-</p>
+                <p class="operator-code">
+                    var a = 20;<br>
+                    var b = "50";<br>
+                    document.write(a !== b);
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">true</p>
+            </div>
+            <!---------------------------->
+            <div class="col-2">
+                <p class="example">(Example - 3) :-</p>
+                <p class="operator-code">
+                    var a = 50;<br>
+                    var b = ["12", "22"];<br>
+                    document.write(a !== b);
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">true</p>
+            </div>
+            <!---------------------------->
+            <div class="col-2">
+                <p class="example">(Example - 5) :-</p>
+                <p class="operator-code">
+                    var a = 20;<br>
+                    var b = {age: '20', year: '2020'};<br>
+                    document.write(a !== b);
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">true</p>
+            </div>
+            <!---------------------------->
+        </div>
+    </div>
+    <br>
+
+
+    <!--==================== Operator-5 =======================-->
+    <div class="div-border">
+        <h4 class="operator-title">(5) Greater than (>) :-</h4>
+        <p class="operator-desc">- check the greater than value.</p>
+        <div class="row">
+            <!---------------------------->
+            <div class="col-2">
+                <p class="example">(Example - 1) :-</p>
+                <p class="operator-code">
+                    var a = 50;<br>
+                    var b = 55;<br>
+                    document.write(a > b);
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">false</p>
+            </div>
+            <!---------------------------->
+            <div class="col-2">
+                <p class="example">(Example - 2) :-</p>
+                <p class="operator-code">
+                    var a = 55;<br>
+                    var b = 50;<br>
+                    document.write(a > b);
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">true</p>
+            </div>
+            <!---------------------------->
+        </div>
+    </div>
+    <br>
+
+
+    <!--==================== Operator-6 =======================-->
+    <div class="div-border">
+        <h4 class="operator-title">(6) Less than (>) :-</h4>
+        <p class="operator-desc">- check the Less than value.</p>
+        <div class="row">
+            <!---------------------------->
+            <div class="col-2">
+                <p class="example">(Example - 1) :-</p>
+                <p class="operator-code">
+                    var a = 50;<br>
+                    var b = 55;<br>
+                    document.write(a < b); </p>
+                        <p class="example-1">(output) :-</p>
+                        <p class="output">false</p>
+            </div>
+            <!---------------------------->
+            <div class="col-2">
+                <p class="example">(Example - 2) :-</p>
+                <p class="operator-code">
+                    var a = 55;<br>
+                    var b = 50;<br>
+                    document.write(a < b); </p>
+                        <p class="example-1">(output) :-</p>
+                        <p class="output">true</p>
+            </div>
+            <!---------------------------->
+        </div>
+    </div>
+    <br>
+
+
+    <!--==================== Operator-7 =======================-->
+    <div class="div-border">
+        <h4 class="operator-title">(7) Less than or Equal to (<=) :-</h4>
+                <p class="operator-desc">- check the Less than value.</p>
+                <div class="row">
+                    <!---------------------------->
+                    <div class="col-2">
+                        <p class="example">(Example - 1) :-</p>
+                        <p class="operator-code">
+                            var a = 50;<br>
+                            var b = 55;<br>
+                            document.write(a <= b); </p>
+                        <p class="example-1">(output) :-</p>
+                        <p class="output">true</p>
+                    </div>
+                    <!---------------------------->
+                    <div class="col-2">
+                        <p class="example">(Example - 2) :-</p>
+                        <p class="operator-code">
+                            var a = 50;<br>
+                            var b = 50;<br>
+                            document.write(a <= b); </p>
+                        <p class="example-1">(output) :-</p>
+                        <p class="output">true</p>
+                    </div>
+                    <!---------------------------->
+                    <div class="col-2">
+                        <p class="example">(Example - 3) :-</p>
+                        <p class="operator-code">
+                            var a = 55;<br>
+                            var b = 50;<br>
+                            document.write(a <= b); </p>
+                        <p class="example-1">(output) :-</p>
+                        <p class="output">false</p>
+                    </div>
+                    <!---------------------------->
+                </div>
+    </div>
+    <br>
+
+
+    <!--==================== Operator-8 =======================-->
+    <div class="div-border">
+        <h4 class="operator-title">(8) Greater than or Equal to (>=) :-</h4>
+        <p class="operator-desc">- check the Less than value.</p>
+        <div class="row">
+            <!---------------------------->
+            <div class="col-2">
+                <p class="example">(Example - 1) :-</p>
+                <p class="operator-code">
+                    var a = 50;<br>
+                    var b = 55;<br>
+                    document.write(a >= b);
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">true</p>
+            </div>
+            <!---------------------------->
+            <div class="col-2">
+                <p class="example">(Example - 2) :-</p>
+                <p class="operator-code">
+                    var a = 50;<br>
+                    var b = 50;<br>
+                    document.write(a >= b);
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">true</p>
+            </div>
+            <!---------------------------->
+            <div class="col-2">
+                <p class="example">(Example - 3) :-</p>
+                <p class="operator-code">
+                    var a = 55;<br>
+                    var b = 50;<br>
+                    document.write(a >= b);
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">false</p>
+            </div>
+            <!---------------------------->
+        </div>
+    </div>
+    <br>
+
+    <!--==================== Operator-9 =======================-->
+    <div class="div-border">
+        <h4 class="operator-title">(9) null or undefined :-</h4>
+        <p class="operator-desc">- null & undefined value are same but data type is not same.</p>
+        <div class="row">
+            <!---------------------------->
+            <div class="col-3">
+                <p class="example">(Example - 1) :-</p>
+                <p class="operator-code">
+                    var a = 50;<br>
+                    var b = 55;<br>
+                    document.write(null == undefined);
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">true</p>
+            </div>
+            <!---------------------------->
+            <div class="col-3">
+                <p class="example">(Example - 2) :-</p>
+                <p class="operator-code">
+                    var a = 50;<br>
+                    var b = 50;<br>
+                    document.write(null === undefined);
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">false</p>
+            </div>
+            <!---------------------------->
+        </div>
+    </div>
+    <br>
+
+    <!--==================== Operator-8 =======================-->
+
+    <script>
+        var a = 20;
+        var b = 19;
+        document.write(a >= b);
+    </script><br>
+
+    <script>
+        var a = 55;
+        var b = 50;
+        document.write(a >= b);
+    </script><br>
+
+
+
+    <script>
+        var a = 50;
+        var b = 35;
+        document.write(a < b);
+    </script><br>
+
+    <script>
+        var a = 35;
+        var b = 50;
+        document.write(a < b);
+    </script><br>
+
+    <script>
+        var a = { age: '20', year: '2020' };
+        var b = { age: '19', year: '2020' };
+        document.write(a !== b);
+    </script><br>
+
+
+    <script>
+        var a = 50;
+        var b = 55;
+        document.write(a <= b);
+    </script>
+
+
+
+</html>

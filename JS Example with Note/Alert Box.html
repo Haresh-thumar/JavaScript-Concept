@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Box</title>
+</head>
+
+<body style="width: 85%; margin: 0 auto; padding-top: 20px;">
+
+    <style>
+        .heading-title {
+            color: rgb(255, 96, 117);
+            font-size: 50px;
+            font-weight: 400;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .table-title {
+            color: rgb(4, 133, 105);
+            font-size: 25px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            margin-top: 50px;
+            width: 50%;
+        }
+
+        td,
+        th {
+            border: 1px solid rgb(195, 195, 195);
+            text-align: left;
+            padding: 10px;
+            padding-left: 25px !important;
+        }
+
+        .div-border {
+            margin-top: 30px;
+        }
+
+        .operator-title {
+            font-size: 24px;
+            color: rgb(37, 26, 192);
+            font-family: sans-serif;
+        }
+
+        .operator-desc {
+            font-size: 16px;
+            margin-top: -15px;
+            color: rgb(95, 95, 95);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .operator-code {
+            font-size: 15px;
+            margin-left: 15px;
+            line-height: 1.5;
+            letter-spacing: 0.5px;
+            color: rgb(76, 150, 235);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .example {
+            font-size: 16px;
+            margin-left: 15px;
+            font-weight: bold;
+            color: rgb(255, 96, 117);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .example-1 {
+            font-size: 15px;
+            margin: 10px 0 -5px 15px;
+            font-weight: bold;
+            color: rgb(40, 184, 4);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .row {
+            width: 100%;
+            display: inline-flex;
+        }
+
+        .col-2 {
+            width: 20%;
+            height: auto;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .col-3 {
+            width: 30%;
+            height: auto;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .col-5 {
+            width: 50%;
+            height: auto;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .output {
+            font-size: 16px;
+            margin-left: 15px;
+            color: rgb(95, 95, 95);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- type of Logical operators -->
+    <!--==============================-->
+
+    <h1 class="heading-title">* Alert Box *</h1>
+    <p class="operator-desc">- output માં સાચી value અને message alert box માં print કરે છે.</p>
+
+    <br>
+    <br>
+
+
+
+
+
+    <!--==================== Operator-1 =======================-->
+    <div class="div-border">
+        <h4 class="operator-title">(1) Simple Alert Box :-</h4>
+        <div class="row">
+            <!---------------------------->
+            <div class="col-3">
+                <p class="example">(Example - 1) :-</p>
+                <p class="operator-code">
+
+                    alert("this is alert box");
+                    
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">A is greater</p>
+            </div>
+            <!---------------------------->
+        </div>
+    </div>
+    <br>
+
+
+    <!--==================== Operator-2 =======================-->
+    <div class="div-border">
+        <h4 class="operator-title">(2) Condition With Alert Box :-</h4> 
+        <div class="row">
+            <!---------------------------->
+            <div class="col-3">
+                <p class="example">(Example - 1) :-</p>
+                <p class="operator-code">
+                    var a = 10;<br>
+                    var b = 20;<br><br>
+
+                    if (a > b){<br>
+                    &nbsp;&nbsp;alert("A is greater");<br>
+                    }<br>
+                    else {<br>
+                    &nbsp;&nbsp;alert("B smaller");<br>
+                    }
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">B is greater</p>
+            </div>
+            <!---------------------------->
+            <div class="col-3">
+                <p class="example">(Example - 2) :-</p>
+                <p class="operator-code">
+                    var a = 10;<br>
+                    var b = 20;<br><br>
+
+                    if (a > b){<br>
+                    &nbsp;&nbsp;alert(a);<br>
+                    }<br>
+                    else {<br>
+                    &nbsp;&nbsp;alert(b);<br>
+                    }
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">B is greater</p>
+            </div>
+            <!---------------------------->
+        </div>
+    </div>
+    <br>
+
+
+    <!--==================== Operator-3 =======================-->
+    <div class="div-border">
+        <h4 class="operator-title">(3) Concetination With Value Print in Alert Box :-</h4> 
+        <div class="row">
+            <!---------------------------->
+            <div class="col-3">
+                <p class="example">(Example - 1) :-</p>
+                <p class="operator-code">
+                    var a = 30;<br>
+                    var b = 20;<br><br>
+
+                    if (a > b){<br>
+                    &nbsp;&nbsp;alert("value is A :" + a);<br>
+                    }<br>
+                    else {<br>
+                    &nbsp;&nbsp;alert("value is B :" + b);<br>
+                    }
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">value is A : 30</p>
+            </div>
+            <!---------------------------->
+            <div class="col-3">
+                <p class="example">(Example - 2) :-</p>
+                <p class="operator-code">
+                    var a = 10;<br>
+                    var b = 20;<br><br>
+
+                    if (a > b){<br>
+                    &nbsp;&nbsp;alert(a + b);<br>
+                    }<br>
+                    else {<br>
+                    &nbsp;&nbsp;alert(a - b);<br>
+                    }
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">B is greater</p>
+            </div>
+            <!---------------------------->
+        </div>
+    </div>
+    <br>
+
+
+
+
+
+    <!-- <script>
+       
+        alert("A is greater");
+        
+    </script>
+    <br> -->
+
+
+    <!-- <script>
+        var a = 10;
+        var b = 20;
+
+        if (a > b) {
+            alert("A is greater");
+        }
+        else {
+            alert("B is greater");
+        }
+    </script>
+    <br> -->
+
+
+    <!-- <script>
+        var a = 10;
+        var b = 20;
+
+        if (a > b) {
+            alert(a);
+        }
+        else {
+            alert(b);
+        }
+    </script>
+    <br> -->
+
+
+    <!-- <script>
+        var a = 10;
+        var b = 20;
+
+        if (a > b) {
+            alert("value is A :" + a);
+        }
+        else {
+            alert("value is B :" + b);
+        }
+    </script>
+    <br> -->
+
+
+    <script>
+        var a = 30;
+        var b = 20;
+
+        if (a > b) {
+            alert(a + b);
+        }
+        else {
+            alert(a - b);
+        }
+    </script>
+    <br>
+
+
+
+</html>

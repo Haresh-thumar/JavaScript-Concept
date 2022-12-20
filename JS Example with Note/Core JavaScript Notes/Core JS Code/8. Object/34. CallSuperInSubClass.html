@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head><title>Geeky Shows</title>
+	</head>
+	<body>
+		<script>
+			var Mobile = function(model){
+					this.model = model;
+			}
+			Mobile.prototype.getModel = function(){ return this.model; }
+
+			var Samsung = function(model, price){
+				Mobile.call(this, model)
+				this.price = price;
+			}
+
+			// inheritance 
+			Samsung.prototype = Object.create(Mobile.prototype);
+			Samsung.prototype.constructor = Samsung;
+
+
+			var galaxy = new Samsung("Galaxy", 3000);
+
+			console.log(galaxy.getModel());
+			console.log(galaxy.model);
+
+		</script>
+	</body>
+</html>
+
+

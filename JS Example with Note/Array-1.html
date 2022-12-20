@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array-1</title>
+</head>
+
+<body style="width: 85%; margin: 0 auto; padding-top: 20px;">
+
+    <style>
+        .heading-title {
+            color: rgb(255, 96, 117);
+            font-size: 50px;
+            font-weight: 400;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .table-title {
+            color: rgb(4, 133, 105);
+            font-size: 25px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            margin-top: 50px;
+            width: 30%;
+        }
+
+        td,
+        th {
+            border: 1px solid rgb(195, 195, 195);
+            text-align: left;
+            padding: 10px;
+            padding-left: 25px !important;
+        }
+
+        .div-border {
+            margin-top: 30px;
+        }
+
+        .operator-title {
+            font-size: 24px;
+            color: rgb(37, 26, 192);
+            font-family: sans-serif;
+        }
+
+        .operator-desc {
+            font-size: 16px;
+            margin-top: -15px;
+            color: rgb(95, 95, 95);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .operator-code {
+            font-size: 15px;
+            margin-left: 15px;
+            line-height: 1.5;
+            letter-spacing: 0.5px;
+            color: rgb(76, 150, 235);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .example {
+            font-size: 16px;
+            margin-left: 15px;
+            font-weight: bold;
+            color: rgb(255, 96, 117);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .example-1 {
+            font-size: 15px;
+            margin: 10px 0 -5px 15px;
+            font-weight: bold;
+            color: rgb(40, 184, 4);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .row {
+            width: 100%;
+            display: inline-flex;
+        }
+
+        .col-2 {
+            width: 20%;
+            height: auto;
+            float: left;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .col-3 {
+            width: 33%;
+            height: auto;
+            float: left;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .col-5 {
+            width: 50%;
+            height: auto;
+            float: left;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .output {
+            font-size: 16px;
+            margin-left: 15px;
+            color: rgb(95, 95, 95);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .red-pink {
+            color: rgb(255, 82, 177);
+            font-weight: 600;
+        }
+
+        .violate {
+            color: rgb(181, 22, 255);
+            font-weight: 600;
+        }
+
+        .gray {
+            color: rgb(82, 82, 82);
+            font-weight: 600;
+        }
+    </style>
+
+
+
+
+
+
+
+    <!-- Introduction of Array -->
+    <!--==============================-->
+
+    <h1 class="heading-title">* Array *</h1>
+
+    <div>
+        <h4 class="operator-title">* Declair Array :- </h4>
+        <p class="example">var ary = [10, 20, 30];</p>
+
+        <p class="output">-- simple એક variable માં એક જ value store કરી શકાય છે. જો આપણે એક કરતા વધારે store કરવા જશુ તો error આવી જશે. માટે એક variable માં multiple value store કરવા માટે array નો ઉપયોગ થાય છે.</p>
+
+        <p class="output">-- એક class માં ઘણાં બધા student હોય છે, એ બધા student ના roll no. હોય છે. એમ array માં પણ roll no. હોય છે, જે 0 થી ચાલુ થઇ છે. આમાં roll no. ને index કહેવાય છે. </p>
+        <br><br>
+
+
+
+
+    <!--==================== Simple Array =======================-->
+    <div class="div-border">
+        <h4 class="operator-title">* Simple Array :-</h4>
+        <div class="row">
+            <!---------------------------->
+            <div class="col-3">
+                <p class="example">(Example - 1) :-</p>
+                <p class="output">print numeric value</p>
+                <p class="operator-code">
+                    var haresh = [10,20,30,40,50];<br>
+                    document.write(haresh);<br>
+
+                        <p class="example-1">(output) :-</p>
+                        <p class="output">10,20,30,40,50</p>
+                </p>
+            </div>
+            <!---------------------------->
+            <div class="col-5">
+                <p class="example">(Example - 2) :-</p>
+                <p class="output">print string value</p>
+                <p class="operator-code">
+                    var haresh = ["haresh", "rutvik", "parth", "divyesh", "rushabh"];<br>
+                    document.write(haresh);<br>
+
+                        <p class="example-1">(output) :-</p>
+                        <p class="output">haresh, rutvik, parth, divyesh, rushabh</p>
+                </p>
+            </div>
+            <!---------------------------->
+        </div>
+    </div>
+    <br>
+
+
+
+    <!--==================== use multiple data type in array =======================-->
+    <div class="div-border">
+        <h4 class="operator-title">* use multiple data type in array :-</h4>
+        <div class="row">
+            <!---------------------------->
+            <div class="col-3">
+                <p class="example">(Example - 1) :-</p>
+                <p class="output">print numeric value</p>
+                <p class="operator-code">
+                    var haresh = [10,"haresh","google",true,null];<br>
+                    console.log(haresh);<br>
+
+                        <p class="example-1">(output) :-</p>
+                        <p class="output">10,"haresh","google",true,null</p>
+                </p>
+            </div>
+            <!---------------------------->
+        </div>
+    </div>
+    <br>
+
+
+
+    <!--==================== Get Particular Value in Array =======================-->
+    <div class="div-border">
+        <h4 class="operator-title">* Get Particular Value in Array :-</h4>
+        <div class="row">
+            <!---------------------------->
+            <div class="col-3">
+                <p class="example">(Example - 1) :-</p>
+                <p class="output">get particular numeric value in array</p>
+                <p class="operator-code">
+                    var haresh = [10,20,30,40,50];<br>
+                    document.write(haresh);<br>
+
+                        <p class="example-1">(output) :-</p>
+                        <p class="output">10,20,30,40,50</p>
+                </p>
+            </div>
+            <!---------------------------->
+            <div class="col-5">
+                <p class="example">(Example - 2) :-</p>
+                <p class="output">get particular string value in array</p>
+                <p class="operator-code">
+                    var haresh = ["haresh", "rutvik", "parth", "divyesh", "rushabh"];<br>
+                    document.write(haresh);<br>
+
+                        <p class="example-1">(output) :-</p>
+                        <p class="output">haresh, rutvik, parth, divyesh, rushabh</p>
+                </p>
+            </div>
+            <!---------------------------->
+        </div>
+    </div>
+    <br>
+
+
+
+    <!--==================== for loop with Array =======================-->
+    <div class="div-border">
+        <h4 class="operator-title">* for loop with Array :-</h4>
+        <div class="row">
+            <!---------------------------->
+            <div class="col-3">
+                <p class="example">(Example - 1) :-</p>
+                <p class="output">get particular numeric value in array</p>
+                <p class="operator-code">
+                    var haresh = [10,20,30,40,50];<br>
+                    for (a = 0; a <= 4; a++){<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;document.write(haresh[a] + "<<span>br></span>");<br>
+                    }<br>
+
+                    <p class="example-1">(output) :-</p>
+                    <p class="output">10</p>
+                    <p class="output">20</p>
+                    <p class="output">30</p>
+                    <p class="output">40</p>
+                    <p class="output">50</p>
+                </p>
+            </div>
+            <!---------------------------->
+            <div class="col-5">
+                <p class="example">(Example - 2) :-</p>
+                <p class="output">get particular string value in array</p>
+                <p class="operator-code">
+                    var haresh = ["haresh", "rutvik", "parth", "divyesh", "rushabh"];<br>
+                    for (a = 0; a <= 4; a++){<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;document.write(haresh[a] + "<<span>br></span>");<br>
+                    }<br>
+
+                    <p class="example-1">(output) :-</p>
+                    <p class="output">haresh</p>
+                    <p class="output">rutvik</p>
+                    <p class="output">parth</p>
+                    <p class="output">divyesh</p>
+                    <p class="output">rushabh</p>
+                </p>
+            </div>
+            <!---------------------------->
+        </div>
+    </div>
+    <br>
+
+
+
+    <!--==================== for loop with list item in Array =======================-->
+    <div class="div-border">
+        <h4 class="operator-title">* for loop with list item in Array :-</h4>
+        <div class="row">
+            <!---------------------------->
+            <div class="col-3">
+                <p class="example">(Example - 1) :-</p>
+                <p class="output">for loop with list item in Array (numeric value)</p>
+                <p class="operator-code">
+                    var haresh = [10,20,30,40,50];<br>
+                    document.write("<<span>ul></span>");<br>
+
+                    for (a = 0; a <= 4; a++){<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;document.write("<<span>li></span>" + haresh[a] + "<<span>/li></span>");<br>
+                    }<br>
+
+                    document.write("<<span>/ul></span>");<br>
+
+                    <p class="example-1">(output) :-</p>
+                    <p class="output">
+                        <ul>
+                            <li>10</li>
+                            <li>20</li>
+                            <li>30</li>
+                            <li>40</li>
+                            <li>50</li>
+                        </ul>
+                    </p>
+                </p>
+            </div>
+            <!---------------------------->
+            <div class="col-5">
+                <p class="example">(Example - 2) :-</p>
+                <p class="output">for loop with list item in Array (string value)</p>
+                <p class="operator-code">
+                    var haresh = ["haresh", "rutvik", "parth", "divyesh", "rushabh"];<br>
+                    document.write("<<span>ul></span>");<br>
+
+                    for (a = 0; a <= 4; a++){<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;document.write("<<span>li></span>" + haresh[a] + "<<span>/li></span>");<br>
+                    }<br>
+
+                    document.write("<<span>/ul></span>");<br>
+
+                    <p class="example-1">(output) :-</p>
+                    <p class="output">
+                        <ul>
+                            <li>haresh</li>
+                            <li>rutvik</li>
+                            <li>parth</li>
+                            <li>divyesh</li>
+                            <li>rushabh</li>
+                        </ul>
+                    </p>
+                </p>
+            </div>
+            <!---------------------------->
+        </div>
+    </div>
+    <br>
+
+
+
+    <!--==================== use sum formula with for loop in Array =======================-->
+    <div class="div-border">
+        <h4 class="operator-title">* use sum formula with for loop in Array :-</h4>
+        <div class="row">
+            <!---------------------------->
+            <div class="col-3">
+                <p class="example">(Example - 1) :-</p>
+                <p class="output">for loop with list item in Array (numeric value)</p>
+                <p class="operator-code">
+                    var haresh = [10,20,30,40,50];<br>
+                    var sum = 0;<br><br>    
+
+                    for (a = 0; a <= 4; a++){<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;document.write(haresh[a] + "<<span>br></span>");<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;sum = sum + haresh[a];<br>
+                    }<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;document.write("total value : " + sum);<br>
+
+                    <p class="example-1">(output) :-</p>
+                    <p class="output">10</p>
+                    <p class="output">20</p>
+                    <p class="output">30</p>
+                    <p class="output">40</p>
+                    <p class="output">50</p>
+                    <p class="output">total value : 50</p>
+                </p>
+            </div>
+            <!---------------------------->
+        </div>
+    </div>
+    <br>
+
+
+
+
+
+
+
+
+
+
+    <!-- <script>
+        var haresh = [10,20,30,40,50];
+        document.write(haresh);
+    </script>
+    <br>
+
+    <script>
+        var haresh = ["haresh", "rutvik", "parth", "divyesh", "rushabh"];
+        document.write(haresh);
+    </script>
+    <br><br> -->
+
+    
+
+    <!-- <script>
+        var haresh = [10,"haresh","google",true, null];
+        console.log(haresh);
+    </script>
+    <br> -->
+
+
+
+    <!-- <script>
+        var haresh = [10,20,30,40,50];
+        document.write(haresh[2]);
+    </script>
+    <br>
+
+    <script>
+        var haresh = ["haresh", "rutvik", "parth", "divyesh", "rushabh"];
+        document.write(haresh[2]);
+    </script>
+    <br> -->
+
+
+
+    <!-- <script>
+        var haresh = [10,20,30,40,50];
+        for(a = 0; a <= 4; a++){
+            document.write(haresh[a] + "<br>");
+        }
+    </script>
+    <br>
+
+    <script>
+        var haresh = ["haresh", "rutvik", "parth", "divyesh", "rushabh"];
+        for(a = 0; a <= 4; a++){
+            document.write(haresh[a] + "<br>");
+        }
+    </script>
+    <br> -->
+
+
+
+    <!-- <script>
+        var haresh = [10,20,30,40,50];
+        document.write("<ul>");
+        for(a = 0; a <= 4; a++){
+            document.write("<li>" + haresh[a] + "</li>");
+        }
+        document.write("</ul>");
+    </script>
+
+    <script>
+        var haresh = ["haresh", "rutvik", "parth", "divyesh", "rushabh"];
+        document.write("<ul>");
+        for(a = 0; a <= 4; a++){
+            document.write("<li>" + haresh[a] + "</li>");
+        }
+        document.write("</ul>");
+    </script>
+    <br> -->
+
+
+
+    <!-- <script>
+        var haresh = [10,20,30,40,50];
+        document.write("<ul>");
+        var sum = 0; 
+        for(a = 0; a <= 4; a++){
+            document.write(haresh[a] + "<br>");
+            sum = sum + haresh[a];
+        }
+        document.write("<br>");
+        document.write("total value : " + sum);
+    </script>
+    <br> -->
+
+
+</html>

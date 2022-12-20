@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For / in Loop</title>
+</head>
+
+<body style="width: 85%; margin: 0 auto; padding-top: 20px;">
+
+
+
+
+    <h1 style="text-decoration: underline;">For / in Loop</h1>
+    <p>- for in loop object ને print કરવા માટે જ બનાવેલ છે.</p>
+
+    <br><br><br><br>
+
+
+
+    <script>
+        var obj = {
+            fName: 'haresh',
+            lName: 'thumar',
+            age: 22,
+            state: 'gujrat'
+        };
+
+        for (var key in obj) {
+            document.write(obj[key] + "<br>");
+        }
+    </script>
+    <br><br><br>
+
+
+
+    <script>
+        var obj = {
+            fName: 'haresh',
+            lName: 'thumar',
+            age: 22,
+            state: 'gujrat'
+        };
+
+        for (var key in obj) {
+            document.write(key + " : " + obj[key] + "<br>");
+        }
+    </script>
+
+
+
+
+
+</body>
+
+</html>

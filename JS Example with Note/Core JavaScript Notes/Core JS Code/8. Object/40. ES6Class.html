@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head><title>Geeky Shows</title>
+	</head>
+	<body>
+		<script>
+		/*
+			var Mobile = function (){
+				this.model = 'Galaxy';
+				this.show = function() {
+					return "Class using Constructor";
+				}
+			}
+			// Prototype Member
+			Mobile.prototype.display = function () {
+				return "Prototype Method";
+			}
+		*/
+			class Mobile {
+				constructor() {
+				// Instance Member
+					this.a = 12;
+					this.show = function () {
+						return "Instance Method";
+					};
+				}
+				// Prototype Member
+				display() {
+					return "Prototype Method";
+				}
+			}
+			
+			var samsung = new Mobile ();
+			document.write(samsung.display());
+			
+		</script>
+	</body>
+</html>
+
+

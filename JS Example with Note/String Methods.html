@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods</title>
+</head>
+
+<body style="width: 85%; margin: 0 auto; padding-top: 20px;">
+
+
+    <style>
+        .heading-title {
+            color: rgb(255, 96, 117);
+            font-size: 50px;
+            font-weight: 400;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .table-title {
+            color: rgb(4, 133, 105);
+            font-size: 25px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            margin-top: 50px;
+            width: 50%;
+        }
+
+        td,
+        th {
+            border: 1px solid rgb(195, 195, 195);
+            text-align: left;
+            padding: 10px;
+            padding-left: 25px !important;
+        }
+
+        .div-border {
+            margin-top: 30px;
+        }
+
+        .operator-title {
+            font-size: 24px;
+            color: rgb(37, 26, 192);
+            font-family: sans-serif;
+        }
+
+        .operator-desc {
+            font-size: 16px;
+            margin-top: -15px;
+            color: rgb(95, 95, 95);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .operator-code {
+            font-size: 15px;
+            margin-left: 15px;
+            line-height: 1.5;
+            letter-spacing: 0.5px;
+            color: rgb(76, 150, 235);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .example {
+            font-size: 16px;
+            margin-left: 15px;
+            font-weight: bold;
+            color: rgb(255, 96, 117);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .example-1 {
+            font-size: 15px;
+            margin: 10px 0 -5px 15px;
+            font-weight: bold;
+            color: rgb(40, 184, 4);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .row {
+            width: 100%;
+            display: inline-flex;
+        }
+
+        .col-2 {
+            width: 20%;
+            height: auto;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .col-3 {
+            width: 30%;
+            height: auto;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .output {
+            font-size: 16px;
+            margin-left: 15px;
+            color: rgb(95, 95, 95);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+
+
+
+
+
+    <!-- type of Arithmetic operators -->
+    <!--==============================-->
+
+    <h1 class="heading-title">* Array Methods *</h1>
+
+
+    <table>
+        <tr>
+            <th class="table-title" colspan="4">Array Methods() List :-</th>
+        </tr>
+        <tr>
+            <td>length()</td>
+            <td>toLowerCase()</td>
+            <td>toUpperCase()</td>
+            <td>includes()</td>
+        </tr>
+        <tr>
+            <td>startWith()</td>
+            <td>endWith()</td>
+            <td>search()</td>
+            <td>match()</td>
+        </tr>
+        <tr>
+            <td>indexOf()</td>
+            <td>lastIndexOf()</td>
+            <td>includes()</td>
+            <td>push()</td>
+        </tr>
+        <tr>
+            <td>indexOf()</td>
+            <td>replace()</td>
+            <td>trim()</td>
+            <td>toString()</td>
+        </tr>
+        <tr>
+            <td>charAt()</td>
+            <td>charCodeAt()</td>
+            <td>forCharCode()</td>
+            <td>valueOf()</td>
+        </tr>
+        <tr>
+            <td>concat()</td>
+            <td>split()</td>
+            <td>repeate()</td>
+            <td>slice()</td>
+        </tr>
+        <tr>
+            <td>substr()</td>
+            <td>substring()</td>
+        </tr>
+    </table>
+
+
+    <br><br>
+
+
+
+<!--******************************************
+                length()
+*******************************************-->
+<!-- <script>
+    var str = "this is javascript";
+    var a = str.length;
+    document.write(a);
+</script>
+<br><br> -->
+
+
+<!--******************************************
+                toLowerCase()
+*******************************************-->
+<!-- <script>
+    var str = "THIS IS JAVASCRIPT";
+    var a = str.toLowerCase();
+    document.write(a);
+</script>
+<br><br> -->
+
+
+<!--******************************************
+                toUpperCase()
+*******************************************-->
+<!-- <script>
+    var str = "this is javascript";
+    var a = str.toUpperCase();
+    document.write(a);
+</script>
+<br><br> -->
+
+
+<!--******************************************
+                includes()
+*******************************************-->
+<!-- <script>
+    var str = "this is javascript";
+    var a = str.includes("is");
+    document.write(a);
+</script>
+<br><br>
+
+<script>
+    var str = "this is javascript";
+    var a = str.includes("Is");
+    document.write(a);
+</script>
+<br><br> -->
+
+
+<!--******************************************
+                startsWith()
+*******************************************-->
+<!-- <script>
+    var str = "this is javascript";
+    var a = str.startsWith("this");
+    document.write(a);
+</script>
+<br><br> -->
+
+
+<!--******************************************
+                endsWith()
+*******************************************-->
+<!-- <script>
+    var str = "this is javascript";
+    var a = str.endsWith("javascript");
+    document.write(a);
+</script>
+<br><br> -->
+
+
+<!--******************************************
+                endsWith()
+*******************************************-->
+<!-- <script>
+    var str = "this is javascript";
+    var a = str.endsWith("javascript");
+    document.write(a);
+</script>
+<br><br> -->
+
+
+<!--******************************************
+                search()
+*******************************************-->
+<!-- <script>
+    var str = "javascript is a greate language";
+    var a = str.search("greate");
+    document.write(a);
+</script>
+<br><br> -->
+
+
+<!--******************************************
+                match()
+*******************************************-->
+<!-- <script>
+    var str = "greate javascript is a greate language greate nice";
+    var a = str.match(/greate/g);
+    document.write(a);
+</script>
+<br><br> -->
+
+
+<!--******************************************
+                indexOf()
+*******************************************-->
+<!-- <script>
+    var str = "javascript is a greate is language";
+    var a = str.indexOf("is");
+    document.write(a);
+</script>
+<br><br> -->
+
+
+<!--******************************************
+                lastIndexOf()
+*******************************************-->
+<!-- <script>
+    var str = "javascript is a greate is language";
+    var a = str.lastIndexOf("is");
+    document.write(a);
+</script>
+<br><br> -->
+
+
+<!--******************************************
+                replace()
+*******************************************-->
+<!-- <script>
+    var str = "javascript is a greate is language";
+    var a = str.replace("javascript", "PHP");
+    document.write(a);
+</script>
+<br><br> -->
+
+
+<!--******************************************
+                replace()
+*******************************************-->
+<!-- <script>
+    var str = "javascript is a greate language in the javascript";
+    var a = str.replace("javascript", "PHP");
+    document.write(a);
+</script>
+<br><br> -->
+
+<!-- <script>
+    var str = "javascript is a greate language in the javascript";
+    var a = str.replace(/javascript/g, "PHP");
+    document.write(a);
+</script>
+<br><br> -->
+
+
+<!--******************************************
+                charAt()
+*******************************************-->
+<!-- <script>
+    var a = "javascript is a greate language";
+    var b = a.charAt(5) ;
+    document.write(b);
+</script>
+<br><br> -->
+
+
+<!--******************************************
+                charCodeAt()
+*******************************************-->
+<!-- <img src="./image/skycode.png"><br>
+<script>
+    var a = "javascript is a greate language";
+    var b = a.charCodeAt(2) ;
+    document.write(b);
+</script>
+<br><br> -->
+
+
+<!--******************************************
+                fromCharCode()
+*******************************************-->
+<!-- <img src="./image/skycode.png"><br>
+<script>
+    var b = String.fromCharCode(118);
+    document.write(b);
+</script>
+<br><br> -->
+
+
+<!--******************************************
+                concat()
+*******************************************-->
+<!-- <script>
+    var a = "hello";
+    var b = "haresh";
+    var c = a.concat(b);
+    document.write(c);
+</script>
+<br><br>
+
+<script>
+    var a = "hello";
+    var b = "haresh";
+    var c = "thumar";
+    var d = a.concat(b,c);
+    document.write(d);
+</script>
+<br><br> -->
+
+
+<!--******************************************
+                split()
+*******************************************-->
+<!-- <script>
+    var a = "hello haresh thumar";
+    var b = a.split(" ");
+    document.write(b);
+</script>
+<br><br>
+
+<script>
+    var a = "hello haresh thumar";
+    var b = a.split("h");
+    document.write(b);
+</script>
+<br><br> -->
+
+
+<!--******************************************
+                repeat()
+*******************************************-->
+<!-- <script>
+    var a = "hello haresh thumar";
+    var b = a.repeat(2);
+    document.write(b);
+</script>
+<br><br> -->
+
+
+<!--******************************************
+                slice()
+*******************************************-->
+<!-- <script>
+    var a = "hello haresh thumar";
+    var b = a.slice(2);
+    document.write(b);
+</script>
+<br><br>
+
+<script>
+    var a = "hello haresh thumar";
+    var b = a.slice(2, 10);
+    document.write(b);
+</script>
+<br><br>
+
+<script>
+    var a = "hello haresh thumar";
+    var b = a.slice(-2);
+    document.write(b);
+</script>
+<br><br> -->
+
+
+<!--******************************************
+                substr()
+*******************************************-->
+<!-- <script>
+    var a = "javascript is a greate language";
+    var b = a.substr(3,5);
+    document.write(b);
+</script>
+<br><br> -->
+
+
+<!--******************************************
+                substring()
+*******************************************-->
+<!-- <script>
+    var a = "javascript is a greate language";
+    var b = a.substring(3,5);
+    document.write(b);
+</script>
+<br><br> -->
+
+
+<!--******************************************
+                toString()
+*******************************************-->
+<!-- <script>
+    var a = 50;
+    var b = a.toString();
+    document.write(b + 20);
+</script>
+<br><br> -->
+
+
+<!--******************************************
+                valueOf()
+*******************************************-->
+<!-- <script>
+    var a = "hello haresh";
+    var b = a.valueOf();
+    document.write(b);
+</script>
+<br><br> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

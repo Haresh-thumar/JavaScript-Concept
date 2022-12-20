@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head><title>Geeky Shows</title>
+	</head>
+	<body>
+		<script>
+		// Variable Hoisting
+			var i = "Hello";
+			document.write(i + "<br>");
+			function show(){
+				document.write(i + "<br>");
+				var i = "GeekyShows";
+				document.write(i + "<br>");
+			}
+			show();
+			
+			/*
+				var i; 
+				i = "Hello";
+				document.write(i + "<br>");
+				function show(){
+					var i;
+					document.write(i + "<br>");
+					i = "GeekyShows";
+					document.write(i + "<br>");
+				}
+				show();
+			*/
+		</script>
+	</body>
+</html>
+
+

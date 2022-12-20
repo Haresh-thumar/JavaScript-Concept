@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camparison_operators</title>
+</head>
+
+<body style="width: 85%; margin: 0 auto; padding-top: 20px;">
+
+    <style>
+        .heading-title {
+            color: rgb(255, 96, 117);
+            font-size: 50px;
+            font-weight: 400;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .div-border {
+            margin-top: 30px;
+        }
+
+        .operator-title {
+            font-size: 24px;
+            color: rgb(37, 26, 192);
+            font-family: sans-serif;
+        }
+
+        .operator-desc {
+            font-size: 16px;
+            margin-top: -15px;
+            color: rgb(95, 95, 95);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .operator-code {
+            font-size: 15px;
+            margin-left: 15px;
+            line-height: 1.5;
+            letter-spacing: 0.5px;
+            color: rgb(76, 150, 235);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .example {
+            font-size: 16px;
+            margin-left: 15px;
+            font-weight: bold;
+            color: rgb(255, 96, 117);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .example-1 {
+            font-size: 15px;
+            margin: 10px 0 -5px 15px;
+            font-weight: bold;
+            color: rgb(40, 184, 4);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .row {
+            width: 100%;
+            display: inline-flex;
+        }
+
+        .col-2 {
+            width: 20%;
+            height: auto;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .col-3 {
+            width: 30%;
+            height: auto;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .output {
+            font-size: 16px;
+            margin-left: 15px;
+            color: rgb(95, 95, 95);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- type of Arithmetic operators -->
+    <!--==============================-->
+
+    <h1 class="heading-title">* if condition (statement) *</h1>
+    <p class="operator-desc">- if નાં statement માં બે જ condition આવે છે, true & false</p>
+    <p class="operator-desc">- if  નાં statement માં condition check કરવા માટે કાંઈક value નું camparison કરવું પડે છે, જેમ કે two value , two  variable, multiple values, multiple વરીઅબીલેસ... આની value campare  કરવા માટે camparison operator નો use થાય છે.</p>
+
+
+    <br>
+
+
+    <!--==================== Operator-1 =======================-->
+    <div class="div-border">
+        <h4 class="operator-title">(1) Example - 1</h4>
+        <p class="operator-desc">- campare the data value in if statement.</p>
+        <div class="row">
+            <!---------------------------->
+            <div class="col-3">
+                <p class="operator-code">
+                    var a = 100;<br>
+                    var b = 100;<br><br>
+
+                    if (a == b) {<br>
+                        document.write("A is Greater");<br>
+                    }
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">A is Greater</p>
+            </div>
+            <!---------------------------->
+            <div class="col-3">
+                <p class="operator-code">
+                    var a = 120;<br>
+                    var b = 100;<br><br>
+
+                    if (a == b) {<br>
+                        document.write("A is Greater");<br>
+                    }
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">none <span style="color: rgb(241, 105, 105);">(none means do not show data in display)</span></p>
+            </div>
+        </div>
+    </div>
+    <br>
+
+
+
+    <!--==================== Operator-2 =======================-->
+    <div class="div-border">
+        <h4 class="operator-title">(2) Example - 2</h4>
+        <p class="operator-desc">- campare the data type in if statement.</p>
+        <div class="row">
+            <!---------------------------->
+            <div class="col-3">
+                <p class="operator-code">
+                    var a = 100;<br>
+                    var b = 100;<br><br>
+
+                    if (a === b) {<br>
+                        document.write("A is Greater");<br>
+                    }
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">A is Greater</p>
+            </div>
+            <!---------------------------->
+            <div class="col-3">
+                <p class="operator-code">
+                    var a = 120;<br>
+                    var b = "100";<br><br>
+
+                    if (a === b) {<br>
+                        document.write("A is Greater");<br>
+                    }
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">none <span style="color: rgb(241, 105, 105);">(none means do not show data in display)</span></p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <p class="operator-desc"><b style="color: red;">NOTE:-</b> <i>જો operator નું camparison true હશે તો statement true થશે અને તો જ data display થશે નહીંતર data display નહિ થાય.</i></p>
+    <br>
+    <br>
+    <br>
+
+
+    
+
+
+
+    <script>
+        // example 1 
+        var a = 100;
+        var b = 100;
+
+        if(a == b){
+            document.write("A is Greater");
+        }
+
+        // example 2
+        var a = 100;
+        var b = 120;
+
+        if(a == b){
+            document.write("A is Greater");
+        }
+        
+
+        // just for line break 
+        document.write("<br><br>");
+
+        // example 3 
+        var a = 100;
+        var b = 100;
+
+        if(a === b){
+            document.write("A is Greater");
+        }
+
+        // example 4
+        var a = 100;
+        var b = "120";
+
+        if(a === b){
+            document.write("A is Greater");
+        }
+    </script>
+    
+
+
+
+</html>

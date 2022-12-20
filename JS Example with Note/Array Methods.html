@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+
+<body style="width: 85%; margin: 0 auto; padding-top: 20px;">
+
+    <style>
+        .heading-title {
+            color: rgb(255, 96, 117);
+            font-size: 50px;
+            font-weight: 400;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .table-title {
+            color: rgb(4, 133, 105);
+            font-size: 25px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            margin-top: 50px;
+            width: 50%;
+        }
+
+        td,
+        th {
+            border: 1px solid rgb(195, 195, 195);
+            text-align: left;
+            padding: 10px;
+            padding-left: 25px !important;
+        }
+
+        .div-border {
+            margin-top: 30px;
+        }
+
+        .operator-title {
+            font-size: 24px;
+            color: rgb(37, 26, 192);
+            font-family: sans-serif;
+        }
+
+        .operator-desc {
+            font-size: 16px;
+            margin-top: -15px;
+            color: rgb(95, 95, 95);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .operator-code {
+            font-size: 15px;
+            margin-left: 15px;
+            line-height: 1.5;
+            letter-spacing: 0.5px;
+            color: rgb(76, 150, 235);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .example {
+            font-size: 16px;
+            margin-left: 15px;
+            font-weight: bold;
+            color: rgb(255, 96, 117);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .example-1 {
+            font-size: 15px;
+            margin: 10px 0 -5px 15px;
+            font-weight: bold;
+            color: rgb(40, 184, 4);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .row {
+            width: 100%;
+            display: inline-flex;
+        }
+
+        .col-2 {
+            width: 20%;
+            height: auto;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .col-3 {
+            width: 30%;
+            height: auto;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .output {
+            font-size: 16px;
+            margin-left: 15px;
+            color: rgb(95, 95, 95);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+
+
+
+
+
+    <!-- type of Arithmetic operators -->
+    <!--==============================-->
+
+    <h1 class="heading-title">* Array Methods *</h1>
+
+
+    <table>
+        <tr>
+            <th class="table-title" colspan="4">Array Methods() List :-</th>
+        </tr>
+        <tr>
+            <td>sort()</td>
+            <td>slice()</td>
+            <td>find()</td>
+            <td>split()</td>
+        </tr>
+        <tr>
+            <td>reverse()</td>
+            <td>splice()</td>
+            <td>fondIndex()</td>
+            <td>replace()</td>
+        </tr>
+        <tr>
+            <td>pop()</td>
+            <td>inArray()</td>
+            <td>includes()</td>
+        </tr>
+        <tr>
+            <td>push()</td>
+            <td>indexOf()</td>
+            <td>some()</td>
+        </tr>
+        <tr>
+            <td>shift()</td>
+            <td>lastIndexOf()</td>
+            <td>forEach()</td>
+        </tr>
+        <tr>
+            <td>unshift()</td>
+            <td>entries()</td>
+            <td>toString()</td>
+        </tr>
+        <tr>
+            <td>concat()</td>
+            <td>every()</td>
+            <td>valueOf()</td>
+        </tr>
+        <tr>
+            <td>join()</td>
+            <td>filter()</td>
+            <td>fill()</td>
+        </tr>
+    </table>
+
+
+    <br><br>
+
+    <!--******************************************
+                    sort()
+*******************************************-->
+    <!---- sort() ---->
+    <!-- <script>
+    var a = ["Banana", "Orange", "Apple", "Mango"];
+    var a = [1,8,4,3,6,5,7,2];  
+    a.sort((a,b)=> b-a);
+    document.write(a)
+    console.log(this)
+</script>
+<br><br> -->
+    <!---- sort() ---->
+    <!-- <script>
+    var a = ["Banana", "Orange", "Apple", "Mango"];
+    a.sort();
+    document.write(a);
+</script>
+<br><br> -->
+
+
+    <!---- sort() [accending order] ---->
+    <script>
+        //var arrA = ["1", "2", "3", "4", "5", "6"];
+        //sort in ascending order
+        // descOrder = arrA.sort((a,b) => a > b ? 1 : -1);
+        // document.write(descOrder);
+        // document.write("<br>");
+
+        //sort in descending order
+        // descOrder = arrA.sort((a,b) => a > b ? -1 : 1);
+        // document.write(descOrder);
+        // document.write("<br>");
+    </script>
+
+
+    <!--******************************************
+                    reverse()
+*******************************************-->
+    <!---- reverse() ---->
+    <!-- <script>
+    var a = ["Banana", "Orange", "Apple", "Mango"];
+    a.reverse();
+    document.write(a);
+</script>
+<br><br><br> -->
+
+
+    <!--******************************************
+                    pop()
+*******************************************-->
+    <!---- pop() ---->
+    <!-- <script>
+    var a = ["Banana", "Orange", "Apple", "Mango"];
+    a.pop();
+    document.write(a);
+</script>
+<br><br> -->
+
+
+    <!--******************************************
+                    push()
+*******************************************-->
+    <!---- push() ---->
+    <!-- <script>
+    var a = ["Banana", "Orange", "Apple", "Mango"];
+    a.push("Graphs", "Graphs", "Graphs");
+    document.write(a);
+</script>
+<br><br><br> -->
+
+
+    <!--******************************************
+                    shift()
+*******************************************-->
+    <!---- shift() ---->
+    <!-- <script>
+    var a = ["Banana", "Orange", "Apple", "Mango"];
+    a.shift();
+    document.write(a);
+</script>
+<br><br> -->
+
+
+    <!--******************************************
+                    unshift()
+*******************************************-->
+    <!---- unshift() ---->
+    <!-- <script>
+    var a = ["Orange", "Apple", "Mango"];
+    a.unshift("Banana", "Banana", "Banana");
+    document.write(a);
+</script>
+<br><br><br> -->
+
+
+    <!--******************************************
+                    concat()
+*******************************************-->
+    <!---- concat() [1] ---->
+    <!-- <script>
+    var a = ["haresh", "hitesh", "harsh"];
+    var b = a.concat ("11", "12", "13");
+    var c = b.concat ("Orange", "Apple", "Mango");
+    document.write(c);
+</script>
+<br><br> -->
+    <!---- concat() [2] ---->
+    <!-- <script>
+    var a = ["Orange", "Apple", "Mango"];
+    var b = ["18", "19", "20"];
+    var c = ["graphs", "Apple", "Mango"];
+    var d = ["21", "22", "23"];
+    var e = a.concat(b,c,d);
+    document.write(e);
+</script>
+<br><br> -->
+
+
+    <!--******************************************
+                    join()
+*******************************************-->
+    <!---- join() ---->
+    <!-- <script>
+    var a = ["Orange", "Apple", "Mango"];
+    var b = ["18", "19", "20"];
+    var c = a.concat(b);
+    document.write(c + "<br><br>");
+    var d = c.join(" / ");
+    document.write(d);
+</script>
+<br><br> -->
+
+
+    <!--******************************************
+                    slice()
+*******************************************-->
+    <!---- slice() [1] ---->
+    <!-- <script>
+    var a = ["sanjay", "haresh", "ankit", "rahul"];
+    var b = a.slice(0, 3);
+    document.write(b);
+</script><br> -->
+    <!---- slice() [2] ---->
+    <!-- <script>
+    var a = ["sanjay", "haresh", "ankit", "rahul"];
+    var b = a.slice(2);
+    document.write(b);
+</script><br> -->
+    <!---- slice() [3] ---->
+    <!-- <script>
+    var a = ["sanjay", "haresh", "ankit", "rahul"];
+    var b = a.slice(-3);
+    document.write(b);
+</script><br> -->
+    <!---- slice() [4] ---->
+    <!-- <script>
+    var a = ["sanjay", "haresh", "ankit", "rahul"];
+    var b = a.slice(-3, -1);
+    document.write(b);
+</script> -->
+
+
+    <!--******************************************
+                    splice()
+*******************************************-->
+    <!---- splish() [1] ---->
+    <!-- <script>
+    var a = ["aman", "rahul", "haresh", "karan"];
+        a.splice(2, 0, "neha", "pooja");
+    document.write(a);
+</script><br> -->
+    <!---- splish() [2] ---->
+    <!-- <script>
+    var a = ["aman", "rahul", "haresh", "karan"];
+        a.splice(2, 1, "neha", "pooja");
+    document.write(a);
+</script><br> -->
+    <!---- splish() [3] ---->
+    <!-- <script>
+    var a = ["aman", "rahul", "haresh", "karan"];
+        a.splice(-2, 1, "neha", "pooja");
+    document.write(a);
+</script><br> -->
+    <!---- splish() [4] ---->
+    <!-- <script>
+    var a = ["aman", "rahul", "haresh", "karan"];
+        a.splice(2, 2);
+    document.write(a);
+</script><br> -->
+
+
+
+    <!--******************************************
+                isArray()
+*******************************************-->
+    <!---- isArray() [1] ---->
+    <!-- <script>
+    var a = ["haresh", "rahul", "karan"];
+
+    var b = Array.isArray(a);
+     document.write(b);
+</script> -->
+
+    <!---- isArray() [2] ---->
+    <!-- <script>
+    var a = 10;
+
+    var b = Array.isArray(a);
+     document.write(b);
+</script> -->
+
+    <!---- isArray() [3] ---->
+    <!-- <script>
+    var a = ["haresh", "rahul", "karan", "sweta"];
+
+    if(Array.isArray(a)){
+        document.write("this is an Array");
+    }else {
+        document.write("this is not an Array");
+    }
+</script> -->
+
+    <!---- isArray() [4] ---->
+    <!-- <script>
+    var a = "haresh";
+
+    if(Array.isArray(a)){
+        document.write("this is an Array");
+    }else {
+        document.write("this is not an Array");
+    }
+</script> -->
+
+
+
+    <!--******************************************
+                indexOf()
+*******************************************-->
+    <!---- indexOf() [1] ---->
+    <!-- <script>
+    var a = ["haresh", "karan", "rahul", "karan", "aman"];
+
+    var b = a.indexOf("karan");
+    document.write(b);
+</script><br> -->
+
+    <!---- indexOf() [2] ---->
+    <!-- <script>
+    var a = ["haresh", "karan", "rahul", "karan", "aman"];
+
+    var b = a.indexOf("karan", 2);
+    document.write(b);
+</script><br> -->
+
+    <!---- indexOf() [3] ---->
+    <!-- <script>
+    var a = ["haresh", "karan", "rahul", "karan", "aman"];
+
+    var b = a.indexOf("sweta");
+    document.write(b);
+</script><br> -->
+
+
+    <!--******************************************
+                lastIndexOf()
+*******************************************-->
+    <!---- lastIndexOf() [1] ---->
+    <!-- <script>
+    var a = ["haresh", "karan", "rahul", "karan", "aman"];
+
+    var b = a.lastIndexOf("karan");
+    document.write(b);
+</script><br> -->
+
+    <!---- lastIndexOf() [2] ---->
+    <!-- <script>
+    var a = ["haresh", "karan", "rahul", "karan", "aman"];
+
+    var b = a.lastIndexOf("karan", 1);
+    document.write(b);
+</script><br> -->
+
+
+
+
+    <!--******************************************
+                includes()
+*******************************************-->
+    <!---- includes() [1] ---->
+    <!-- <script>
+    var a = ["haresh", "karan", "rahul", "karan", "aman"];
+
+    var b = a.includes("karan");
+    document.write(b);
+</script><br> -->
+
+    <!---- includes() [2] ---->
+    <!-- <script>
+    var a = ["haresh", "karan", "rahul", "karan", "aman"];
+
+    var b = a.includes("Karan");
+    document.write(b);
+</script><br> -->
+
+    <!---- includes() [3] ---->
+    <!-- <script>
+    var a = ["haresh", "karan", "rahul", "karan", "aman"];
+
+    var b = a.includes("10");
+    document.write(b);
+</script><br> -->
+
+
+
+
+    <!--******************************************
+                some()
+*******************************************-->
+    <!---- some() [1] ---->
+    <!-- <script>
+    var a = [10, 13, 15, 20, 22];
+    var b = a.some(haresh);
+    document.write(b);
+    function haresh (age) {
+        return age >= 20;
+    }
+</script><br> -->
+
+    <!---- some() [2] ---->
+    <!-- <script>
+    var a = [10, 13, 15, 20, 22];
+    var b = a.some(haresh);
+    document.write(b);
+    function haresh (age) {
+        return age <= 9;
+    }
+</script><br> -->
+
+
+
+
+    <!--******************************************
+                every()
+*******************************************-->
+    <!---- every() [1] ---->
+    <!-- <script>
+    var a = [20, 25, 30, 40, 50];
+    var b = a.every(haresh);
+    document.write(b);
+    function haresh (age) {
+        return age >= 15;
+    }
+</script><br> -->
+
+    <!---- every() [2] ---->
+    <!-- <script>
+    var a = [20, 25, 30, 40, 50];
+    var b = a.every(haresh);
+    document.write(b);
+    function haresh (age) {
+        return age >= 25;
+    }
+</script><br> -->
+
+
+
+
+    <!--******************************************
+                find()
+*******************************************-->
+    <!---- find() ---->
+    <!-- <script>
+    var a = [20, 25, 30, 40, 50];
+    var b = a.find(haresh);
+    document.write(b);
+    function haresh (age) {
+        return age >= 18;
+    }
+</script><br> -->
+
+
+
+
+    <!--******************************************
+                findIndex()
+*******************************************-->
+    <!---- findIndex() ---->
+    <!-- <script>
+    var a = [20, 25, 30, 40, 50];
+    var b = a.findIndex(haresh);
+    document.write(b);
+    function haresh (age) {
+        return age >= 35;
+    }
+</script><br> -->
+
+
+
+
+    <!--******************************************
+                filter()
+*******************************************-->
+    <!---- filter() [1] ---->
+    <!-- <script>
+    var a = [20, 25, 30, 40, 50, 60];
+    var b = a.filter(haresh);
+    document.write(b);
+    function haresh (age) {
+        return age >= 30;
+    }
+</script><br> -->
+
+
+
+
+
+
+    <!--******************************************
+                toString()
+*******************************************-->
+    <!---- toString() ---->
+    <!-- <script>
+    var a = ["haresh", "karan", "rahul", "karan", "aman"];
+        a.toString();
+    document.write(a);
+</script><br> -->
+
+
+
+
+    <!--******************************************
+                valueOf()
+*******************************************-->
+    <!---- toString() ---->
+    <!-- <script>
+    var a = ["haresh", "karan", "rahul", "aman"];
+    document.write(a.valueOf());
+</script><br> -->
+
+
+
+
+    <!--******************************************
+                fill()
+*******************************************-->
+    <!---- fill() [1] ---->
+    <!-- <script>
+    var a = ["haresh", "karan", "rahul", "aman"];
+    a.fill("Ram");
+    document.write(a);
+</script><br> -->
+
+    <!---- fill() [2] ---->
+    <!-- <script>
+    var a = ["10", "12", "15", "18", "20"];
+    a.fill("50");
+    document.write(a);
+</script><br> -->
+
+
+
+
+    <!--******************************************
+                entries()
+*******************************************-->
+    <!---- entries() ---->
+    <!-- <script>
+        var a = ["haresh", "karan", "rahul", "aman"];
+        var b = a.entries();
+        for (var c of b) {
+            document.write(c + "<br>");
+        }
+    </script><br> -->
+
+
+
+
+    <!--******************************************
+                key()
+*******************************************-->
+    <!---- key() ---->
+    <!-- <script>
+        var a = ["haresh", "karan", "rahul", "aman"];
+        var b = a.keys();
+        for (var c of b) {
+            document.write(c + "<br>");
+        }
+    </script><br> -->
+
+
+
+
+    <!--******************************************
+                forEach()
+*******************************************-->
+    <!---- forEach() [external function] ---->
+    <!-- <script>
+    var a = ["haresh", "karan", "aman", "rahul"];
+    var b = a.forEach(haresh);
+
+    function haresh(value, index) {
+        document.write(index + " : " + value + "<br>");
+    }
+</script> -->
+
+    <!---- forEach() [internal function] ---->
+    <!-- <script>
+    var a = ["haresh", "karan", "aman", "rahul"];
+    var b = a.forEach(function(value, index) {
+        document.write(index + " : " + value + "<br>");
+    });
+</script> -->
+
+
+
+
+    <!--******************************************
+                copyWithin()
+*******************************************-->
+    <!---- copyWithin() [external function] ---->
+    <!-- <script>
+    var a = ["haresh", "karan", "aman", "rahul", "ram", "rutvik"];
+    var b = a.copyWithin(1, 2);
+
+    document.write(b);
+</script><br> -->
+
+
+
+
+    <!--******************************************
+                from()
+*******************************************-->
+    <!---- from() ---->
+    <!-- <script>
+    var text = "ABCDEFG"
+    var myArr = Array.from(text);
+    
+    document.write(myArr);
+    </script>
+
+</html> -->
+
+
+
+
+    <!--******************************************
+                map()
+*******************************************-->
+    <!---- map() ---->
+    <!-- <script>
+    var a = [10, 20, 30, 40, 50, 60];
+    var b = a.map(haresh);
+    document.write(b);
+
+    function haresh (test){
+        return test * 10;
+    }
+    </script> -->
+
+
+
+
+    <!--******************************************
+                reduce()
+*******************************************-->
+<!---- reduce() [going left-to-tight] ---->
+    <!-- <script>
+        var a = [175, 50, 25, 40];
+        document.write(a.reduce(myFunc));
+
+        function myFunc(total, num) {
+            return total - num;
+        }
+    </script> -->
+
+
+
+ <!--******************************************
+                reduceRight()
+*******************************************-->
+<!---- reduce() [going left-to-tight] ---->
+<!-- <script>
+    var a = [175, 50, 25, 40];
+    document.write(a.reduceRight(myFunc));
+
+    function myFunc(total, num) {
+        return total - num;
+    }
+</script> -->
+
+
+
+
+</html>

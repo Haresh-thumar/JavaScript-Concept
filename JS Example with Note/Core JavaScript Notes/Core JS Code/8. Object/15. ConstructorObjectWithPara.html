@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head><title>Geeky Shows</title>
+	</head>
+	<body>
+		<script>
+			function Mobile(model_no){
+				this.model = model_no;
+				this.price = function(){
+					document.write(this.model + " Price Rs.3000 <br>");
+				}
+			}
+			var samsung = new Mobile('Galaxy');
+			var nokia = new Mobile('3310');
+			samsung.price();
+			nokia.price();
+
+		</script>
+	</body>
+</html>
+
+

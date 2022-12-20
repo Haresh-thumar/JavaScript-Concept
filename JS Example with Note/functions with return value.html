@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function with return value</title>
+</head>
+
+<body style="width: 85%; margin: 0 auto; padding-top: 20px;">
+
+    <style>
+        .heading-title {
+            color: rgb(255, 96, 117);
+            font-size: 50px;
+            font-weight: 400;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .div-border {
+            margin-top: 30px;
+        }
+
+        .operator-title {
+            font-size: 24px;
+            color: rgb(37, 26, 192);
+            font-family: sans-serif;
+        }
+
+        .operator-desc {
+            font-size: 16px;
+            margin-top: -15px;
+            color: rgb(95, 95, 95);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .operator-code {
+            font-size: 15px;
+            margin-left: 15px;
+            line-height: 1.5;
+            letter-spacing: 0.5px;
+            color: rgb(76, 150, 235);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .example {
+            font-size: 16px;
+            margin-left: 15px;
+            font-weight: bold;
+            color: rgb(255, 96, 117);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .example-1 {
+            font-size: 15px;
+            margin: 10px 0 -5px 15px;
+            font-weight: bold;
+            color: rgb(40, 184, 4);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .row {
+            width: 100%;
+            display: inline-flex;
+        }
+
+        .col-2 {
+            width: 20%;
+            height: auto;
+            float: left;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .col-3 {
+            width: 33%;
+            height: auto;
+            float: left;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .col-5 {
+            width: 50%;
+            height: auto;
+            float: left;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .output {
+            font-size: 16px;
+            margin-left: 15px;
+            color: rgb(95, 95, 95);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .red-pink {
+            color: rgb(255, 82, 177);
+            font-weight: 600;
+        }
+        .violate {
+            color: rgb(181, 22, 255);
+            font-weight: 600;
+        }
+        .gray {
+            color: rgb(82, 82, 82);
+            font-weight: 600;
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+    <!-- type of Logical operators -->
+    <!--==============================-->
+
+    <h1 class="heading-title">* function with return value *</h1>
+    <p class="operator-desc">- એક function ની અંદર parameter + parameter property ની value pass કરીને function ની અંદર એક variable declair કરીને parameter ની property ને concatination કરીને નીચે તે variable ને return કરે છે. function ના parameter ની value નીચે declair કરેલા variable માં store થાય છે, અને તે variable ની value function માં return(store) થાય છે, અને તે function નીચે એક variable માં declair કરાવીને parameter ની value update કરીએ તેને print કરીને output show થાય છે.</p>
+    <br><br>
+
+
+
+    <!--==================== structure =======================-->
+    <div class="div-border">
+        <h4 class="operator-title">* function with return value structure :- *</h4>
+        <div class="row">
+            <!---------------------------->
+            <div class="col-5">
+                <p class="operator-code">
+                    function functionName(parameter1, parameter2) {<br>
+                        &nbsp;&nbsp;&nbsp;variable = parameter1 + " " + parameter2;<br>
+                        &nbsp;&nbsp;&nbsp;return variable<br>
+                    }<br>
+
+                    var fn = functionName(argument1, argument2);<br>
+                    &nbsp;&nbsp;&nbsp;document.write(fn);<br>  
+                </p>
+            </div>
+            <!---------------------------->
+        </div>
+    </div>
+    <br>
+
+
+
+     <!--==================== Operator-1 =======================-->
+     <div class="div-border">
+        <h4 class="operator-title">(1) Parameter with set default value :-</h4>
+        <div class="row">
+            <!---------------------------->
+            <div class="col-3">
+                <p class="example">(Example - 1) :-</p>
+                <p class="operator-code">
+                    function <span class="red-pink">abc</span>(fname ="value1", lname ="value2") {<br>
+                        &nbsp;&nbsp;&nbsp;var <span class="gray">a</span> = "hello" + fname + "" + lname;<br>
+                        &nbsp;&nbsp;&nbsp;return <span class="gray">a</span>;<br>
+                    }<br><br>
+
+                    var <span class="violate">fn</span> = <span class="red-pink">abc</span>("value3", "value4");<br>
+                    &nbsp;&nbsp;&nbsp;document.write(<span class="violate">fn</span>);<br>                    
+                    
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">hello value3 value4</p>
+            </div>
+            <!---------------------------->
+            <div class="col-3">
+                <p class="example">(Example - 2) :-</p>
+                <p class="operator-code">
+                    function <span class="red-pink">abc</span>(fname ="value1", lname ="value2") {<br>
+                        &nbsp;&nbsp;&nbsp;var <span class="gray">a</span> = "hello" + fname + "" + lname;<br>
+                        &nbsp;&nbsp;&nbsp;return <span class="gray">a</span>;<br>
+                    }<br><br>
+
+                    var <span class="violate">fn</span> = <span class="red-pink">abc</span>(three = "value3", four = "value4");<br>
+                    &nbsp;&nbsp;&nbsp;document.write(<span class="violate">fn</span>);<br>                    
+                    
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">hello value3 value4</p>
+            </div>
+            <!---------------------------->
+            <div class="col-3">
+                <p class="example">(Example - 3) :-</p>
+                <p class="operator-code">
+                    function <span class="red-pink">abc</span>(fname ="value1", lname ="value2") {<br>
+                        &nbsp;&nbsp;&nbsp;var <span class="gray">a</span> = "hello" + fname + "" + lname;<br>
+                        &nbsp;&nbsp;&nbsp;return <span class="gray">a</span>;<br>
+                    }<br><br>
+
+                    var <span class="violate">fn</span> = <span class="red-pink">abc</span>();<br>
+                    &nbsp;&nbsp;&nbsp;document.write(<span class="violate">fn</span>);<br>                    
+                    
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">hello value1 value2</p>
+            </div>
+            <!---------------------------->
+        </div>
+        <!--=====================-->
+        <div class="row">
+            <!---------------------------->
+            <div class="col-3">
+                <p class="example">(Example - 4) :-</p>
+                <p class="operator-code">
+                    function <span class="red-pink">abc</span>(fname, lname) {<br>
+                        &nbsp;&nbsp;&nbsp;var <span class="gray">a</span> = "hello" + fname + "" + lname;<br>
+                        &nbsp;&nbsp;&nbsp;return <span class="gray">a</span>;<br>
+                    }<br><br>
+
+                    var <span class="violate">fn</span> = <span class="red-pink">abc</span>();<br>
+                    &nbsp;&nbsp;&nbsp;document.write(<span class="violate">fn</span>);<br>                    
+                    
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">hello undefined undefined</p>
+            </div>
+            <!---------------------------->
+        </div>
+    </div>
+    <br>
+
+
+    <!--==================== Operator-2 =======================-->
+    <div class="div-border">
+        <h4 class="operator-title">(2) Make a Formula Calculate With Return Value :-</h4>
+        <p class="operator-desc">-પહેલા function ની અંદર ૩ parameter pass કરીને function ની અંદર એક variable declair કરીને ઉપરના parameter ને concatination કરીને નીચે તે variable ને return કરાવી દીધો. બીજા function માં એક parameter લઇ function ની અંદર એક variable માં ઉપરનો parameter pass કરીને તેને જેટલા mark હતા એની સાથે parameter ને divide(/) કરીને તેને 100 સાથે multiplication(ગુણાકાર) કરી તેને concatination કરી % ની sign use કરી જેથી તે output માં number ની પાછળ % print કરશે, અને તે variable ને તે જ function માં print કરાવી નીચે બીજો એક variable લઇ તેમાં function call કરાવીને તેમાં argument pass કરાવી, પછી એક second function લઇ તેમાં ઉપરના variable ને function માં call કરાવી દીધો.</p>
+        <div class="row">
+            <!---------------------------->
+            <div class="col-5">
+                <p class="operator-code">
+                    function <span class="red-pink">sum</span>(math, eng, sci) {<br>
+                        &nbsp;&nbsp;&nbsp;var <span class="gray">i</span> = math + eng + sci;<br>
+                        &nbsp;&nbsp;&nbsp;return <span class="gray">i</span>;<br>
+                    }<br><br>
+
+                    function <span class="red-pink">percentage</span>(tt) {<br>
+                        &nbsp;&nbsp;&nbsp;var <span class="gray">per</span> = tt/300 * 100 + " %";<br>
+                        &nbsp;&nbsp;&nbsp;document.write(<span class="gray">per</span>);<br>
+                    }<br><br>
+
+                    var <span class="violate">total</span> = <span class="red-pink">sum</span>(63,25,50);<br>
+                    &nbsp;&nbsp;&nbsp;percentage(<span class="violate">total</span>);<br>                    
+                    
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">46 %</p>
+            </div>
+            <!---------------------------->
+        </div>
+    </div>
+    <br>
+
+
+
+  
+
+
+
+    <!-- <script>
+        function fun1(one = "value1", two = "value2") {
+            var a = "hello " + one + " " + two;
+            return a;
+        }
+
+        var c = fun1("value3", "value4");
+        document.write(c);
+        
+    </script>
+    <br><br> -->
+
+
+
+    <!-- <script>
+        function fun2(three = "value3", four = "value3") {
+            var b = "hello " + three + " " + four;
+            return b;
+        }
+
+        var b = fun2(three = "value5", four = "value6");
+        document.write(b);
+        
+    </script>
+    <br><br> -->
+
+
+
+    <!-- <script>
+        function fun3(five = "value5", six = "value6") {
+            var c = "hello " + five + " " + six;
+            return c;
+        }
+
+        var c = fun3();
+        document.write(c);
+        
+    </script>
+    <br><br> -->
+
+
+
+    <!-- <script>
+        function fun4(seven, eight) {
+            var d = "hello " + seven + " " + eight;
+            return d;
+        }
+
+        var d = fun4();
+        document.write(d);
+        
+    </script>
+    <br><br> -->
+
+    
+
+    <!-- <script>
+        function sum(math, eng, sci){
+            var i = math + eng + sci;
+            return i; 
+        }
+
+        function percentage (tt){
+            var per = tt/300 * 100 + " %";
+            document.write(per);
+        }
+
+        var total = sum(63, 25, 50);
+        percentage(total);
+    </script> -->
+
+
+</html>

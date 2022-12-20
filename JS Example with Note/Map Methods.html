@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Methods</title>
+</head>
+
+<body style="width: 85%; margin: 0 auto; padding-top: 20px;">
+
+
+    <style>
+        .heading-title {
+            color: rgb(255, 96, 117);
+            font-size: 50px;
+            font-weight: 400;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .table-title {
+            color: rgb(4, 133, 105);
+            font-size: 25px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            margin-top: 50px;
+            width: 50%;
+        }
+
+        td,
+        th {
+            border: 1px solid rgb(195, 195, 195);
+            text-align: left;
+            padding: 10px;
+            padding-left: 25px !important;
+        }
+
+        .div-border {
+            margin-top: 30px;
+        }
+
+        .operator-title {
+            font-size: 24px;
+            color: rgb(37, 26, 192);
+            font-family: sans-serif;
+        }
+
+        .operator-desc {
+            font-size: 16px;
+            margin-top: -15px;
+            color: rgb(95, 95, 95);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .operator-code {
+            font-size: 15px;
+            margin-left: 15px;
+            line-height: 1.5;
+            letter-spacing: 0.5px;
+            color: rgb(76, 150, 235);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .example {
+            font-size: 16px;
+            margin-left: 15px;
+            font-weight: bold;
+            color: rgb(255, 96, 117);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .example-1 {
+            font-size: 15px;
+            margin: 10px 0 -5px 15px;
+            font-weight: bold;
+            color: rgb(40, 184, 4);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .row {
+            width: 100%;
+            display: inline-flex;
+        }
+
+        .col-2 {
+            width: 20%;
+            height: auto;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .col-3 {
+            width: 30%;
+            height: auto;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .output {
+            font-size: 16px;
+            margin-left: 15px;
+            color: rgb(95, 95, 95);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+
+
+
+
+
+    <!-- type of Arithmetic operators -->
+    <!--==============================-->
+
+    <h1 class="heading-title">* Map Methods *</h1>
+
+
+    <table>
+        <tr>
+            <th class="table-title" colspan="4">Map Methods() List :-</th>
+        </tr>
+        <tr>
+            <td>ceil(x)</td>
+            <td>max(x,y,z...,n)</td>
+            <td>pow(x,y)</td>
+        </tr>
+        <tr>
+            <td>floor(x)</td>
+            <td>min(x,y,z...,n)</td>
+            <td>ramdom()</td>
+        </tr>
+        <tr>
+            <td>round(x)</td>
+            <td>sqrt(x)</td>
+            <td>abs(x)</td>
+        </tr>
+        <tr>
+            <td>trunc(x)</td>
+            <td>cbrt(x)</td>
+            <td>pi()</td>
+        </tr>
+    </table>
+
+
+    <br><br>
+
+
+
+<!--******************************************
+                ceil(x)
+*******************************************-->
+<!-- <script>
+    var a = Math.ceil(1.25);
+    document.write(a);
+</script>
+<br><br>
+
+<script>
+    var a = Math.ceil(-1.25);
+    document.write(a);
+</script>
+<br><br> -->
+
+
+
+<!--******************************************
+                floor(x)
+*******************************************-->
+<!-- <script>
+    var a = Math.floor(1.25);
+    document.write(a);
+</script>
+<br><br>
+
+<script>
+    var a = Math.floor(-1.25);
+    document.write(a);
+</script>
+<br><br> -->
+
+
+
+<!--******************************************
+                round(x)
+*******************************************-->
+<!-- <script>
+    var a = Math.round(2.40);
+    document.write(a);
+</script>
+<br><br>
+
+<script>
+    var a = Math.round(2.50);
+    document.write(a);
+</script>
+<br><br>
+
+<script>
+    var a = Math.round(2.60);
+    document.write(a);
+</script>
+<br><br> -->
+
+
+
+<!--******************************************
+                trunc(x)
+*******************************************-->
+<!-- <script>
+    var a = Math.trunc(2.40);
+    document.write(a);
+</script>
+<br><br>
+
+<script>
+    var a = Math.trunc(5.89);
+    document.write(a);
+</script>
+<br><br>
+
+<script>
+    var a = Math.trunc(8.12);
+    document.write(a);
+</script>
+<br><br> -->
+
+
+
+<!--******************************************
+                max(x,y,z,...n)
+*******************************************-->
+<!-- <script>
+    var a = Math.max(8, 10, 2, 25, 50);
+    document.write(a);
+</script>
+<br><br>
+
+<script>
+    var a = Math.max(-8, -10, -2, -25, -50);
+    document.write(a);
+</script>
+<br><br> -->
+
+
+
+<!--******************************************
+                min(x,y,z,...n)
+*******************************************-->
+<!-- <script>
+    var a = Math.min(8, 10, 2, 25, 50);
+    document.write(a);
+</script>
+<br><br>
+
+<script>
+    var a = Math.min(-8, -10, -2, -25, -50);
+    document.write(a);
+</script>
+<br><br> -->
+
+
+
+<!--******************************************
+                sqrt(x)
+*******************************************-->
+<!-- <script>
+    var a = Math.sqrt(4);
+    document.write(a);
+</script>
+<br><br>
+
+<script>
+    var a = Math.sqrt(16);
+    document.write(a);
+</script>
+<br><br>
+
+<script>
+    var a = Math.sqrt(25);
+    document.write(a);
+</script>
+<br><br>
+
+<script>
+    var a = Math.sqrt(49);
+    document.write(a);
+</script>
+<br><br> -->
+
+
+
+<!--******************************************
+                cbrt(x)
+*******************************************-->
+<!-- <script>
+    var a = Math.cbrt(8);
+    document.write(a);
+</script>
+<br><br>
+
+<script>
+    var a = Math.cbrt(64);
+    document.write(a);
+</script>
+<br><br>
+
+<script>
+    var a = Math.cbrt(125);
+    document.write(a);
+</script>
+<br><br>
+
+<script>
+    var a = Math.cbrt(343);
+    document.write(a);
+</script>
+<br><br> -->
+
+
+
+<!--******************************************
+                pow(x, y)
+*******************************************-->
+<!-- <script>
+    var a = Math.pow(2, 3);
+    document.write(a);
+</script>
+<br><br>
+
+<script>
+    var a = Math.pow(4, 3);
+    document.write(a);
+</script>
+<br><br>
+
+<script>
+    var a = Math.pow(10, 2);
+    document.write(a);
+</script>
+<br><br>
+
+<script>
+    var a = Math.pow(100, 2);
+    document.write(a);
+</script>
+<br><br> -->
+
+
+
+<!--******************************************
+                random()
+*******************************************-->
+<!-- <script>
+    var a = Math.random();
+    document.write(a);
+</script>
+<br><br>
+
+<script>
+    var a = Math.random() * 10;
+    document.write(a);
+</script>
+<br><br>
+
+<script>
+    var a = Math.floor(Math.random() * 10);
+    document.write(a);
+</script>
+<br><br> -->
+
+
+
+<!--******************************************
+                abs()
+*******************************************-->
+<!-- <script>
+    var a = Math.abs(5.25);
+    document.write(a);
+</script>
+<br><br>
+
+<script>
+    var a = Math.abs(-5.25);
+    document.write(a);
+</script>
+<br><br>
+
+<script>
+    var a = Math.abs(null);
+    document.write(a);
+</script>
+<br><br>
+
+<script>
+    var a = Math.abs("hello");
+    document.write(a);
+</script>
+<br><br> -->
+
+
+
+<!--******************************************
+                PI()
+*******************************************-->
+<!-- <script>
+    var a = Math.PI;
+    document.write(a);
+</script>
+<br><br> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

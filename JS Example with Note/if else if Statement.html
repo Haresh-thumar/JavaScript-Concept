@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if / else / if statement</title>
+</head>
+
+<body style="width: 85%; margin: 0 auto; padding-top: 20px;">
+
+    <style>
+        .heading-title {
+            color: rgb(255, 96, 117);
+            font-size: 50px;
+            font-weight: 400;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .table-title {
+            color: rgb(4, 133, 105);
+            font-size: 25px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            margin-top: 50px;
+            width: 50%;
+        }
+
+        td,
+        th {
+            border: 1px solid rgb(195, 195, 195);
+            text-align: left;
+            padding: 10px;
+            padding-left: 25px !important;
+        }
+
+        .div-border {
+            margin-top: 30px;
+        }
+
+        .operator-title {
+            font-size: 24px;
+            color: rgb(37, 26, 192);
+            font-family: sans-serif;
+        }
+
+        .operator-desc {
+            font-size: 16px;
+            margin-top: -15px;
+            color: rgb(95, 95, 95);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .operator-code {
+            font-size: 15px;
+            margin-left: 15px;
+            line-height: 1.5;
+            letter-spacing: 0.5px;
+            color: rgb(76, 150, 235);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .example {
+            font-size: 16px;
+            margin-left: 15px;
+            font-weight: bold;
+            color: rgb(255, 96, 117);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .example-1 {
+            font-size: 15px;
+            margin: 10px 0 -5px 15px;
+            font-weight: bold;
+            color: rgb(40, 184, 4);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .row {
+            width: 100%;
+            display: inline-flex;
+        }
+
+        .col-2 {
+            width: 20%;
+            height: auto;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .col-3 {
+            width: 30%;
+            height: auto;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .col-5 {
+            width: 50%;
+            height: auto;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .output {
+            font-size: 16px;
+            margin-left: 15px;
+            color: rgb(95, 95, 95);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- type of Logical operators -->
+    <!--==============================-->
+
+    <h1 class="heading-title">* if / else / if statement *</h1>
+    <p class="operator-desc">- if / else / if statement માં multiple condition check કરી શકાય છે.</p>
+
+    <br>
+    <br>
+
+
+
+
+
+
+    <!--==================== Operator-1 =======================-->
+    <div class="div-border">
+        <h4 class="operator-title">(1) Using Camparison Operator (Check Greater Than value & Less Than value) :-</h4>
+        <p class="operator-desc">- First Condition 75 > 30... 75 is greater than to 30...</p>
+        <p class="operator-desc">- Second Condition 30 < 75... 30 is small than to 75...</p>
+        <div class="row">
+            <!---------------------------->
+            <div class="col-3">
+                <p class="example">(Example - 1) :-</p>
+                <p class="operator-code">
+                    var x = 75;<br><br>
+
+                    if (per >= 80 && per <= 100) {<br>
+                        &nbsp;&nbsp;document.writ("x is merit");<br>
+                    }<br>
+                    else if(per >= 60 && per < 79) {<br>
+                        &nbsp;&nbsp;document.write("x is 1st division");<br>
+                    }<br>
+                    else if(per >= 45 && per < 59){<br>
+                        &nbsp;&nbsp;document.write("x is 2st division");<br>
+                    }<br>
+                    else if(per >= 33 && per < 44){<br>
+                        &nbsp;&nbsp;document.write("x is 3st division");<br>
+                    }<br>
+                    else if(per < 33){<br>
+                        &nbsp;&nbsp;document.write("you are fail");<br>
+                    }<br>
+                    else {<br>
+                        &nbsp;&nbsp;document.write("enter valid input");<br>
+                    }
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">x is 1st division</p>
+            </div>
+            <!---------------------------->
+            <div class="col-3">
+                <p class="example">(Example - 2) :-</p>
+                <p class="operator-code">
+                    var x = prompt();<br><br>
+
+                    if (per >= 80 && per <= 100) {<br>
+                        &nbsp;&nbsp;document.write("x is merit");<br>
+                    }<br>
+                    else if(per >= 60 && per < 79) {<br>
+                        &nbsp;&nbsp;document.write("x is 1st division");<br>
+                    }<br>
+                    else if(per >= 45 && per < 59){<br>
+                        &nbsp;&nbsp;document.write("x is 2st division");<br>
+                    }<br>
+                    else if(per >= 33 && per < 44){<br>
+                        &nbsp;&nbsp;document.write("x is 3st division");<br>
+                    }<br>
+                    else if(per < 33){<br>
+                        &nbsp;&nbsp;document.write("you are fail");<br>
+                    }<br>
+                    else {<br>
+                        &nbsp;&nbsp;document.write("enter valid input");<br>
+                    }
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">javascript માં variable ની value માં prompt() લખવાથી બ્રાઉઝરમાં એલર્ટમાં input textbox આવી  જાય છે. અને ત્યાંથી જ value change કરીને output જોઈ શકાય છે, custom static value લખવી નથી પડતી...</p>
+            </div>
+            <!---------------------------->
+        </div>
+    </div>
+    <br>
+
+
+  
+
+
+
+
+
+
+    <script>
+        var per = 75;
+
+        if (per >= 80 && per <= 100) {
+            document.write("x is merit");
+        }
+        else if(per >= 60 && per < 79) {
+            document.write("x is 1st division");
+        }
+        else if(per >= 45 && per < 59){
+            document.write("x is 2st division");
+        }
+        else if(per >= 33 && per < 44){
+            document.write("x is 3st division");
+        }
+        else if(per < 33){
+            document.write("you are fail");
+        }
+        else {
+            document.write("enter valid input");
+        }
+    </script>
+    <br>
+
+
+   <script>
+       var a = 50;
+       document.write(a);
+       var a = 80;
+       document.write(a);
+   </script>
+
+</html>

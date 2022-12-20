@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array-2</title>
+</head>
+
+<body style="width: 85%; margin: 0 auto; padding-top: 20px;">
+
+    <style>
+        .heading-title {
+            color: rgb(255, 96, 117);
+            font-size: 50px;
+            font-weight: 400;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .table-title {
+            color: rgb(4, 133, 105);
+            font-size: 25px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            margin-top: 50px;
+            width: 30%;
+        }
+
+        td,
+        th {
+            border: 1px solid rgb(195, 195, 195);
+            text-align: left;
+            padding: 10px;
+            padding-left: 25px !important;
+        }
+
+        .div-border {
+            margin-top: 30px;
+        }
+
+        .operator-title {
+            font-size: 24px;
+            color: rgb(37, 26, 192);
+            font-family: sans-serif;
+        }
+
+        .operator-desc {
+            font-size: 16px;
+            margin-top: -15px;
+            color: rgb(95, 95, 95);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .operator-code {
+            font-size: 15px;
+            margin-left: 15px;
+            line-height: 1.5;
+            letter-spacing: 0.5px;
+            color: rgb(76, 150, 235);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .example {
+            font-size: 16px;
+            margin-left: 15px;
+            font-weight: bold;
+            color: rgb(255, 96, 117);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .example-1 {
+            font-size: 15px;
+            margin: 10px 0 -5px 15px;
+            font-weight: bold;
+            color: rgb(40, 184, 4);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .row {
+            width: 100%;
+            display: inline-flex;
+        }
+
+        .col-2 {
+            width: 20%;
+            height: auto;
+            float: left;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .col-3 {
+            width: 33%;
+            height: auto;
+            float: left;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .col-5 {
+            width: 50%;
+            height: auto;
+            float: left;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .output {
+            font-size: 16px;
+            margin-left: 15px;
+            color: rgb(95, 95, 95);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .red-pink {
+            color: rgb(255, 82, 177);
+            font-weight: 600;
+        }
+
+        .violate {
+            color: rgb(181, 22, 255);
+            font-weight: 600;
+        }
+
+        .gray {
+            color: rgb(82, 82, 82);
+            font-weight: 600;
+        }
+    </style>
+
+
+
+
+
+
+    <!-- Introduction of Array -->
+    <!--==============================-->
+
+    <h1 class="heading-title">* Another Way to Create Array *</h1>
+    <p class="output">- New Array() Means કે એક Variable, Array ની નવી Bydefault Value Set કરાવીએ છીએ.</p>
+
+<br>
+
+
+    <!--==================== Create Fix & multiple Get Data Type in Array =======================-->
+    <div class="div-border">
+        <h4 class="operator-title">* Create Fix & multiple Get Data Type in Array :-</h4>
+        <div class="row">
+            <!---------------------------->
+            <div class="col-3">
+                <p class="example">(Example - 1) :-</p>
+                <p class="output">Create Fix Get Data Type in Array </p>
+                <p class="operator-code">
+                    var abc = new Array(4);<br>
+                    abc[0] = 10;<br>
+                    abc[1] = "haresh";<br>
+                    abc[2] = true;<br>
+                    abc[3] = null;<br><br>
+
+                    for (a = 0; a <= 4; a++){<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;document.write(abc[a] + "<<span>br></span>");<br>
+                    }<br>
+
+                    <p class="example-1">(output) :-</p>
+                    <p class="output">10</p>
+                    <p class="output">haresh</p>
+                    <p class="output">true</p>
+                    <p class="output">null</p>
+                </p>
+            </div>
+            <!---------------------------->
+            <div class="col-3">
+                <p class="example">(Example - 2) :-</p>
+                <p class="output">Create Multiple Value in Array </p>
+                <p class="operator-code">
+                    var abc = new Array();<br>
+                    abc[0] = 10;<br>
+                    abc[1] = "haresh";<br>
+                    abc[2] = true;<br>
+                    abc[3] = false;<br>
+                    abc[4] = null;<br><br>
+
+                    for (a = 0; a <= 5; a++){<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;document.write(abc[a] + "<<span>br></span>");<br>
+                    }<br>
+
+                    <p class="example-1">(output) :-</p>
+                    <p class="output">10</p>
+                    <p class="output">haresh</p>
+                    <p class="output">true</p>
+                    <p class="output">false</p>
+                    <p class="output">null</p>
+                </p>
+            </div>
+            <!---------------------------->
+        </div>
+    </div>
+    <br>
+
+
+
+
+    <!--==================== User Enter & Get Data Type Using Prompt Box in Array =======================-->
+    <div class="div-border">
+        <h4 class="operator-title">* User Enter & Get Data Type Using Prompt Box in Array :-</h4>
+        <div class="row">
+            <!---------------------------->
+            <div class="col-5">
+                <p class="example">(Example - 1) :-</p>
+                <p class="operator-code">
+                    var abc = new Array(4);<br><br>
+
+                    for (a = 0; a < 4; a++){<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;abc[a] = prompt("Enter The Value");<br>
+                    }<br><br>
+
+                    for (b = 0; b < 4; b++){<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;document.write(abc[b] + "<<span>br></span>");<br>
+                    }<br>
+
+                    <p class="example-1">(output) :-</p>
+                    <p class="output">જયારે page reload થશે ત્યારે એક prompt box ખુલશે એમાં ત્રણ વાર loop ફરે છે એટલે ૩ વાર value enter કરવાની રહેશે. value 3 વાર add થયા પછી તે display કરી દેશે. </p>
+                </p>
+            </div>
+            <!---------------------------->
+        </div>
+    </div>
+    <br>
+
+
+
+
+
+
+
+
+    <!-- <script>
+        var haresh = new Array(3);
+        haresh[0] = 10;
+        haresh[1] = "haresh";
+        haresh[2] = true;
+
+        for(var a = 0; a < 3; a++){
+            document.write(haresh[a] + "<br>");
+        }
+    </script>
+    <br>
+
+
+    <script>
+        var haresh = new Array();
+        haresh[0] = 10;
+        haresh[1] = "haresh";
+        haresh[2] = "thumar";
+        haresh[3] = true;
+        haresh[4] = null;
+
+        for(var a = 0; a < 5; a++){
+            document.write(haresh[a] + "<br>");
+        }
+    </script>
+    <br> -->
+
+
+
+
+    <!-- <script>
+        var haresh = new Array(4);
+
+        for(var a = 0; a < 4; a++){
+            haresh[a] = prompt("Enter The Value : ");
+        }
+
+        for(var b = 0; b < 4; b++){
+            document.write(haresh[b] + "<br>");
+        }
+    </script>
+    <br> -->
+
+
+
+
+    
+
+
+</html>

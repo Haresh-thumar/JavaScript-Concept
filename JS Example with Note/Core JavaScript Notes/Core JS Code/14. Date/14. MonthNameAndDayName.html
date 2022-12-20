@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head><title>Geeky Shows</title>
+	</head>
+	<body>
+		<script> 
+			// Day as Number 1 - 31 
+			// Hours as Number 0 - 23
+			// Month as Number 0 - 11 Ex- 0 = Jan
+			// Week Day as Number 0 - 6 Ex- 0 = Sun
+			var tarikh = new Date();
+			var month = tarikh.getMonth();
+			var day = tarikh.getDay();
+			document.write(getMonthName(month) + "<br>");
+			document.write(getDayName(day) + "<br>");
+			
+			function getMonthName(monthnumber){
+				var monthname = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+				return monthname[monthnumber];
+			
+			}
+			
+			function getDayName(daynumber){
+				var dayname = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+				return dayname[daynumber];
+			
+			}
+			
+
+			
+			
+		</script>
+	</body>
+</html>

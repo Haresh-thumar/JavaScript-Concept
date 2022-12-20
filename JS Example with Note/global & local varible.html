@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>global & local varible</title>
+</head>
+
+<body style="width: 85%; margin: 0 auto; padding-top: 20px;">
+
+    <style>
+        .heading-title {
+            color: rgb(255, 96, 117);
+            font-size: 50px;
+            font-weight: 400;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .div-border {
+            margin-top: 30px;
+        }
+
+        .operator-title {
+            font-size: 24px;
+            color: rgb(37, 26, 192);
+            font-family: sans-serif;
+        }
+
+        .operator-desc {
+            font-size: 16px;
+            margin-top: -15px;
+            color: rgb(95, 95, 95);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .operator-code {
+            font-size: 15px;
+            margin-left: 15px;
+            line-height: 1.5;
+            letter-spacing: 0.5px;
+            color: rgb(76, 150, 235);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .example {
+            font-size: 16px;
+            margin-left: 15px;
+            font-weight: bold;
+            color: rgb(255, 96, 117);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .example-1 {
+            font-size: 15px;
+            margin: 10px 0 -5px 15px;
+            font-weight: bold;
+            color: rgb(40, 184, 4);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .row {
+            width: 100%;
+            display: inline-flex;
+        }
+
+        .col-2 {
+            width: 20%;
+            height: auto;
+            float: left;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .col-3 {
+            width: 33%;
+            height: auto;
+            float: left;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .col-5 {
+            width: 50%;
+            height: auto;
+            float: left;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .output {
+            font-size: 16px;
+            margin-left: 15px;
+            color: rgb(95, 95, 95);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .red-pink {
+            color: rgb(255, 82, 177);
+            font-weight: 600;
+        }
+
+        .violate {
+            color: rgb(181, 22, 255);
+            font-weight: 600;
+        }
+
+        .gray {
+            color: rgb(82, 82, 82);
+            font-weight: 600;
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+    <!-- type of Logical operators -->
+    <!--==============================-->
+
+    <h1 class="heading-title">* global & local varible *</h1>
+    <br><br>
+
+
+    <h4 class="operator-title">=> Local Variable :- </h4>
+    <p class="operator-desc">- global variable નો scope અંદર પણ છે અને બહાર પણ છે. global variable ની અંદર પણ work કરે
+        છે, અને બહાર પણ work કરે છે. </p>
+
+    <h4 class="operator-title">=> Global Variable :- </h4>
+    <p class="operator-desc">- local variable નો scope અંદર સુધી જ છે. local variable અંદર જ work કરે છે, બહાર general
+        work નથી કરતો.</p>
+    <br><br>
+
+
+    <!--==================== structure =======================-->
+    <div class="div-border">
+        <h4 class="operator-title">Global & Local Variable</h4>
+        <div class="row">
+            <!---------------------------->
+            <div class="col-2">
+                <p class="example">(Example - 1) :-</p>
+                <p class="operator-code">
+                    var a = 10;<br>
+                    function hello() {<br>
+                    &nbsp;&nbsp;&nbsp;document.write(a);<br>
+                    }<br>
+
+                    hello();<br>
+                <p class="example-1">(output) :-</p>
+                <p class="output">10</p>
+                </p>
+            </div>
+            <!---------------------------->
+            <div class="col-2">
+                <p class="example">(Example - 2) :-</p>
+                <p class="operator-code">
+                    var a = "hello google";<br>
+                    function hello() {<br>
+                    &nbsp;&nbsp;&nbsp;document.write(a);<br>
+                    }<br>
+
+                    hello();<br>
+                    &nbsp;&nbsp;&nbsp;document.write(a);
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">hello google<br> hello google</p>
+            </div>
+            <!---------------------------->
+            <div class="col-3">
+                <p class="example">(Example - 3) :-</p>
+                <p class="operator-code">
+                    function hello() {<br>
+                    &nbsp;&nbsp;&nbsp;document.write(a);<br>
+                    }<br>
+
+                    hello();<br>
+                    &nbsp;&nbsp;&nbsp;document.write(a);
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">Uncaught ReferenceError: b is not defined</p>
+                <p class="output">- because <b>a</b> variable is not declair in function inside or outside.</p>
+            </div>
+            <!---------------------------->
+            <div class="col-2">
+                <p class="example">(Example - 4) :-</p>
+                <p class="operator-code">
+                    function hello() {<br>
+                    &nbsp;&nbsp;&nbsp;var a = "haresh";<br>
+                    &nbsp;&nbsp;&nbsp;document.write(a);<br>
+                    }<br>
+
+                    hello();<br>
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">haresh</p>
+            </div>
+            <!---------------------------->
+        </div>
+    </div>
+    <br>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var a = 10;
+        function hello() {
+           document.write(a);
+        }
+
+        hello();
+        
+    </script>
+    <br><br>
+
+
+    <script>
+        var a = "hello google";
+
+        function hello() {
+           document.write(a + "<br>");
+        }
+
+        hello();
+        document.write(a);
+        
+    </script>
+    <br><br>
+
+
+    <script>
+        function hello() {
+            var b = "hello google";
+           document.write(b + "<br>");
+        }
+
+        hello();
+        document.write(b);
+        
+    </script>
+    <br><br>
+
+
+    
+
+
+</html>

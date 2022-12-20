@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head><title>Geeky Shows</title>
+	</head>
+	<body>
+		<script>
+			// Default Parameters
+			// null assigned to c
+			function add(a, b, c = null){
+				document.write("A= " + a + "<br>");
+				document.write("B= " + b + "<br>");
+				document.write("C= " + c + "<br>");
+			}
+			
+			add(10, 20);		// 10 20 70
+			add(10, 20, 30);	// 10 20 30
+			add(10);			// 10 undefined 70
+			 
+		</script>
+	</body>
+</html>

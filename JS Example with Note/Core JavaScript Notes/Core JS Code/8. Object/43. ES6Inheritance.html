@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head><title>Geeky Shows</title>
+	</head>
+	<body>
+		<script> 
+			class Father {
+				showFMoney(){
+					return "Father Money <br>";
+				}
+			}
+			class Son extends Father {
+				showSMoney(){
+					return "Son Money <br>";
+				}
+			}
+			
+			class GrandSon extends Son {
+				showGMoney() {
+					return "GrandSon Money";
+				}
+			}
+			var g = new GrandSon();
+			document.write(g.showFMoney());
+			document.write(g.showSMoney());
+			document.write(g.showGMoney());
+			
+
+		</script>
+	</body>
+</html>
+
+

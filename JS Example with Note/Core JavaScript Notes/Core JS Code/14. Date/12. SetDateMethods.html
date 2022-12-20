@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head><title>Geeky Shows</title>
+	</head>
+	<body>
+		<script> 
+			// Day as Number 1 - 31 
+			// Hours as Number 0 - 23
+			// Month as Number 0 - 11 Ex- 0 = Jan
+			// Week Day as Number 0 - 6 Ex- 0 = Sun
+			var tarikh = new Date();
+			document.write(tarikh + "<br>");
+			
+			tarikh.setHours(22);
+			document.write(tarikh + "<br>");
+			
+			tarikh.setMinutes(56);
+			document.write(tarikh + "<br>");
+			
+			tarikh.setSeconds(40);
+			document.write(tarikh + "<br>");
+			
+			tarikh.setDate(26);
+			document.write(tarikh + "<br>");
+			
+			tarikh.setMonth(11);
+			document.write(tarikh + "<br>");
+			
+			tarikh.setFullYear(2022);
+			document.write(tarikh + "<br>");
+			
+			tarikh.setFullYear(2022, 3, 15);
+			document.write(tarikh + "<br>");
+			
+		</script>
+	</body>
+</html>

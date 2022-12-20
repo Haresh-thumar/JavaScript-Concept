@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case Statement</title>
+</head>
+
+<body style="width: 85%; margin: 0 auto; padding-top: 20px;">
+
+    <style>
+        .heading-title {
+            color: rgb(255, 96, 117);
+            font-size: 50px;
+            font-weight: 400;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .div-border {
+            margin-top: 30px;
+        }
+
+        .operator-title {
+            font-size: 24px;
+            color: rgb(37, 26, 192);
+            font-family: sans-serif;
+        }
+
+        .operator-desc {
+            font-size: 16px;
+            margin-top: -15px;
+            color: rgb(95, 95, 95);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .operator-code {
+            font-size: 15px;
+            margin-left: 15px;
+            line-height: 1.5;
+            letter-spacing: 0.5px;
+            color: rgb(76, 150, 235);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .example {
+            font-size: 16px;
+            margin-left: 15px;
+            font-weight: bold;
+            color: rgb(255, 96, 117);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .example-1 {
+            font-size: 15px;
+            margin: 10px 0 -5px 15px;
+            font-weight: bold;
+            color: rgb(40, 184, 4);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .row {
+            width: 100%;
+            display: inline-flex;
+        }
+
+        .col-2 {
+            width: 20%;
+            height: auto;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .col-3 {
+            width: 30%;
+            height: auto;
+            border: 1px solid rgb(228, 227, 227);
+        }
+        .col-6 {
+            width: 40%;
+            height: auto;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .output {
+            font-size: 16px;
+            margin-left: 15px;
+            color: rgb(95, 95, 95);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- type of Arithmetic operators -->
+    <!--==============================-->
+
+    <h1 class="heading-title">* Switch Case Statement *</h1>
+    <p class="operator-desc">- આ switch statement if statement ની જેમ જ work કરે છે, switch case statement માં multiple condition ચેક કરી શકાય છે.</p>
+
+    <br>
+
+
+    <!--==================== Operator-1 =======================-->
+    <div class="div-border">
+        <h4 class="operator-title">(1) Example - 1</h4>
+        <div class="row">
+            <!---------------------------->
+            <div class="col-6">
+                <p class="example">(Example - 1) :-</p>
+                <p class="operator-code">
+                var day = 0;<br><br>
+       
+                switch (day)  {<br>
+                    case  0:<br>
+                        &nbsp;&nbsp;&nbsp;document.write("today is monday");<br>
+                    break;<br>
+
+                    case  1:<br>
+                        &nbsp;&nbsp;&nbsp;document.write("today is tuesday");<br>
+                    break;<br>
+
+                    case  2:<br>
+                        &nbsp;&nbsp;&nbsp;document.write("today is wednesday");<br>
+                    break;<br>
+
+                    case  3:<br>
+                        &nbsp;&nbsp;&nbsp;document.write("today is thursday");<br>
+                    break;<br>
+
+                    case  4:<br>
+                        &nbsp;&nbsp;&nbsp;document.write("today is friday");<br>
+                    break;<br>
+
+                    case  5:<br>
+                        &nbsp;&nbsp;&nbsp;document.write("today is saturday");<br>
+                    break;<br>
+
+                    case  6:<br>
+                        &nbsp;&nbsp;&nbsp;document.write("today is sunday");<br>
+                    break;<br><br>
+
+                    default: <br>
+                        &nbsp;&nbsp;&nbsp;document.write("Enter the valid day");<br>
+                }
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">today is monday</p>
+
+                <b style="color: tomato;">NOTE:</b> <span class="operator-desc">one by one check the condition after print the value...</span>
+            </div>
+            <!---------------------------->
+            <div class="col-6">
+                <p class="example">(Example - 2) :-</p>
+                <p class="operator-code">
+                var day = 0;<br><br>
+       
+                switch (day)  {<br>
+                    case 0:&nbsp;&nbsp; case 1:&nbsp;&nbsp; case 2:<br>
+                        &nbsp;&nbsp;&nbsp;document.write("today is monday");<br>
+                        &nbsp;&nbsp;&nbsp;document.write("today is tuesday");<br>
+                        &nbsp;&nbsp;&nbsp;document.write("today is wednesday");<br>
+                    break;<br>
+
+                    case 3:<br>
+                        &nbsp;&nbsp;&nbsp;document.write("today is thursday");<br>
+                    break;<br>
+
+                    case 4:<br>
+                        &nbsp;&nbsp;&nbsp;document.write("today is friday");<br>
+                    break;<br>
+
+                    case 5:<br>
+                        &nbsp;&nbsp;&nbsp;document.write("today is saturday");<br>
+                    break;<br>
+
+                    case 6:<br>
+                        &nbsp;&nbsp;&nbsp;document.write("today is sunday");<br>
+                    break;<br><br>
+
+                    default: <br>
+                        &nbsp;&nbsp;&nbsp;document.write("Enter the valid day");<br>
+                }
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">today is monday today is tuesday today is wednesday</p>
+
+                <b style="color: tomato;">NOTE:</b> <span class="operator-desc">one time three run condition in first case...</span>
+            </div>
+            <!---------------------------->
+        </div>
+    </div>
+    <br>
+
+
+
+    <!--==================== Operator-2 =======================-->
+    <div class="div-border">
+        <h4 class="operator-title">(2) Example - 2</h4>
+        <div class="row">
+            <!---------------------------->
+            <div class="col-6">
+                <p class="operator-code">
+                    var age = 18;<br><br>
+                    switch (true) {<br>
+                        case  (age >= 15 && age <= 20):
+                            &nbsp;&nbsp;&nbsp;document.write("you are eligible");<br>
+                        break;<br>
+                        case  (age >= 21 && age <= 30):
+                            &nbsp;&nbsp;&nbsp;document.write("you are not eligible");<br>
+                        break;<br>
+                        default: <br>
+                        &nbsp;&nbsp;&nbsp;document.write("enter the valid day");<br>
+                    }
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">you are eligible</p>
+                <b style="color: tomato;">NOTE:</b> <span class="operator-desc">જો true switch case માં value true હશે તો statement બરાબર મળશે...</span>
+            </div>
+            <!---------------------------->
+            <div class="col-6">
+                <p class="operator-code">
+                    var age = 18;<br><br>
+                    switch (false) {<br>
+                        case  (age >= 15 && age <= 20):
+                            &nbsp;&nbsp;&nbsp;document.write("you are eligible");<br>
+                        break;<br>
+                        case  (age >= 21 && age <= 30):
+                            &nbsp;&nbsp;&nbsp;document.write("you are not eligible");<br>
+                        break;<br>
+                        default: <br>
+                        &nbsp;&nbsp;&nbsp;document.write("enter the valid day");<br>
+                    }
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">you are not eligible</p>
+
+                <b style="color: tomato;">NOTE:</b> <span class="operator-desc">જો false switch case માં value true હશે તો statement reverse print કરશે...</span>
+            </div>
+        </div>
+    </div>
+    <br>
+
+
+    
+
+
+
+
+
+
+    <script>
+        // example 1 
+        var day = 0;
+       
+        switch (day)  {
+            case  0:
+                document.write("today is monday");
+            break;
+
+            case  1:
+                document.write("today is tuesday");
+            break;
+
+            case  2:
+                document.write("today is wednesday");
+            break;
+
+            case  3:
+                document.write("today is thursday");
+            break;
+
+            case  4:
+                document.write("today is friday");
+            break;
+
+            case  5:
+                document.write("today is saturday");
+            break;
+
+            case  6:
+                document.write("today is sunday");
+            break;
+
+            default: 
+                document.write("Enter the valid day");
+        }
+    </script>
+    
+    <br>
+    <script>
+        // example 1 
+        var day = 2;
+       
+        switch (day)  {
+            case 0: case 1: case 2:
+                document.write("today is monday");
+                document.write("today is tuesday");
+                document.write("today is wednesday");
+            break;
+
+            case 3:
+                document.write("today is thursday");
+            break;
+
+            case 4:
+                document.write("today is friday");
+            break;
+
+            case 5:
+                document.write("today is saturday");
+            break;
+
+            case 6:
+                document.write("today is sunday");
+            break;
+
+            default: 
+                document.write("Enter the valid day");
+        }
+    </script>
+
+    <br>
+    <script>
+        // example 1 
+        var day = 0;
+    
+        switch (day)  {
+            case 0:
+                document.write("today is monday");
+
+            case 1:
+                document.write("today is tuesday");
+
+            case 2:
+                document.write("today is wednesday");
+
+            case 3:
+                document.write("today is thusday");
+            break;
+
+            case 4:
+                document.write("today is friday");
+            break;
+
+            default: 
+                document.write("Enter the valid day");
+        }
+    </script>
+
+    <br>
+    <script>
+        // example 1 
+        var age = 15;
+    
+        switch (true)  {
+            case (age >= 15 && age <= 20):
+                document.write("you are eligible");
+            break;
+            case (age >= 21 && age <= 30):
+                document.write("you are not eligible");
+            break;
+
+            default: 
+                document.write("enter the valid day");
+        }
+    </script>
+
+    <br>
+    <script>
+        // example 1 
+        var age = 18;
+    
+        switch (false)  {
+            case (age >= 15 && age <= 20):
+                document.write("you are eligible");
+            break;
+            case (age >= 21 && age <= 30):
+                document.write("you are not eligible");
+            break;
+
+            default: 
+                document.write("enter the valid day");
+        }
+    </script>
+
+</html>

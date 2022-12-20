@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Geeky Shows</title>
+</head>
+
+<body>
+    <script>
+        function Mobile(){
+
+        }
+        // Creating a new Object using new keyword
+        var lg = new Mobile();
+        // This will show undefined becoz a is neither defined in the funtion nor in the function's prototype
+        // it first checks if lg object have property a as it doesn't have it so it go to its prototype object pointed by __proto__ and ask him if he has property a as it also doesn't have it so finally we receive undefined. This is how it works behind the browser and JS Engine is the responsible for this task
+        console.log(lg.a);
+        
+    </script>
+</body>
+
+</html>

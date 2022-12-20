@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head><title>Geeky Shows</title>
+	</head>
+	<body>
+	<script>
+		var i = 0;
+		do 
+		{
+			document.write("<strong>Outer Loop </strong>");
+			document.write(i);
+			i++;
+			document.write("<br>");
+			var j = 0;
+			do 
+			{
+				document.write("Inner Loop ");
+				document.write(j);
+				j++;
+				document.write("<br>");
+			} while(j<5);
+		} while(i<3);
+	</script>
+</body>
+</html>

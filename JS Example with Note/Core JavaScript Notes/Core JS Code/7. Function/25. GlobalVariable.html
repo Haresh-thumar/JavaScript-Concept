@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head><title>Geeky Shows</title>
+	</head>
+	<body>
+		<script>
+			// accessible from anywhere 
+			var i = "I am global Variable";	// Global Variable
+			
+			function show(){
+				document.write(i + "<br>");	// accessible in function
+			}
+			show();
+			
+			document.write(i + "<br>");	// accessible outside
+			
+			function disp(){
+				document.write(i + "<br>");	// accessible in function
+			}
+			disp();
+			
+			if(true){
+				document.write(i + "<br>");	// accessible in block
+			}
+		</script>
+	</body>
+</html>
+
+

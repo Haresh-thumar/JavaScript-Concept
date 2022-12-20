@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Geeky Shows</title>
+</head>
+
+<body>
+    <script>
+        function Mobile(){
+            this.a = 20;
+        }
+         // This property is defined in Function's Prototype Object so all Objects will have access to this property and this is just one single property for all objects. It doesn't make copies for objects separately. usually we defined methods as a prototype method member rather than Prototype variable memeber
+         Mobile.prototype.a = 10;   
+
+        // Creating a new Object using new keyword
+        var lg = new Mobile();
+
+        // It first checks if lg object have property a as it has so it will return 10 and will stop checking further in the prototype object
+        console.log(lg.a);      // 20
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Const Variable with Array & Objects</title>
+</head>
+
+<body style="width: 85%; margin: 0 auto; padding-top: 20px;">
+
+
+
+
+    <h1 style="text-decoration: underline;">Const Variable with Array & Objects</h1>
+    <p>- આખા array કે object માં એક સાથે બધી value change નથી કરી શકાતી, આવી રીતે એક એક index કે object ની property
+        value ને specific રીતે જ change કરવી પડે છે.</p>
+
+    <br><br><br><br>
+
+
+
+    <script>
+        /*-------- change & assign value in Array --------*/
+        var a = [10,20,30];
+
+        a[0] = 11;
+        a[1] = 22;
+        a[2] = 33;
+
+        console.log(a);
+    </script>
+
+
+
+
+    <script>
+        /*-------- for loop with object --------*/
+        var a = {
+            name: 'ram',
+            age: 18
+        };
+
+        a.name = 'haresh';
+        a.age = 30
+
+        console.log(a);
+    </script>
+
+
+
+
+
+</body>
+
+</html>

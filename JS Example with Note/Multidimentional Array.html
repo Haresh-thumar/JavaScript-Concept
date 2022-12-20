@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multidimentional Array</title>
+</head>
+
+<body style="width: 85%; margin: 0 auto; padding-top: 20px;">
+
+    <style>
+        .heading-title {
+            color: rgb(255, 96, 117);
+            font-size: 50px;
+            font-weight: 400;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .table-title {
+            color: rgb(4, 133, 105);
+            font-size: 25px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            margin-top: 50px;
+            width: 30%;
+        }
+
+        td,
+        th {
+            border: 1px solid rgb(195, 195, 195);
+            text-align: left;
+            padding: 10px;
+            padding-left: 25px !important;
+        }
+
+        .div-border {
+            margin-top: 30px;
+        }
+
+        .operator-title {
+            font-size: 24px;
+            color: rgb(37, 26, 192);
+            font-family: sans-serif;
+        }
+
+        .operator-desc {
+            font-size: 16px;
+            margin-top: -15px;
+            color: rgb(95, 95, 95);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .operator-code {
+            font-size: 15px;
+            margin-left: 15px;
+            line-height: 1.5;
+            letter-spacing: 0.5px;
+            color: rgb(76, 150, 235);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .example {
+            font-size: 16px;
+            margin-left: 15px;
+            font-weight: bold;
+            color: rgb(255, 96, 117);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .example-1 {
+            font-size: 15px;
+            margin: 10px 0 -5px 15px;
+            font-weight: bold;
+            color: rgb(40, 184, 4);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .row {
+            width: 100%;
+            display: inline-flex;
+        }
+
+        .col-2 {
+            width: 25%;
+            height: auto;
+            float: left;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .col-3 {
+            width: 33%;
+            max-width: 100%;
+            height: auto;
+            float: left;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .col-5 {
+            width: 50%;
+            height: auto;
+            max-width: 100%;
+            float: left;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .output {
+            font-size: 16px;
+            margin-left: 15px;
+            color: rgb(95, 95, 95);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .red-pink {
+            color: rgb(255, 82, 177);
+            font-weight: 600;
+        }
+
+        .violate {
+            color: rgb(181, 22, 255);
+            font-weight: 600;
+        }
+
+        .gray {
+            color: rgb(82, 82, 82);
+            font-weight: 600;
+        }
+    </style>
+
+
+
+
+
+
+    <!-- Introduction of Array -->
+    <!--==============================-->
+
+    <h1 class="heading-title">* Multidimentional Array *</h1>
+    <p class="output">- Array of Array માં outer Array ની index પણ 0 થી start થાય છે.</p>
+
+    <br>
+
+
+    <table>
+        <tr>
+            <th class="table-title" colspan="4"> Array of Array :-</th>
+        </tr>
+        <tr>
+            <th style="color: crimson;">Name</th>
+            <th style="color: crimson;">Age</th>
+            <th style="color: crimson;">Gender</th>
+            <th style="color: crimson;">Class</th>
+        </tr>
+        <tr>
+            <td>harry</td>
+            <td>18</td>
+            <td>male</td>
+            <td>B.Com</td>
+        </tr>
+        <tr>
+            <td>sunny</td>
+            <td>19</td>
+            <td>male</td>
+            <td>BCA</td>
+        </tr>
+        <tr>
+            <td>sarah</td>
+            <td>18</td>
+            <td>female</td>
+            <td>BCA</td>
+        </tr>
+        <tr>
+            <td>top</td>
+            <td>17</td>
+            <td>male</td>
+            <td>B.A.</td>
+        </tr>
+    </table>
+
+
+
+
+
+
+
+    <!--==================== simple array of array =======================-->
+    <div class="div-border">
+        <h4 class="operator-title">* simple array of array :-</h4>
+        <div class="row">
+            <!---------------------------->
+            <div class="col-5">
+                <p class="example">(Example - 1) :-</p>
+                <p class="output">simple methode to print all value in array.</p>
+                <p class="operator-code">
+                    var haresh = [<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["harry", 18, "male", "B.Com"],<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["sunny", 19, "male", "BCA"],<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["sarah", 18, "female", "BCA"],<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["tom", 17, "male", "B.A."],<br>
+                    ];<br><br>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;document.write(haresh);<br>
+
+                <p class="example-1">(output) :-</p>
+                <p class="output" style="width: 200px!important;">harry,18,male,B.Com,sunny,19,male,BCA,</p>
+                <p class="output" style="width: 200px!important;">sarah,18,female,BCA,tom,17,male,B.A.</p>
+            </div>
+            <!---------------------------->
+            <div class="col-3   ">
+                <p class="example">(Example - 1) :-</p>
+                <p class="output">simple methode to print particular one row in array.</p>
+                <p class="operator-code">
+                    var haresh = [<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["harry", 18, "male", "B.Com"],<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["sunny", 19, "male", "BCA"],<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["sarah", 18, "female", "BCA"],<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["tom", 17, "male", "B.A."],<br>
+                    ];<br><br>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;document.write(haresh[2]);<br>
+
+                <p class="example-1">(output) :-</p>
+                <p class="output">sarah, 18, female, BCA</p>
+                </p>
+            </div>
+            <!---------------------------->
+            <div class="col-3">
+                <p class="example">(Example - 1) :-</p>
+                <p class="output">simple methode to print particular one column in array.</p>
+                <p class="operator-code">
+                    var haresh = [<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["harry", 18, "male", "B.Com"],<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["sunny", 19, "male", "BCA"],<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["sarah", 18, "female", "BCA"],<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["tom", 17, "male", "B.A."],<br>
+                    ];<br><br>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;document.write(haresh[3][3]);<br>
+
+                <p class="example-1">(output) :-</p>
+                <p class="output">female</p>
+                </p>
+            </div>
+            <!---------------------------->
+        </div>
+    </div>
+    <br>
+
+
+
+     <!--==================== for loop with array of array =======================-->
+     <div class="div-border">
+        <h4 class="operator-title">* for loop with array of array :-</h4>
+        <div class="row">
+            <!---------------------------->
+            <div class="col-2">
+                <p class="example">(Example - 1) :-</p>
+                <p class="output">using for loop & print multiple row in array.</p>
+                <p class="operator-code">
+                    var haresh = [<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["harry", 18, "male", "B.Com"],<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["sunny", 19, "male", "BCA"],<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["sarah", 18, "female", "BCA"],<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["tom", 17, "male", "B.A."],<br>
+                    ];<br><br>
+
+                    for(a = 0; a < 4; a++){<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;document.write(haresh[a]);<br>
+                    }<br>
+
+                <p class="example-1">(output) :-</p>
+                <p class="output">harry,18,male,B.Com</p>
+                <p class="output">sunny,19,male,BCA</p>
+                <p class="output">sarah,18,female,BCA</p>
+                <p class="output">tom,17,male,B.A.</p>
+            </div>
+            <!---------------------------->
+            <div class="col-2">
+                <p class="example">(Example - 2) :-</p>
+                <p class="output">using for loop & print multiple column in array.</p>
+                <p class="operator-code">
+                    var haresh = [<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["harry", 18, "male", "B.Com"],<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["sunny", 19, "male", "BCA"],<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["sarah", 18, "female", "BCA"],<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["tom", 17, "male", "B.A."],<br>
+                    ];<br><br>
+
+                    for(a = 0; a < 4; a++){<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;document.write(haresh[a][1]);<br>
+                    }<br>
+
+                <p class="example-1">(output) :-</p>
+                <p class="output">18</p>
+                <p class="output">18</p>
+                <p class="output">19</p>
+                <p class="output">17</p>
+                </p>
+            </div>
+            <!---------------------------->
+            <div class="col-2">
+                <p class="example">(Example - 3) :-</p>
+                <p class="output">using for loop & print particular row in array.</p>
+                <p class="operator-code">
+                    var haresh = [<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["harry", 18, "male", "B.Com"],<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["sunny", 19, "male", "BCA"],<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["sarah", 18, "female", "BCA"],<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["tom", 17, "male", "B.A."],<br>
+                    ];<br><br>
+
+                    for(a = 0; a < 1; a++){<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;document.write(haresh[2]);<br>
+                    }<br>
+
+                <p class="example-1">(output) :-</p>
+                <p class="output">sarah,18,female,BCA</p>
+            </div>
+            <!---------------------------->
+            <div class="col-2">
+                <p class="example">(Example - 4) :-</p>
+                <p class="output">using for loop & print particular column in array.</p>
+                <p class="operator-code">
+                    var haresh = [<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["harry", 18, "male", "B.Com"],<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["sunny", 19, "male", "BCA"],<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["sarah", 18, "female", "BCA"],<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["tom", 17, "male", "B.A."],<br>
+                    ];<br><br>
+
+                    for(a = 0; a < 1; a++){<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;document.write(haresh[2][2]);<br>
+                    }<br>
+
+                <p class="example-1">(output) :-</p>
+                <p class="output">female</p>
+            </div>
+            <!---------------------------->
+        </div>
+    </div>
+    <br>
+
+
+
+    <!--==================== nested loop with array of array =======================-->
+    <div class="div-border">
+        <h4 class="operator-title">* nested loop with array of array :-</h4>
+        <div class="row">
+            <!---------------------------->
+            <div class="col-5">
+                <p class="example">(Example - 1) :-</p>
+                <p class="output">using for loop & print index wise data multiple row in array.</p>
+                <p class="operator-code">
+                    var haresh = [<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["harry", 18, "male", "B.Com"],<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["sunny", 19, "male", "BCA"],<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["sarah", 18, "female", "BCA"],<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["tom", 17, "male", "B.A."],<br>
+                    ];<br><br>
+
+                    for(var a = 0; a < 4; a++){<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;document.write(a + " ");<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;for(var b = 0; b < 4; b++){<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.write(haresh[a][b] + " ");<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;document.write("<<span>br></span>");<br>
+                    }
+
+                <p class="example-1">(output) :-</p>
+                <p class="output">0 harry 18 male B.Com</p>
+                <p class="output">1 sunny 19 male BCA</p>
+                <p class="output">2 sarah 18 female BCA</p>
+                <p class="output">3 tom 17 male B.A.</p>
+            </div>
+            <!---------------------------->
+            <div class="col-5">
+                <p class="example">(Example - 1) :-</p>
+                <p class="output">using for loop & print unorder list wise data multiple row in array.</p>
+                <p class="operator-code">
+                    var haresh = [<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["harry", 18, "male", "B.Com"],<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["sunny", 19, "male", "BCA"],<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["sarah", 18, "female", "BCA"],<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["tom", 17, "male", "B.A."],<br>
+                    ];<br><br>
+
+                    document.write("<<span>ul></span>");<br>
+                    for(var a = 0; a < 4; a++){<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;document.write("<<span>li></span>");<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;for(var b = 0; b < 4; b++){<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.write(haresh[a][b]);<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;document.write("<<span>/li></span>");<br>
+                    }<br>
+                    document.write("<<span>/ul></span>");<br>
+
+                <p class="example-1">(output) :-</p>
+                <ul>
+                    <li class="output">harry 18 male B.Com</li>
+                    <li class="output">sunny 19 male BCA</li>
+                    <li class="output">sarah 18 female BCA</li>
+                    <li class="output">tom 17 male B.A.</li>
+                </ul>
+            </div>
+            <!---------------------------->
+        </div>
+
+
+        <div class="row">
+            <!---------------------------->
+            <div class="col-2">
+                <p class="example">(Example - 3) :-</p>
+                <p class="output">using nested loop & print index wise data particular row in array.</p>
+                <p class="operator-code">
+                    var haresh = [<br>
+                    &nbsp;&nbsp;&nbsp;["harry", 18, "male", "B.Com"],<br>
+                    &nbsp;&nbsp;&nbsp;["sunny", 19, "male", "BCA"],<br>
+                    &nbsp;&nbsp;&nbsp;["sarah", 18, "female", "BCA"],<br>
+                    &nbsp;&nbsp;&nbsp;["tom", 17, "male", "B.A."],<br>
+                    ];<br><br>
+
+                    for(var a = 0; a < 1; a++){<br>
+                        &nbsp;&nbsp;&nbsp;document.write(a + " ");<br>
+                        &nbsp;&nbsp;&nbsp;for(var b = 0; b < 1; b++){<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.write(haresh[0] + " ");<br>
+                        &nbsp;&nbsp;&nbsp;}<br>
+                        &nbsp;&nbsp;&nbsp;document.write("<<span>br></span>");<br>
+                    }
+
+                <p class="example-1">(output) :-</p>
+                <p class="output">0 harry 18 male B.Com</p>
+            </div>
+            <!---------------------------->
+            <div class="col-2">
+                <p class="example">(Example - 4) :-</p>
+                <p class="output">using nested loop & print index wise data particular column in array.</p>
+                <p class="operator-code">
+                    var haresh = [<br>
+                    &nbsp;&nbsp;&nbsp;["harry", 18, "male", "B.Com"],<br>
+                    &nbsp;&nbsp;&nbsp;["sunny", 19, "male", "BCA"],<br>
+                    &nbsp;&nbsp;&nbsp;["sarah", 18, "female", "BCA"],<br>
+                    &nbsp;&nbsp;&nbsp;["tom", 17, "male", "B.A."],<br>
+                    ];<br><br>
+
+                    for(var a = 0; a < 1; a++){<br>
+                        &nbsp;&nbsp;&nbsp;document.write(a + " ");<br>
+                        &nbsp;&nbsp;&nbsp;for(var b = 0; b < 1; b++){<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.write(haresh[1][0]);<br>
+                        &nbsp;&nbsp;&nbsp;}<br>
+                        &nbsp;&nbsp;&nbsp;document.write("<<span>br></span>");<br>
+                    }
+
+                <p class="example-1">(output) :-</p>
+                <p class="output">0 sunny</p>
+            </div>
+            <!---------------------------->
+            <div class="col-2">
+                <p class="example">(Example - 5) :-</p>
+                <p class="output">using for loop & print unorder list wise data multiple row in array.</p>
+                <p class="operator-code">
+                    var haresh = [<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["harry", 18, "male", "B.Com"],<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["sunny", 19, "male", "BCA"],<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["sarah", 18, "female", "BCA"],<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["tom", 17, "male", "B.A."],<br>
+                    ];<br><br>
+
+                    document.write(<<span>ul></span>);<br>
+                    for(var a = 0; a < 1; a++){<br>
+                        &nbsp;&nbsp;&nbsp;document.write(<<span>li></span>);<br>
+                        &nbsp;&nbsp;&nbsp;for(var b = 0; b < 1; b++){<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.write(haresh[1]);<br>
+                        &nbsp;&nbsp;&nbsp;}<br>
+                        &nbsp;&nbsp;&nbsp;document.write(<<span>/li></span>);<br>
+                    }<br>
+                    document.write(<<span>/ul></span>);<br>
+
+                <p class="example-1">(output) :-</p>
+                <ul>
+                    <li class="output">sunny,19,male,BCA</li>
+                </ul>
+            </div>
+            <!---------------------------->
+            <div class="col-2">
+                <p class="example">(Example - 6) :-</p>
+                <p class="output">using for loop & print unorder list wise data multiple column in array.</p>
+                <p class="operator-code">
+                    var haresh = [<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["harry", 18, "male", "B.Com"],<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["sunny", 19, "male", "BCA"],<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["sarah", 18, "female", "BCA"],<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["tom", 17, "male", "B.A."],<br>
+                    ];<br><br>
+
+                    document.write(<<span>ul></span>);<br>
+                    for(var a = 0; a < 1; a++){<br>
+                        &nbsp;&nbsp;&nbsp;document.write(<<span>li></span>);<br>
+                        &nbsp;&nbsp;&nbsp;for(var b = 0; b < 1; b++){<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.write(haresh[1][0]);<br>
+                        &nbsp;&nbsp;&nbsp;}<br>
+                        &nbsp;&nbsp;&nbsp;document.write(<<span>/li></span>);<br>
+                    }<br>
+                    document.write(<<span>/ul></span>);<br>
+
+                <p class="example-1">(output) :-</p>
+                <ul>
+                    <li class="output">sunny</li>
+                </ul>
+            </div>
+            <!---------------------------->
+        </div>
+    </div>
+    <br>
+
+
+
+    <!--==================== using nested loop with table wise data of array =======================-->
+    <div class="div-border">
+        <h4 class="operator-title">* using nested loop with table wise data of array :-</h4>
+        <div class="row">
+            <!---------------------------->
+            <div class="col-5">
+                <p class="example">(Example - 1) :-</p>
+                <p class="output">using nested loop & print index wise multiple row in array.</p>
+                <p class="operator-code">
+                    var haresh = [<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["harry", 18, "male", "B.Com"],<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["sunny", 19, "male", "BCA"],<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["sarah", 18, "female", "BCA"],<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["tom", 17, "male", "B.A."],<br>
+                    ];<br><br>
+
+                    document.write("<<span>table></span>");<br>
+                    for(var a = 0; a < 4; a++){<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;document.write("<<span>tr></span>");<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;for(var b = 0; b < 4; b++){<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.write("<<span>td></span>" + haresh[a][b] + "<<span>/td></span>");<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;document.write("<<span>/tr></span>");<br>
+                    }<br>
+                    document.write("<<span>/table></span>");<br>
+
+                <p class="example-1">(output) :-</p>
+                <p class="output">5</p><br>
+                <table>
+                    <tr>
+                        <td>harry</td>
+                        <td>18</td>
+                        <td>male</td>
+                        <td>B.Com</td>
+                    </tr>
+                    <tr>
+                        <td>sunny</td>
+                        <td>19</td>
+                        <td>male</td>
+                        <td>BCA</td>
+                    </tr>
+                    <tr>
+                        <td>sarah</td>
+                        <td>18</td>
+                        <td>female</td>
+                        <td>BCA</td>
+                    </tr>
+                    <tr>
+                        <td>tom</td>
+                        <td>17</td>
+                        <td>male</td>
+                        <td>B.A.</td>
+                    </tr>
+                    <tr>
+                        <td>cat</td>
+                        <td>20</td>
+                        <td>male</td>
+                        <td>BBA</td>
+                    </tr>
+                </table>
+
+            </div>
+            <!---------------------------->
+        </div>
+        <br><br>
+    </div>
+
+
+    <!--==================== nested loop with automatic count length of array =======================-->
+    <div class="div-border">
+        <h4 class="operator-title">* nested loop with automatic count length of array :-</h4>
+        <div class="row">
+            <!---------------------------->
+            <div class="col-5">
+                <p class="example">(Example - 1) :-</p>
+                <p class="output">using for loop & pr   int index wise multiple row in array.</p>
+                <p class="operator-code">
+                    var haresh = [<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["harry", 18, "male", "B.Com"],<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["sunny", 19, "male", "BCA"],<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["sarah", 18, "female", "BCA"],<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["tom", 17, "male", "B.A."],<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;["cat", 20, "male", "BBA"]<br>
+                    ];<br><br>
+
+                    document.write(haresh.length);<br><br>
+
+                    for(var a = 0; a < haresh.length; a++){<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;document.write(a + " ");<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;for(var b = 0; b < haresh[a].length; b++){<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.write(haresh[a][b] + " ");<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;document.write("<<span>br></span>");<br>
+                    }
+
+                <p class="example-1">(output) :-</p>
+                <p class="output">harry 18 male B.Com</p>
+                <p class="output">sunny 19 male BCA</p>
+                <p class="output">sarah 18 female BCA</p>
+                <p class="output">tom 17 male B.A.</p>
+                <p class="output">cat 20 male BBA</p>
+                
+            </div>
+            <!---------------------------->
+        </div>
+        <br><br>
+
+
+
+
+<!------ simple Array of Array ------->     
+    <!-- <script>
+        var haresh = [
+            ["harry", 18, "male", "B.Com"],
+            ["sunny", 19, "male", "BCA"],
+            ["sarah", 18, "female", "BCA"],
+            ["tom", 17, "male", "B.A."],
+        ];
+        document.write(haresh);
+    </script>
+    <br>
+
+    <script>
+        var haresh = [
+            ["harry", 18, "male", "B.Com"],
+            ["sunny", 19, "male", "BCA"],
+            ["sarah", 18, "female", "BCA"],
+            ["tom", 17, "male", "B.A."],
+        ];    
+        document.write(haresh[3]);
+    </script>
+    <br>
+
+    <script>
+        var haresh = [
+            ["harry", 18, "male", "B.Com"],
+            ["sunny", 19, "male", "BCA"],
+            ["sarah", 18, "female", "BCA"],
+            ["tom", 17, "male", "B.A."],
+        ];    
+        document.write(haresh[2][2]);
+    </script>
+    <br> -->
+
+
+
+
+<!------ for loop with array of array ------->
+    <!-- <script>
+        var haresh = [
+            ["harry", 18, "male", "B.Com"],
+            ["sunny", 19, "male", "BCA"],
+            ["sarah", 18, "female", "BCA"],
+            ["tom", 17, "male", "B.A."],
+        ];    
+
+        for(var a = 0; a < 4; a++){
+            document.write(haresh[a] + "<br>");
+        }
+    </script>
+    <br>
+
+
+    <script>
+        var haresh = [
+            ["harry", 18, "male", "B.Com"],
+            ["sunny", 19, "male", "BCA"],
+            ["sarah", 18, "female", "BCA"],
+            ["tom", 17, "male", "B.A."],
+        ];    
+
+        for(var a = 0; a < 4; a++){
+            document.write(haresh[a][1] + "<br>");
+        }
+    </script>
+    <br>
+
+
+    <script>
+        var haresh = [
+            ["harry", 18, "male", "B.Com"],
+            ["sunny", 19, "male", "BCA"],
+            ["sarah", 18, "female", "BCA"],
+            ["tom", 17, "male", "B.A."],
+        ];    
+
+        for(var a = 0; a < 1; a++){
+            document.write(haresh[2] + "<br>");
+        }
+    </script>
+    <br>
+
+    <script>
+        var haresh = [
+            ["harry", 18, "male", "B.Com"],
+            ["sunny", 19, "male", "BCA"],
+            ["sarah", 18, "female", "BCA"],
+            ["tom", 17, "male", "B.A."],
+        ];    
+
+        for(var a = 0; a < 1; a++){
+            document.write(haresh[2][2] + "<br>");
+        }
+    </script>
+    <br> -->
+
+
+    
+
+<!------ nested loop with array of array ------->
+    <!-- <script>
+        var haresh = [
+            ["harry", 18, "male", "B.Com"],
+            ["sunny", 19, "male", "BCA"],
+            ["sarah", 18, "female", "BCA"],
+            ["tom", 17, "male", "B.A."],
+        ];    
+
+        for(var a = 0; a < 4; a++){
+            document.write(a + " ");
+            for(var b = 0; b < 4; b++){
+                    document.write(haresh[a][b] + " ");
+            }
+            document.write("<br>");
+        }
+    </script>
+    <br>
+
+
+    <script>
+        var haresh = [
+            ["harry", 18, "male", "B.Com"],
+            ["sunny", 19, "male", "BCA"],
+            ["sarah", 18, "female", "BCA"],
+            ["tom", 17, "male", "B.A."],
+        ];    
+        
+        document.write("<ul>");
+        for(var a = 0; a < 4; a++){
+            document.write("<li>");
+            for(var b = 0; b < 4; b++){
+                    document.write(haresh[a][b] + " ");
+            }
+            document.write("</li>");
+        }
+        document.write("</ul>");
+        
+        
+    </script>
+    <br> -->
+
+
+    <!-- <script>
+        var haresh = [
+            ["harry", 18, "male", "B.Com"],
+            ["sunny", 19, "male", "BCA"],
+            ["sarah", 18, "female", "BCA"],
+            ["tom", 17, "male", "B.A."],
+        ];    
+
+        for(var a = 0; a < 1; a++){
+            document.write(a + " ");
+            for(var b = 0; b < 1; b++){
+                    document.write(haresh[2] + " ");
+            }
+            document.write("<br>");
+        }
+    </script>
+    <br>
+
+
+    <script>
+        var haresh = [
+            ["harry", 18, "male", "B.Com"],
+            ["sunny", 19, "male", "BCA"],
+            ["sarah", 18, "female", "BCA"],
+            ["tom", 17, "male", "B.A."],
+        ];    
+
+        for(var a = 0; a < 1; a++){
+            document.write(a + " ");
+            for(var b = 0; b < 1; b++){
+                    document.write(haresh[2][2] + " ");
+            }
+            document.write("<br>");
+        }
+    </script>
+    <br> -->
+
+
+    <!-- <script>
+        var haresh = [
+            ["harry", 18, "male", "B.Com"],
+            ["sunny", 19, "male", "BCA"],
+            ["sarah", 18, "female", "BCA"],
+            ["tom", 17, "male", "B.A."],
+        ];    
+        
+        document.write("<ul>");
+        for(var a = 0; a < 1; a++){
+            document.write("<li>" + " ");
+            for(var b = 0; b < 1; b++){
+                    document.write(haresh[1] + " ");
+            }
+            document.write("</li>");
+        }
+        document.write("</ul>");
+        
+        
+    </script>
+    <br>
+
+
+    <script>
+        var haresh = [
+            ["harry", 18, "male", "B.Com"],
+            ["sunny", 19, "male", "BCA"],
+            ["sarah", 18, "female", "BCA"],
+            ["tom", 17, "male", "B.A."],
+        ];    
+        
+        document.write("<ul>");
+        for(var a = 0; a < 1; a++){
+            document.write("<li>");
+            for(var b = 0; b < 1; b++){
+                    document.write(haresh[3][1] );
+            }
+            document.write("</li>");
+        }
+        document.write("</ul>");
+        
+        
+    </script>
+    <br> -->
+
+
+
+
+<!------ nested loop with array of array ------->
+    <!-- <script>
+        var haresh = [
+            ["harry", 18, "male", "B.Com"],
+            ["sunny", 19, "male", "BCA"],
+            ["sarah", 18, "female", "BCA"],
+            ["tom", 17, "male", "B.A."],
+        ];    
+
+        document.write("<table border='1px'>");
+        for(var a = 0; a < 4; a++){
+            document.write("<tr>");
+            for(var b = 0; b < 4; b++){
+                    document.write("<td>" + haresh[a][b] + "</td>");
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>");
+    </script>
+    <br> -->
+
+
+
+
+<!------ using nested loop with table wise data of array ------->
+    <!-- <script>
+        var haresh = [  
+            ["harry", 18, "male", "B.Com"],
+            ["sunny", 19, "male", "BCA"],
+            ["sarah", 18, "female", "BCA"],
+            ["tom", 17, "male", "B.A."]
+        ];    
+
+        document.write("<table");
+        for(var a = 0; a < 4; a++){
+            document.write("<tr>");
+            for(var b = 0; b < 4; b++){
+                    document.write("<td>" + haresh[a][b] + "</td>");
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>");
+    </script>
+    <br> -->
+
+
+
+<!------ nested loop with automatic count length of array ------->
+<!-- <script>
+    var haresh = [  
+        ["harry", 18, "male", "B.Com"],
+        ["sunny", 19, "male", "BCA"],
+        ["sarah", 18, "female", "BCA"],
+        ["tom", 17, "male", "B.A."],
+        ["cat", 20, "male", "BBA"]
+    ];    
+
+    document.write(haresh.length);
+
+    document.write("<table border='1px'>");
+    for(var a = 0; a < haresh.length; a++){
+        document.write("<tr>");
+        for(var b = 0; b < haresh[a].length; b++){
+                document.write("<td>" + haresh[a][b] + "</td>");
+        }
+        document.write("</tr>");
+    }
+    document.write("</table>");
+</script>
+<br> -->
+
+
+
+
+
+</html>

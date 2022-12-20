@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Box</title>
+</head>
+
+<body style="width: 85%; margin: 0 auto; padding-top: 20px;">
+
+    <style>
+        .heading-title {
+            color: rgb(255, 96, 117);
+            font-size: 50px;
+            font-weight: 400;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .table-title {
+            color: rgb(4, 133, 105);
+            font-size: 25px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            margin-top: 50px;
+            width: 50%;
+        }
+
+        td,
+        th {
+            border: 1px solid rgb(195, 195, 195);
+            text-align: left;
+            padding: 10px;
+            padding-left: 25px !important;
+        }
+
+        .div-border {
+            margin-top: 30px;
+        }
+
+        .operator-title {
+            font-size: 24px;
+            color: rgb(37, 26, 192);
+            font-family: sans-serif;
+        }
+
+        .operator-desc {
+            font-size: 16px;
+            margin-top: -15px;
+            color: rgb(95, 95, 95);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .operator-code {
+            font-size: 15px;
+            margin-left: 15px;
+            line-height: 1.5;
+            letter-spacing: 0.5px;
+            color: rgb(76, 150, 235);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .example {
+            font-size: 16px;
+            margin-left: 15px;
+            font-weight: bold;
+            color: rgb(255, 96, 117);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .example-1 {
+            font-size: 15px;
+            margin: 10px 0 -5px 15px;
+            font-weight: bold;
+            color: rgb(40, 184, 4);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .row {
+            width: 100%;
+            display: inline-flex;
+        }
+
+        .col-2 {
+            width: 20%;
+            height: auto;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .col-3 {
+            width: 30%;
+            height: auto;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .col-5 {
+            width: 50%;
+            height: auto;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .output {
+            font-size: 16px;
+            margin-left: 15px;
+            color: rgb(95, 95, 95);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- type of Logical operators -->
+    <!--==============================-->
+
+    <h1 class="heading-title">* Prompt Box *</h1>
+    <p class="operator-desc">- prompt box એક alert box ની જેમ જ work કરે છે, prompt box માં બે button display થઇ છે જો cancel button click કરતાં prompt box નો dialog close થઇ જાય છે, અને ok button click કરતાં value get કરીને print કરે છે. આ prompt box true અને false ની જેમ જ work કરે છે.</p>
+
+    <br>
+    <br>
+
+
+
+
+
+    <!--==================== Operator-1 =======================-->
+    <div class="div-border">
+        <h4 class="operator-title">(1) Simple prompt Box :-</h4>
+        <div class="row">
+            <!---------------------------->
+            <div class="col-3">
+                <p class="example">(Example - 1) :-</p>
+                <p class="operator-code">
+
+                    prompt("do you like our website ?");
+                    
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">open simple prompt dialog box</p>
+            </div>
+            <!---------------------------->
+        </div>
+    </div>
+    <br>
+
+
+    <!--==================== Operator-2 =======================-->
+    <div class="div-border">
+        <h4 class="operator-title">(2) Variable With prompt Box :-</h4> 
+        <div class="row">
+            <!---------------------------->
+            <div class="col-5">
+                <p class="example">(Example - 1) :-</p>
+                <p class="operator-code">
+
+                    var a = prompt("do you like our website ?");<br><br>
+                        &nbsp;&nbsp;&nbsp;document.write(a);
+                    
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">open prompt dialog box</p>
+                <p class="output">- prompt dialog box માં જે value enter કરીએ તે display માં print થાય છે.</p>
+            </div>
+            <!---------------------------->
+        </div>
+    </div>
+    <br>
+
+
+    <!--==================== Operator-3 =======================-->
+    <div class="div-border">
+        <h4 class="operator-title">(3) if / else Conditon With Prompt Box :-</h4> 
+        <div class="row">
+            <!---------------------------->
+            <div class="col-5">
+                <p class="example">(Example - 1) :-</p>
+                <p class="operator-code">
+                    var per = prompt("do you like our website ?");<br><br>
+
+                    if (per >= 80 && per <= 100) {<br>
+                        &nbsp;&nbsp;&nbsp;document.write("X ia merit");<br>
+                    }<br>
+                    else if (per >= 60 && per < 79) {<br>
+                        &nbsp;&nbsp;&nbsp;document.write("X ia 1st division");<br>
+                    }<br>
+                    else if (per >= 45 && per < 59) {<br>
+                        &nbsp;&nbsp;&nbsp;document.write("X ia 2st division");<br>
+                    }<br>
+                    else if (per >= 33 && per < 44) {<br>
+                        &nbsp;&nbsp;&nbsp;document.write("X ia 3st division");<br>
+                    }<br>
+                    else if (per < 33) {<br>
+                        &nbsp;&nbsp;&nbsp;document.write("you are fail");<br>
+                    }<br>
+                    else {<br>
+                        &nbsp;&nbsp;&nbsp;document.write("enter the valid percentage");<br>
+                    }<br>
+                    
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">open prompt dialog box after enter the value than in display print the your value.</p>
+            </div>
+            <!---------------------------->
+        </div>
+    </div>
+    <br>
+
+    <br>
+
+
+
+
+    <!-- <script>
+       
+       prompt("do you like our website");
+        
+    </script>
+    <br> -->
+
+
+    <!-- <script>
+
+        var a = prompt("do you like our website");
+        document.write(a);
+        
+    </script>z
+    <br> -->
+
+<!-- 
+    <script>
+       
+        var per = prompt();
+        if (per >= 80 && per <= 100) {
+            document.write("X is merit");
+        }
+        else if (per >= 60 && per < 79) {
+            document.write("X is 1st division");
+        }
+        else if (per >= 45 && per < 59) {
+            document.write("X is 2st division");
+        }
+        else if (per >= 33 && per < 44) {
+            document.write("X is 3st division");
+        }
+        else if (per < 33) {
+            document.write("you are fail");
+        }
+        else {
+            document.write("enter the valid percentage");
+        }
+        
+    </script>
+    <br> -->
+
+</html>

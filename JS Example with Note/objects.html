@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+
+<body style="width: 85%; margin: 0 auto; padding-top: 20px;">
+
+
+
+
+<h1 style="text-decoration: underline;">Object</h1>
+
+<br><br><br><br>
+
+
+
+
+<h2>* Simple Call Object (Method : 1) :-</h2>
+<script>
+    /*-------- object --------*/
+    var a = {
+        fname : 'haresh',
+        lname : 'thumar',
+        age : 18,
+        email : 'haeshthumar46@gmail.com',
+        favMovies : ['dhoom', 'sholay', 'hum'],
+        salery : function(){
+            return 25000;
+        },
+        fullname : function(){
+            return this.fname + " " + this.lname;
+        },
+        living : {
+            city : 'junagadh',
+            state : 'gujrat',
+            country : 'india'
+        }
+    };
+
+    console.log(a);
+    document.write(a.fname);
+    document.write("<br><br>");
+    document.write(a.lname);
+    document.write("<br><br>");
+    document.write(a.age);
+    document.write("<br><br>");
+    document.write(a.email);
+    document.write("<br><br>");
+    document.write(a.favMovies);
+    document.write("<br><br>");
+    document.write(a.favMovies[1]);
+    document.write("<br><br>");
+    document.write(a.salery());
+    document.write("<br><br>");
+    document.write(a.fullname());
+    document.write("<br><br>");
+    document.write(a.living.city);
+    document.write("<br><br>");
+    document.write(a.living.state);
+    document.write("<br><br>");
+    document.write(a.living.country);
+</script>
+<br><br><br><br>
+
+
+
+
+
+
+
+<h2>* with new Object (Method : 2) :-</h2>
+<script>
+    var haresh = new Object();
+
+    haresh.fName = 'haresh';
+    haresh.lName = 'thumar';
+    haresh.age = 30;
+
+    haresh.car = ['BMW', 'Audi', 'TATA', 'Renault'];
+    haresh.village = {
+        street : 'Garbi Chowck',
+        temple : 'Ram Temple',
+        house : 'Janki',
+        mobile : 1234567890
+    };
+    haresh.payment = function(){
+        return 15000 + 2500;
+    }
+    haresh.getName = function(){
+        return this.fName + " " + this.lName;
+    }
+
+
+    document.write(haresh.fName);
+    document.write("<br><br>");
+    document.write(haresh.lName);
+    document.write("<br><br>");
+    document.write(haresh.age);
+    document.write("<br><br>");
+    document.write(haresh.car);
+    document.write("<br><br>");
+    document.write(haresh.car[2]);
+    document.write("<br><br>");
+    document.write(haresh.village.street);
+    document.write("<br><br>");
+    document.write(haresh.village.mobile);
+    document.write("<br><br>");
+    document.write(haresh.payment());
+    document.write("<br><br>");
+    document.write(haresh.getName());
+    document.write("<br><br>");
+
+</script>
+
+
+
+
+
+</body>
+</html>

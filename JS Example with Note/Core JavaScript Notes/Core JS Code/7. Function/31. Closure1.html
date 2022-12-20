@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head><title>Geeky Shows</title>
+	</head>
+	<body>
+		<script>
+			function show(){
+				var j = "J a Local Vari of Outer Function"; // Local Variable
+				document.write(j + "<br>");	// j accessible in function
+				function innerFun(){
+					var k = "K a Local Vari of inner fun";	// Local variable
+					document.write(k + "<br>");	// k accessible in function
+					document.write(j + "<br>");	// j accessible in function
+				}
+				innerFun();
+				document.write(j + "<br>");	// j accessible in function
+				document.write(k + "<br>");	// k not accessible for outer fun
+			}
+			show();
+		</script>
+	</body>
+</html>
+
+

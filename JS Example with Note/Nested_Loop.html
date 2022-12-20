@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested_Loop</title>
+</head>
+
+<body style="width: 85%; margin: 0 auto; padding-top: 20px;">
+
+    <style>
+        .heading-title {
+            color: rgb(255, 96, 117);
+            font-size: 50px;
+            font-weight: 400;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .table-title {
+            color: rgb(4, 133, 105);
+            font-size: 25px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            margin-top: 50px;
+            width: 30%;
+        }
+
+        td,
+        th {
+            border: 1px solid rgb(195, 195, 195);
+            text-align: left;
+            padding: 10px;
+            padding-left: 25px !important;
+        }
+
+        .div-border {
+            margin-top: 30px;
+        }
+
+        .operator-title {
+            font-size: 24px;
+            color: rgb(37, 26, 192);
+            font-family: sans-serif;
+        }
+
+        .operator-desc {
+            font-size: 16px;
+            margin-top: -15px;
+            color: rgb(95, 95, 95);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .operator-code {
+            font-size: 15px;
+            margin-left: 15px;
+            line-height: 1.5;
+            letter-spacing: 0.5px;
+            color: rgb(76, 150, 235);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .example {
+            font-size: 16px;
+            margin-left: 15px;
+            font-weight: bold;
+            color: rgb(255, 96, 117);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .example-1 {
+            font-size: 15px;
+            margin: 10px 0 -5px 15px;
+            font-weight: bold;
+            color: rgb(40, 184, 4);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .row {
+            width: 100%;
+            display: inline-flex;
+        }
+
+        .col-2 {
+            width: 20%;
+            height: auto;
+            float: left;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .col-3 {
+            width: 33%;
+            height: auto;
+            float: left;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .col-5 {
+            width: 50%;
+            height: auto;
+            float: left;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .output {
+            font-size: 16px;
+            margin-left: 15px;
+            color: rgb(95, 95, 95);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .red-pink {
+            color: rgb(255, 82, 177);
+            font-weight: 600;
+        }
+
+        .violate {
+            color: rgb(181, 22, 255);
+            font-weight: 600;
+        }
+
+        .gray {
+            color: rgb(82, 82, 82);
+            font-weight: 600;
+        }
+    </style>
+
+
+
+
+    <!-- type of Logical operators -->
+    <!--==============================-->
+
+    <h1 class="heading-title">* Nested_Loop *</h1><br>
+    <p class="output">- Row Wise Loop Called Outer Loop</p>
+    <p class="output">- Column Wise Loop Called Inner Loop</p>
+    <br>
+
+
+    <!--==================== Do While Loop (Increment Value) =======================-->
+    <div class="div-border">
+        <h4 class="operator-title">* Nested Loop Example:-</h4>
+        <p class="output">- print 1 to 100 value in row & column wise.</p>
+        <div class="row">
+            <!---------------------------->
+            <div class="col-3">
+                <p class="example">(Example - 1) :-</p>
+                <p class="operator-code">
+
+                    for (var a = 1; a <= 100; a = a+10){<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;for (b = a; b < a+10; b++){<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.write(b + " ");<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;document.write("<<span>br</span>>");<br>
+                    }
+
+                    <p class="example-1">(output) :-</p>
+                    <p class="output">
+                        1 2 3 4 5 6 7 8 9 10<br>
+                        11 12 13 14 15 16 17 18 19 20<br>
+                        21 22 23 24 25 26 27 28 29 30<br>
+                        31 32 33 34 35 36 37 38 39 40<br>
+                        41 42 43 44 45 46 47 48 49 50<br>
+                        51 52 53 54 55 56 57 58 59 60<br>
+                        61 62 63 64 65 66 67 68 69 70<br>
+                        71 72 73 74 75 76 77 78 79 80<br>
+                        81 82 83 84 85 86 87 88 89 90<br>
+                        91 92 93 94 95 96 97 98 99 100<br>
+                    </p>
+                    
+                </p>
+            </div>
+            <!---------------------------->
+        </div>
+    </div>
+    <br><br>
+
+
+
+
+    
+<script>
+    for (var a = 1; a <= 100; a = a+10){
+        for(b = a; b < a+10; b++) {
+            document.write(b + " ");
+        }
+        document.write("<br>");
+    }
+</script>
+<br>
+
+
+
+
+
+</html>

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+</head>
+
+<body style="width: 85%; margin: 0 auto; padding-top: 20px;">
+
+    <style>
+        .heading-title {
+            color: rgb(255, 96, 117);
+            font-size: 50px;
+            font-weight: 400;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .table-title {
+            color: rgb(4, 133, 105);
+            font-size: 25px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            margin-top: 50px;
+            width: 80%;
+        }
+
+        td,
+        th {
+            border: 1px solid rgb(195, 195, 195);
+            text-align: left;
+            padding: 10px;
+            padding-left: 25px !important;
+        }
+
+        .div-border {
+            margin-top: 30px;
+        }
+
+        .operator-title {
+            font-size: 24px;
+            color: rgb(37, 26, 192);
+            font-family: sans-serif;
+        }
+
+        .operator-desc {
+            font-size: 16px;
+            margin-top: -15px;
+            color: rgb(95, 95, 95);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .operator-code {
+            font-size: 15px;
+            margin-left: 15px;
+            line-height: 1.5;
+            letter-spacing: 0.5px;
+            color: rgb(76, 150, 235);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .example {
+            font-size: 16px;
+            margin-left: 15px;
+            font-weight: bold;
+            color: rgb(255, 96, 117);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .example-1 {
+            font-size: 15px;
+            margin: 10px 0 -5px 15px;
+            font-weight: bold;
+            color: rgb(40, 184, 4);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .row {
+            width: 100%;
+            display: inline-flex;
+        }
+
+        .col-2 {
+            width: 20%;
+            height: auto;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .col-3 {
+            width: 30%;
+            height: auto;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .col-4 {
+            width: 40%;
+            height: auto;
+            border: 1px solid rgb(228, 227, 227);
+        }
+        .col-6 {
+            width: 50%;
+            height: auto;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .output {
+            font-size: 16px;
+            margin-left: 15px;
+            color: rgb(95, 95, 95);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .btn {
+            margin: 20px 10px 0 15px!important;
+            padding: 5px 15px 5px 15px!important;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 17px;
+            background-color: rgb(255, 125, 74)!important;
+            color: rgb(255, 255, 255)!important;
+        }
+
+        .click {
+            color: rgb(255, 130, 130);
+            font-size: 14px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .color-1 {
+            color: rgb(255, 123, 0);
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- type of Logical operators -->
+    <!--==============================-->
+
+    <h1 class="heading-title">* events *</h1>
+
+    <table>
+        <tr>
+            <th class="table-title" colspan="4">type of basic events :-</th>
+        </tr>
+        <tr>
+            <th style="color: crimson;">Click Event</th>
+            <th style="color: crimson;">Mouse Event</th>
+            <th style="color: crimson;">Key Event</th>
+            <th style="color: crimson;">Window Event</th>
+        </tr>
+        <tr>
+            <td>Click <span style="color: rgb(2, 130, 250);">(onclick)</span></td>
+            <td>Mouse Hover <span style="color: rgb(2, 130, 250);">(onmouseenter)</span></td>
+            <td>Key Press <span style="color: rgb(2, 130, 250);">(onkeypress)</span></td>
+            <td>Load<span style="color: rgb(2, 130, 250);">(onload)</span></td>
+        </tr>
+        <tr>
+            <td>Double Click <span style="color: rgb(2, 130, 250);">(ondblclick)</span></td>
+            <td>Mouse Out <span style="color: rgb(2, 130, 250);">(onmouseout)</span></td>
+            <td>Key Up <span style="color: rgb(2, 130, 250);">(onkeyup)</span></td>
+            <td>Unload <span style="color: rgb(2, 130, 250);">(onunload)</span></td>
+        </tr>
+        <tr>
+            <td>Right Click <span style="color: rgb(2, 130, 250);">(oncontextmenu)</span></td>
+            <td>Mouse Down <span style="color: rgb(2, 130, 250);">(onmousedown)</span></td>
+            <td></td>
+            <td>Resize <span style="color: rgb(2, 130, 250);">(onresize)</span></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Mouse Up <span style="color: rgb(2, 130, 250);">(onmouseup)</span></td>
+            <td></td>
+            <td>Scroll <span style="color: rgb(2, 130, 250);">(onscroll)</span></td>
+        </tr>
+    </table>
+
+
+    <br>
+    <br>
+
+
+    <!--==================== event-1 =======================-->
+    <div class="div-border">
+        <div class="row">
+            <!---------------------------->
+            <div class="col-3">
+                <h4 class="operator-title">(1) Click Event (onclick) :-</h4>
+                <p class="example">Example :-</p>
+                <p class="operator-code">
+                    function hello(){<br>
+                    &nbsp;&nbsp;document.write("hello haresh");<br>
+                    };<br>
+                <p class="operator-code">
+                    <<span>button</span> <b class="color-1">onclick="hello()"</b>><span> click me </span>
+                        <<span>button</span><span>></span>
+                </p>
+                </p>
+                <p class="example-1">(output) :-</p>
+                <button class="btn">click </button><span class="click"><-- click to show</span>
+                <p class="output">hello haresh</p>
+            </div>
+            <!---------------------------->
+            <div class="col-4">
+                <h4 class="operator-title">(2) Double Click Event (ondblclick) :-</h4>
+                <p class="example">Example :-</p>
+                <p class="operator-code">
+                    function hello(){<br>
+                    &nbsp;&nbsp;document.write("hello haresh");<br>
+                    };<br>
+                <p class="operator-code">
+                    <<span>p</span> <b class="color-1">ondblclick="hello()"</b>><span> click on me </span>
+                        <<span>p</span><span>></span>
+                </p>
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">click on me <span class="click"><-- double click to show</span></p>
+                <p class="output">hello haresh</p>
+            </div>
+            <!---------------------------->
+            <div class="col-4">
+                <h4 class="operator-title">(3) Right Click Event (ondblclick) :-</h4>
+                <p class="example">Example :-</p>
+                <p class="operator-code">
+                    function hello(){<br>
+                    &nbsp;&nbsp;document.write("hello haresh");<br>
+                    };<br>
+                <p class="operator-code">
+                    <<span>p</span> <b class="color-1">oncontextmenu="hello()"</b>><span> click on me </span>
+                        <<span>p</span><span>></span>
+                </p>
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">click on me <span class="click"><-- right click to show</span></p>
+                <p class="output">hello haresh</p>
+            </div>
+            <!---------------------------->
+        </div>
+
+        <br><br><br>
+
+
+    <!--==================== event-2 =======================-->
+
+        <div class="row">
+            <!---------------------------->
+            <div class="col-6">
+                <h4 class="operator-title">(1) Mouse Hover Event (onmouseenter) :-</h4>
+                <p class="example">Example :-</p>
+                <p class="operator-code">
+                    function hello(){<br>
+                    &nbsp;&nbsp;document.write("hello haresh");<br>
+                    };<br>
+                <p class="operator-code">
+                        <<span>p</span> <b class="color-1">onmouseenter="hello()"</b>><span> mouse hover on me </span>
+                        <<span>p</span><span>></span>
+                </p>
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">mouse hover on me <span class="click"><-- mouse hover to show</span></p>
+                <p class="output">hello haresh</p>
+            </div>
+            <!---------------------------->
+            <div class="col-6">
+                <h4 class="operator-title">(2) Mouse Out Event (onmouseout) :-</h4>
+                <p class="example">Example :-</p>
+                <p class="operator-code">
+                    function hello(){<br>
+                    &nbsp;&nbsp;document.write("hello haresh");<br>
+                    };<br>
+                <p class="operator-code">
+                    <<span>p</span> <b class="color-1">onmouseout="hello()"</b>><span> mouse leave on me </span>
+                        <<span>p</span><span>></span>
+                </p>
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">mouse leave on me <span class="click"><-- mouse leave to show</span></p>
+                <p class="output">hello haresh</p>
+            </div>
+            <!---------------------------->
+        </div>
+
+        <div class="row">
+            <!---------------------------->
+            <div class="col-6">
+                <h4 class="operator-title">(3) Mouse down Event (onmousedown) :-</h4>
+                <p class="example">Example :-</p>
+                <p class="operator-code">
+                    function hello(){<br>
+                    &nbsp;&nbsp;document.write("hello haresh");<br>
+                    };<br>
+                <p class="operator-code">
+                        <<span>p</span> <b class="color-1">onmousedown="hello()"</b>><span> mouse click press down on me </span>
+                        <<span>p</span><span>></span>
+                </p>
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">mouse hover on me <span class="click"><-- mouse hover to show</span></p>
+                <p class="output">hello haresh</p>
+            </div>
+            <!---------------------------->
+            <div class="col-6">
+                <h4 class="operator-title">(4) Mouse up Event (onmouseup) :-</h4>
+                <p class="example">Example :-</p>
+                <p class="operator-code">
+                    function hello(){<br>
+                    &nbsp;&nbsp;document.write("hello haresh");<br>
+                    };<br>
+                <p class="operator-code">
+                    <<span>p</span> <b class="color-1">onmouseup="hello()"</b>><span> mouse leave on me </span>
+                        <<span>p</span><span>></span>
+                </p>
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">mouse leave on me <span class="click"><-- mouse leave to show</span></p>
+                <p class="output">hello haresh</p>
+            </div>
+            <!---------------------------->
+        </div>
+
+        <br><br><br>
+
+    <!--==================== event-3 =======================-->
+
+        <div class="row">
+            <!---------------------------->
+            <div class="col-6">
+                <h4 class="operator-title">(1) Key Press Event (onkeypress) :-</h4>
+                <p class="example">Example :-</p>
+                <p class="operator-code">
+                    function hello(){<br>
+                    &nbsp;&nbsp;document.write("hello haresh");<br>
+                    };<br>
+                <p class="operator-code">
+                        <<span>p</span> <b class="color-1">onkeypress="hello()"</b>><span> key press to </span>
+                        <<span>p</span><span>></span>
+                </p>
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">key press to <span class="click"><-- key press to show</span></p>
+                <p class="output">hello haresh</p>
+            </div>
+            <!---------------------------->
+            <div class="col-6">
+                <h4 class="operator-title">(2) Key Up Event (onkeyup) :-</h4>
+                <p class="example">Example :-</p>
+                <p class="operator-code">
+                    function hello(){<br>
+                    &nbsp;&nbsp;document.write("hello haresh");<br>
+                    };<br>
+                <p class="operator-code">
+                    <<span>p</span> <b class="color-1">onkeyup="hello()"</b>><span> key up to </span>
+                        <<span>p</span><span>></span>
+                </p>
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">key up to <span class="click"><-- key up to show</span></p>
+                <p class="output">hello haresh</p>
+            </div>
+            <!---------------------------->
+        </div>
+
+        <br><br><br>
+
+    <!--==================== event-4 =======================-->
+
+        <div class="row">
+            <!---------------------------->
+            <div class="col-6">
+                <h4 class="operator-title">(1) Window Resize Event (onresize) :-</h4>
+                <p class="example">Example :-</p>
+                <p class="operator-code">
+                    function hello(){<br>
+                    &nbsp;&nbsp;document.write("hello haresh");<br>
+                    };<br>
+                <p class="operator-code">
+                        <<span>body</span> <b class="color-1">onresize="hello()"</b>><span> window resize </span>
+                        <<span>body</span><span>></span>
+                </p>
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">window resize <span class="click"><-- window resize to show</span></p>
+                <p class="output">hello haresh</p>
+            </div>
+            <!---------------------------->
+            <div class="col-6">
+                <h4 class="operator-title">(2) Window Scroll Event (onscroll) :-</h4>
+                <p class="example">Example :-</p>
+                <p class="operator-code">
+                    function hello(){<br>
+                    &nbsp;&nbsp;document.write("hello haresh");<br>
+                    };<br>
+                <p class="operator-code">
+                    <<span>body </span> <b class="color-1">onscroll="hello()"</b>><span> window scroll </span>
+                        <<span>body </span><span>></span>
+                </p>
+                </p>
+                <p class="example-1">(output) :-</p>
+                <p class="output">window scroll <span class="click"><-- window scroll to show</span></p>
+                <p class="output">hello haresh</p>
+            </div>
+            <!---------------------------->
+        </div>
+
+       
+
+    </div>
+    <br>
+
+
+
+<script>
+    var a = 15;
+    var b = 20;
+
+    document.write(a = b);
+</script>
+
+
+</html>

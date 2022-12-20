@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head><title>Geeky Shows</title>
+	</head>
+	<body>
+		<script>
+			function Mobile(model_no){
+				this.model = model_no;
+				this.color = 'white';
+				this.ram = '4GB';
+				this.price = function(){
+					document.write(this.model + " Price Rs.3000 <br>");
+				};
+			}
+			var samsung = new Mobile('Galaxy');
+			var nokia = new Mobile('3310');
+		// Method wont display
+			for(var key in nokia){
+				if(typeof nokia[key] !== 'function'){
+					document.write(nokia[key] + "<br>");
+				}	
+			}
+
+		/* value with key, Method wont display
+			for(var key in nokia){
+				if(typeof nokia[key] !== 'function'){
+				document.write(key + " : " + nokia[key] + "<br>"); 
+				}
+			}
+		*/
+		</script>
+	</body>
+</html>
+
+

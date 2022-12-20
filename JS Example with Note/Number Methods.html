@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Methods</title>
+</head>
+
+<body style="width: 85%; margin: 0 auto; padding-top: 20px;">
+
+
+    <style>
+        .heading-title {
+            color: rgb(255, 96, 117);
+            font-size: 50px;
+            font-weight: 400;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .table-title {
+            color: rgb(4, 133, 105);
+            font-size: 25px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            margin-top: 50px;
+            width: 50%;
+        }
+
+        td,
+        th {
+            border: 1px solid rgb(195, 195, 195);
+            text-align: left;
+            padding: 10px;
+            padding-left: 25px !important;
+        }
+
+        .div-border {
+            margin-top: 30px;
+        }
+
+        .operator-title {
+            font-size: 24px;
+            color: rgb(37, 26, 192);
+            font-family: sans-serif;
+        }
+
+        .operator-desc {
+            font-size: 16px;
+            margin-top: -15px;
+            color: rgb(95, 95, 95);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .operator-code {
+            font-size: 15px;
+            margin-left: 15px;
+            line-height: 1.5;
+            letter-spacing: 0.5px;
+            color: rgb(76, 150, 235);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .example {
+            font-size: 16px;
+            margin-left: 15px;
+            font-weight: bold;
+            color: rgb(255, 96, 117);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .example-1 {
+            font-size: 15px;
+            margin: 10px 0 -5px 15px;
+            font-weight: bold;
+            color: rgb(40, 184, 4);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .row {
+            width: 100%;
+            display: inline-flex;
+        }
+
+        .col-2 {
+            width: 20%;
+            height: auto;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .col-3 {
+            width: 30%;
+            height: auto;
+            border: 1px solid rgb(228, 227, 227);
+        }
+
+        .output {
+            font-size: 16px;
+            margin-left: 15px;
+            color: rgb(95, 95, 95);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+
+
+
+
+
+    <!-- type of Arithmetic operators -->
+    <!--==============================-->
+
+    <h1 class="heading-title">* Number Methods *</h1>
+
+
+    <table>
+        <tr>
+            <th class="table-title" colspan="4">Number Methods() List :-</th>
+        </tr>
+        <tr>
+            <td>Number()</td>
+            <td>isFinite()</td>
+            <td>toFixed(x)</td>
+        </tr>
+        <tr>
+            <td>parseInt()</td>
+            <td>isInteger()</td>
+            <td>toPrecision(x)</td>
+        </tr>
+        <tr>
+            <td>parseFloat()</td>
+        </tr>
+    </table>
+
+
+    <br><br>
+
+
+
+<!--******************************************
+                Number()
+*******************************************-->
+<!-- <script>
+    var a = "99";
+    var b = Number(a);
+    document.write(b);
+</script>
+<br><br> -->
+
+<!-- <script>
+    var a = true;
+    var b = Number(a);
+    document.write(b);
+</script>
+<br><br> -->
+
+<!-- <script>
+    var a = false;
+    var b = Number(a);
+    document.write(b);
+</script>
+<br><br> -->
+
+<!-- <script>
+    var a = "99 88";
+    var b = Number(a);
+    document.write(b);
+</script>
+<br><br> -->
+
+
+
+<!--******************************************
+                parseInt()
+*******************************************-->
+<!-- <script>
+    var a = "99 88 77";
+    var b = parseInt(a);
+    document.write(b);
+</script>
+<br><br> -->
+
+<!-- <script>
+    var a = "10.33";
+    var b = parseInt(a);
+    document.write(b);
+</script>
+<br><br> -->
+
+<!-- <script>
+    var a = "50 years";
+    var b = parseInt(a);
+    document.write(b);
+</script>
+<br><br> -->
+
+<!-- <script>
+    var a = "hea was 50";
+    var b = parseInt(a);
+    document.write(b);
+</script>
+<br><br> -->
+
+
+
+<!--******************************************
+                parseFloat()
+*******************************************-->
+<!-- <script>
+    var a = "10.33";
+    var b = parseFloat(a);
+    document.write(b);
+</script>
+<br><br> -->
+
+
+
+<!--******************************************
+                isFinite()
+*******************************************-->
+<!-- <script>
+    var a = "100";
+    var b = isFinite(a);
+    document.write(b);
+</script>
+<br><br> -->
+
+<!-- <script>
+    var a = "-100";
+    var b = isFinite(a);
+    document.write(b);
+</script>
+<br><br> -->
+
+<!-- <script>
+    var a = "-1.55";
+    var b = isFinite(a);
+    document.write(b);
+</script>
+<br><br> -->
+
+<!-- <script>
+    var a = "hax";
+    var b = isFinite(a);
+    document.write(b);
+</script>
+<br><br> -->
+
+
+
+<!--******************************************
+                isInteger()
+*******************************************-->
+<!-- <script>
+    var a = 100;
+    var b = Number.isInteger(a);
+    document.write(b);
+</script>
+<br><br>
+
+<script>
+    var a = "100";
+    var b = Number.isInteger(a);
+    document.write(b);
+</script>
+<br><br>
+
+<script>
+    var a = 10.50;
+    var b = Number.isInteger(a);
+    document.write(b);
+</script>
+<br><br>
+
+<script>
+    var a = -50;
+    var b = Number.isInteger(a);
+    document.write(b);
+</script>
+<br><br>
+
+<script>
+    var a = 10-5;
+    var b = Number.isInteger(a);
+    document.write(b);
+</script>
+<br><br>
+
+<script>
+    var a = false;
+    var b = Number.isInteger(a);
+    document.write(b);
+</script>
+<br><br> -->
+
+
+
+<!--******************************************
+                toFixed()
+*******************************************-->
+<!-- <script>
+    var a = 5.56789;
+    var b = a.toFixed(2);
+    document.write(b);
+</script>
+<br><br>
+
+<script>
+    var a = 5.56789;
+    var b = a.toFixed(3);
+    document.write(b);
+</script>
+<br><br>
+
+<script>
+    var a = 5.23456;
+    var b = a.toFixed(3);
+    document.write(b);
+</script>
+<br><br>
+
+<script>
+    var a = 55.56789;
+    var b = a.toFixed(3);
+    document.write(b);
+</script>
+<br><br> -->
+
+
+
+<!--******************************************
+                toFixed()
+*******************************************-->
+<!-- <script>
+    var a = 5.56789;
+    var b = a.toFixed(2);
+    document.write(b);
+</script>
+<br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

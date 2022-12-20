@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head><title>Geeky Shows</title>
+	</head>
+	<body>
+		<script>
+			
+			// Rest Parameters
+			function restShow(a, ...args){
+				console.log("a: " + a);
+				console.log(args);
+			}
+			restShow(10,20,30,40,50);
+			
+			// Arguments Object
+			function show(a){
+				console.log("a: " + a);
+				console.log(arguments);
+			}
+			show(10,20,30,40,50);
+		
+		</script>
+	</body>
+</html>
+
+

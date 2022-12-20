@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Geeky Shows</title>
+</head>
+
+<body>
+    <script>
+        function Mobile(){
+
+        }
+        // Mobile is the object created by Function which is actually Function itself
+        console.log(Mobile);
+
+        // prototype is a property of Mobile which points to the Prototype Object of Mobile
+        console.log(Mobile.prototype);  // it will show Prototype Object of Mobile Function
+
+        // Creating a new Object using new keyword
+        var lg = new Mobile();
+
+        // When you create a new object of that function using new keyword JS Engine creates an object and sets a property named __proto__ which points to its function’s prototype object
+        console.log(lg.__proto__);                // Mobile.prototype
+
+        // Verifying all stuffs
+        console.log(lg.__proto__ === Mobile.prototype);     // true
+        console.log(Mobile === lg.__proto__.constructor);      // true
+        console.log(Mobile === Mobile.prototype.constructor);   // true
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head><title>Geeky Shows</title>
+	</head>
+	<body>
+		<script> 
+		/*
+			var geek = [[], [], []];
+			geek[0][0] = "Rahul";
+			geek[0][1] = "Dell";
+			geek[0][2] = 10;
+			geek[1][0] = "Sonam";
+			geek[1][1] = "HP";
+			geek[1][2] = 20;
+			geek[2][0] = "Sumit";
+			geek[2][1] = "Zed";
+			geek[2][2] = 30;
+		*/
+		// Using Array Literal
+			var geek = [
+							["Rahul", "Dell", 10], 
+							["Sonam", "HP", 20], 
+							["Sumit", "Zed", 30]
+						];
+			
+			
+			// using Array Constructor
+			// var geek = new Array(["Rahul", "Dell", 10], ["Sonam", "HP", 20], ["Sumit", "Zed", 30]);
+						
+			for(let i =0; i<3; i++){
+				for(let j =0; j<3; j++){
+					// document.write(geek[i][j] + " ");
+					document.write( i + " " + j + " " + geek[i][j] + " ");
+				}
+				document.write("<br>")
+			}
+			
+		</script>
+	</body>
+</html>
+
+

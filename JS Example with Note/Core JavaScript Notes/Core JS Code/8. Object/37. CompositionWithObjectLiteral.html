@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head><title>Geeky Shows</title>
+	</head>
+	<body>
+		<script>
+			// Composition or Mixins
+			// Object.assign(target, source1, source_n)
+			var eating = {
+				eat: function(){
+					return "I can Eat <br>";
+				}
+			};
+			var walking = {
+				walk: function(){
+					return "I can Walk <br>";
+				}
+			};
+			var talking = {
+				talk: function(){
+					return "I can Talk <br>";
+				}
+			};
+			
+			var Rahul = Object.assign({}, eating, walking, talking);
+			var RoboCop = Object.assign({}, walking, talking);
+			document.write(Rahul.eat());
+			document.write(Rahul.walk());
+			document.write(Rahul.talk());
+
+			document.write(RoboCop.walk());
+			document.write(RoboCop.talk());
+			
+			
+		</script>
+	</body>
+</html>
+
+

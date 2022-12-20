@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head><title>Geeky Shows</title>
+	</head>
+	<body>
+		<script> 
+			// Day as Number 1 - 31 
+			// Hours as Number 0 - 23
+			// Month as Number 0 - 11 Ex- 0 = Jan
+			// Week Day as Number 0 - 6 Ex- 0 = Sun
+			
+			var tarikh = new Date();
+			document.write(formatDate(tarikh) + "<br>");
+			
+			function formatDate(pd){
+				var date = pd.getDate();
+				var month = pd.getMonth();
+					month++;
+				var year = pd.getFullYear();
+				return date + " - " + month + " - " + year; 
+			}
+			
+		</script>
+	</body>
+</html>

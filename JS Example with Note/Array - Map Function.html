@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array - Map Function</title>
+</head>
+
+<body style="width: 85%; margin: 0 auto; padding-top: 20px;">
+
+
+
+
+    <h1 style="text-decoration: underline;">Array With Map Function</h1>
+    <script>
+        var a = [10, 20, 30, 40, 50];
+        var b = a.map(test);
+        document.write(b);
+
+       function test(x){
+           return x * 10;
+       }
+    </script>
+    <br><br><br>
+
+
+
+
+    <h1 style="text-decoration: underline;">Array of Object With Map Function</h1>
+    <script>
+        var a = [
+            {fname : "haresh", lname : "patel"},
+            {fname : "rutvik", lname : "patel"},
+            {fname : "rushabh", lname : "patel"},
+        ];
+        var b = a.map(test);
+        document.write(b);
+
+       function test(x){
+           return x.fname + " " + x.lname + "<br>";
+       }
+    </script>
+    <br><br><br>
+
+
+
+
+</body>
+
+</html>

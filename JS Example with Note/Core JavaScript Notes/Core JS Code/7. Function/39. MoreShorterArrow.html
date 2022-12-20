@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head><title>Geeky Shows</title>
+	</head>
+	<body>
+		<script>
+			// Function Expression
+			var myfun1 = function show(a){
+					return a;
+				};
+			
+			// Anonymous Function 
+			var myfun2 = function(b){
+					return b;
+				};
+			
+			// Arrow Function 
+			var myfun = (c) => {
+					return c;
+				};
+			
+			// a bit more shorter Arrow Function 
+			var myfunN = (c) => c;	
+		
+			document.write(myfun1(10));
+			document.write(myfun2(20));
+			document.write(myfun(30));
+			document.write(myfunN(40));
+/*
+	var myfunN = (c) => { c };
+	if you put curly bracket it wont work 
+	if you want to put curly bracket then
+	you have to write return c 
+	More Example
+		var myfunN=(c)=>c;		// Work, It automatically returns c
+		var myfunN=(c)=>{c};	// Won't Work
+		var myfunN=(c)=>{return c};	// Work
+		
+		var myfunN=(a,b)=> a+b;		// Work, It automatically returns a+b
+		var myfunN=(a,b)=>{a+b};	// Won't Work
+		var myfunN=(a,b)=>{return a+b};	// Work
+*/			
+		</script>
+	</body>
+</html>
+
+
