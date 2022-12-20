@@ -46,7 +46,7 @@ All-Methods JS File
 => math formula
 => &&(ands) operator
 => ||(or) operator
-=> ternary operator
+=> ternary operator 
 => break & continue keyword
 => do while loop
 => array []
