@@ -1,85 +1,69 @@
-JacaScript Concept...
-*******************************************************************
+# JacaScript Concept with Examples.
 
 //* In this Tutorial cover Topic. *//
 
+## Complete-JS File 
 
-Complete-JS File 
----------------------------------                    
-=> What is the JavaScript
-=> JavaScript History
-=> Advantage of JavaScript
-=> Identifier
-=> Variables
-=> Data Type like (string, number, boolean, null, undefined, Object, Array, RegExp, etc...)
-=> Declaring & initializing Variable
-=> Operator (Arithmatic-Operators, Comparison(Relational)-Operators, Logical-Operators, Bitwise-opertors(Binery), Assignment-Opertors, )
-=> prompt method
-=> if Statement, Else If condition, switch statement, 
-=> Traditional For Loop
-=> Nested For Loop
-=> While Loop
-=> Nested While Loop
-=> Do While Loop
-=> Nested Do While Loop
-=> Break & Continue
-=> Function
-=> creating & calling a function
-=> Function with parameter
-=> Function argument missing
-=> Argument Object
-=> Many Function Argument
-=> Default Parameter
+<ul>
+  <li>What is the JavaScript</li>
+  <li>JavaScript History</li>
+  <li>Advantage of JavaScript</li>
+  <li>Identifier</li>
+  <li>Variables</li>
+  <li>Data Type like (string, number, boolean, null, undefined, Object, Array, RegExp, etc...)</li>
+  <li>Declaring & initializing Variable</li>
+  <li>Operator (Arithmatic-Operators, Comparison(Relational)-Operators, Logical-Operators, Bitwise-opertors(Binery), Assignment-Opertors)</li>
+  <li>prompt method</li>
+  <li>if Statement, Else If condition, switch statement</li>
+  <li>Traditional For Loop</li>
+  <li>Nested For Loop</li>
+  <li>While Loop</li>
+  <li>Nested While Loop</li>
+  <li>Do While Loop</li>
+  <li>Nested Do While Loop</li>
+  <li>Break & Continue</li>
+  <li>Function</li>
+  <li>creating & calling a function</li>
+  <li>Function with parameter</li>
+  <li>Function argument missing</li>
+  <li>Argument Object</li>
+  <li>Many Function Argument</li>
+  <li>Default Parameter</li>
+</ul>
 
+## ALL-Methods JS File 
 
+<ul>
+  <li>String</li>
+  <li>Object{}</li>
+  <li>forLoop()</li>
+  <li>if & else{} condition</li>
+  <li>nested if & else {} condition</li>
+  <li>if else if{} condition</li>
+  <li>switch case statement</li>
+  <li>for loop with declair outside variable</li>
+  <li>math formula</li>
+  <li>&&(ands) operator</li>
+  <li>||(or) operator</li>
+  <li>ternary operator </li>
+  <li>break & continue keyword</li>
+  <li>do while loop</li>
+  <li>array []</li>
+  <li>while loop using print array</li>
+  <li>for of loop using print array</li>
+  <li>for loop using print array</li>
+  <li>for in loop using print array</li>
+  <li>array destructuring</li>
+  <li>object destructuring {}</li>
+  <li>spread operator{}</li>
+  <li>Function(){}</li>
+  <li>Array with function</li>
+  <li>iterables</li>
+  <li>array like object</li>
+  <li>set & get key value pair in map</li>
+  <li>optional chaining</li>
+  <li>methods</li>
+  <li>Additional Logic</li>
+  <li>OBJECT ORIENTED PROGRAMMING IN JAVASCRIPT</li>
+</ul>
 
-All-Methods JS File 
------------------------------
-=> String
-=> Object{}
-=> forLoop()
-=> if & else{} condition
-=> nested if & else {} condition
-=> if else if{} condition
-=> switch case statement
-=> for loop with declair outside variable
-=> math formula
-=> &&(ands) operator
-=> ||(or) operator
-=> ternary operator 
-=> break & continue keyword
-=> do while loop
-=> array []
-=> while loop using print array
-=> for of loop using print array
-=> for loop using print array
-=> for in loop using print array
-=> array destructuring
-=> Object{}
-=> object destructuring {}
-=> spread operator{}
-=> Function(){}
-=> Array with function
-=> iterables
-=> array like object
-=> set & get key value pair in map
-=> optional chaining
-=> methods
-=> Additional Logic
-=> OBJECT ORIENTED PROGRAMMING IN JAVASCRIPT
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
