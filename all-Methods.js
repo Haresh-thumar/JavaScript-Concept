@@ -1524,7 +1524,7 @@
 /*----- ascending order -----*/
 // const numbers = [5, 2, 8, 400, 600, 200, 1400, 800, 950];
 // const sortNumber = numbers.sort((a, b) => a - b);
-// console.log(numbers);                                // [2, 5, 8, 200, 400, 600, 800, 950, 1400] 
+// console.log(numbers);                                // [2, 5, 8, 200, 400, 600, 800, 950, 1400]
 
 /*----- descending order -----*/
 // const numbers = [5, 2, 8, 400, 600, 200, 1400, 800, 950];
@@ -1673,10 +1673,10 @@
 // for(let item of person.keys()){
 //     console.log(item, typeof item);
 // }
-// for(let item of person){ 
+// for(let item of person){
 //     console.log(item);
 // }
-// for(let [item, value] of person){			
+// for(let [item, value] of person){
 //     console.log(item, value);
 // }
 
@@ -1932,8 +1932,8 @@
 /****************************************************************************************************************************************
                                                     OBJECT ORIENTED PROGRAMMING IN JAVASCRIPT
 /****************************************************************************************************************************************/
-// function 
-// 1) that function create object 
+// function
+// 1) that function create object
 // 2) add key value pair
 // 3) return of object
 
@@ -1971,8 +1971,8 @@
 // const getUser2 = createUser("parth", "savaliya", "parth@gmail.com", 20, "mysoor");       // this is output
 // console.log(getUser1);
 // console.log(getUser2);
-// const is18 = user1.is18();        
-// const about = user1.about();      
+// const is18 = user1.is18();
+// const about = user1.about();
 // console.log(is18);                // true
 // console.log(about);               // haresh is 22 year old
 
@@ -2155,7 +2155,7 @@
 /********** count first index & last index in array **********/
 // let haresh = [10, 20, 30, 40, 50];
 // let user = haresh[0] + haresh[haresh.length-1];
-// console.log(user); 
+// console.log(user);
 
 
 /********** check the first index & last index are same in array **********/
@@ -2344,6 +2344,86 @@
 // createUser.prototype.about = function () {
 //     return "toon na na na la la...";
 // };
-// const getUser1 = createUser();      
+// const getUser1 = createUser();
 // console.log(getUser1);
 // console.log(getUser1.about());
+
+
+
+
+
+
+/*------------------------------------------------------------------------------------
+                                String to Convert in Array
+------------------------------------------------------------------------------------*/
+/*---------- Method-1 ---------*/
+const string = 'split-by-dash';
+const usingSplit = string.split('-');
+console.log("method-1 :", usingSplit);
+
+/*---------- Method-2 ---------*/
+const string1 = 'split-by-dash';
+const usingArrayFrom = Array.from(string1);
+console.log("method-2 :", usingArrayFrom);
+
+/*---------- Method-3 ---------*/
+const string2 = 'cake😋';
+const usingSpread1 = [...string2];
+const usingArrayFrom1 = Array.from(string2);
+console.log("method-3 :", usingArrayFrom1);
+
+/*---------- Method-4 ---------*/
+const string3 = 'cake is null';
+const usingSpread2 = string3.split("");
+console.log("method-4 :", usingSpread2);
+
+/*---------- Method-5 ---------*/
+const string4 = 'cake is null';
+const usingSpread3 = Array.prototype.map.call(string4, eachLetter => eachLetter);
+console.log("method-5 :", usingSpread3);
+
+/*---------- Method-6 ---------*/
+const string5 = 'split-by-dash';
+const usingObjectAssign1 = Object.assign([], string5);
+console.log("method-6 :", usingObjectAssign1);
+
+/*---------- Method-7 ---------*/
+let words1 = '     practice   makes   perfect  ',
+    wordArray1 = words1.match(/\S+/g);
+console.log("method-7 :", wordArray1);
+
+/*---------- Method-8 ---------*/
+let words2 = 'practice makes perfect  ',
+    wordArray2 = words2.match(/\S+/g);
+console.log("method-7 :", wordArray2);
+
+
+
+/*------------------------------------------------------------------------------------
+                                String other Methods
+------------------------------------------------------------------------------------*/
+/*------ codePointAt -------*/
+const icons = '☃★♲';
+abc = icons.codePointAt(1)
+console.log(abc);   // Expected output: "9733"
+
+/*------ fromCharCode -------*/
+fromcharcode = String.fromCharCode(189, 43, 190, 61)
+console.log(fromcharcode);   // Expected output: "½+¾="
+
+/*------ valueOf -------*/
+const stringObj = new String('foo');
+console.log(stringObj);  // Expected output: String { "foo" }
+console.log(stringObj.valueOf());  // Expected output: "foo"
+
+
+
+
+
+
+
+
+
+
+
+
